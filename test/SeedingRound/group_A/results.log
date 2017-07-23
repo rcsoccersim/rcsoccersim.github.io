@@ -1,0 +1,7 @@
+time, left team, right team, left coach, right coach, left score, right score, left pen taken, right pen taken, left pen score, right pen score, cointoss
+2016-06-30 11:42:00, "Gliders2016", "ITAndroids", NULL, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL
+2016-06-30 11:55:13, "ITAndroids", "FRA-UNIted", NULL, NULL, 1, 0, NULL, NULL, NULL, NULL, NULL
+2016-06-30 12:08:25, "FRA-UNIted", "HillStone", NULL, NULL, 0, 2, NULL, NULL, NULL, NULL, NULL
+2016-06-30 12:21:19, "HillStone", "Gliders2016", NULL, NULL, 1, 4, NULL, NULL, NULL, NULL, NULL
+2016-06-30 12:34:36, "Gliders2016", "FRA-UNIted", NULL, NULL, 4, 0, NULL, NULL, NULL, NULL, NULL
+2016-06-30 12:47:45, "ITAndroids", "HillStone", NULL, NULL, 1, 3, NULL, NULL, NULL, NULL, NULL
