@@ -12,30 +12,45 @@
           <country>china</country>
           <dir>/home/csuyunlu</dir>
         </team>
-          <matches>6</matches>
+          <matches>7</matches>
           <points>16</points>
           <won>5</won>
           <drawn>1</drawn>
-          <lost>0</lost>
+          <lost>1</lost>
           <goals_scored>16</goals_scored>
-          <goals_received>5</goals_received>
-          <avg_goal_diff>1.8333333333333333</avg_goal_diff>
-          <avg_goals_scored>2.6666666666666665</avg_goals_scored>
+          <goals_received>6</goals_received>
+          <avg_goal_diff>1.4285714285714286</avg_goal_diff>
+          <avg_goals_scored>2.2857142857142856</avg_goals_scored>
+        </score><score>
+          <team>
+          <teamname>Ri-one</teamname>
+          <country>japan</country>
+          <dir>/home/rione</dir>
+        </team>
+          <matches>7</matches>
+          <points>13</points>
+          <won>4</won>
+          <drawn>1</drawn>
+          <lost>2</lost>
+          <goals_scored>11</goals_scored>
+          <goals_received>7</goals_received>
+          <avg_goal_diff>0.5714285714285714</avg_goal_diff>
+          <avg_goals_scored>1.5714285714285714</avg_goals_scored>
         </score><score>
           <team>
           <teamname>Fifty-Storms</teamname>
           <country>japan</country>
           <dir>/home/fiftystorms</dir>
         </team>
-          <matches>6</matches>
+          <matches>7</matches>
           <points>13</points>
           <won>4</won>
           <drawn>1</drawn>
-          <lost>1</lost>
+          <lost>2</lost>
           <goals_scored>9</goals_scored>
-          <goals_received>4</goals_received>
-          <avg_goal_diff>0.8333333333333334</avg_goal_diff>
-          <avg_goals_scored>1.5</avg_goals_scored>
+          <goals_received>5</goals_received>
+          <avg_goal_diff>0.5714285714285714</avg_goal_diff>
+          <avg_goals_scored>1.2857142857142858</avg_goals_scored>
         </score><score>
           <team>
           <teamname>Nexus2D</teamname>
@@ -68,21 +83,6 @@
           <avg_goals_scored>2.0</avg_goals_scored>
         </score><score>
           <team>
-          <teamname>Ri-one</teamname>
-          <country>japan</country>
-          <dir>/home/rione</dir>
-        </team>
-          <matches>6</matches>
-          <points>10</points>
-          <won>3</won>
-          <drawn>1</drawn>
-          <lost>2</lost>
-          <goals_scored>10</goals_scored>
-          <goals_received>7</goals_received>
-          <avg_goal_diff>0.5</avg_goal_diff>
-          <avg_goals_scored>1.6666666666666667</avg_goals_scored>
-        </score><score>
-          <team>
           <teamname>Ziziphus</teamname>
           <country>iran</country>
           <dir>/home/ziziphus</dir>
@@ -102,15 +102,15 @@
           <country>brazil</country>
           <dir>/home/itandroids</dir>
         </team>
-          <matches>6</matches>
-          <points>4</points>
-          <won>1</won>
+          <matches>7</matches>
+          <points>7</points>
+          <won>2</won>
           <drawn>1</drawn>
           <lost>4</lost>
-          <goals_scored>9</goals_scored>
+          <goals_scored>10</goals_scored>
           <goals_received>14</goals_received>
-          <avg_goal_diff>-0.8333333333333334</avg_goal_diff>
-          <avg_goals_scored>1.5</avg_goals_scored>
+          <avg_goal_diff>-0.5714285714285714</avg_goal_diff>
+          <avg_goals_scored>1.4285714285714286</avg_goals_scored>
         </score><score>
           <team>
           <teamname>WIT</teamname>
@@ -1089,6 +1089,80 @@
             <swf>match_26/match_26.swf</swf>
             <output>match_26/server-output.log</output>
             <error>match_26/server-error.log</error>
+            <statistics>no</statistics>
+          </server>
+        </match><match>
+          <time>2017-07-29 15:53</time>
+          <penalty>no</penalty>
+          <team_l>
+            <team>
+          <teamname>ITAndroids</teamname>
+          <country>brazil</country>
+          <dir>/home/itandroids</dir>
+        </team>
+            <score>1</score>
+            <penalty_taken>0</penalty_taken>
+            <penalty_score>0</penalty_score>
+            <output>match_27/team_l-output.log</output>
+            <error>match_27/team_l-error.log</error>
+            <exception>no</exception>
+          </team_l>
+          <team_r>
+            <team>
+          <teamname>Fifty-Storms</teamname>
+          <country>japan</country>
+          <dir>/home/fiftystorms</dir>
+        </team> 
+            <score>0</score>
+            <penalty_taken>0</penalty_taken>
+            <penalty_score>0</penalty_score>
+            <output>match_27/team_r-output.log</output>
+            <error>match_27/team_r-error.log</error>
+            <exception>no</exception>
+          </team_r>
+          <server>
+            <rcg>match_27/201707291553-ITAndroids_1-vs-Fifty-Storms_0.rcg.gz</rcg>
+            <rcl>match_27/201707291553-ITAndroids_1-vs-Fifty-Storms_0.rcl.gz</rcl>
+            <swf>match_27/match_27.swf</swf>
+            <output>match_27/server-output.log</output>
+            <error>match_27/server-error.log</error>
+            <statistics>no</statistics>
+          </server>
+        </match><match>
+          <time>2017-07-29 16:06</time>
+          <penalty>no</penalty>
+          <team_l>
+            <team>
+          <teamname>CSU_Yunlu</teamname>
+          <country>china</country>
+          <dir>/home/csuyunlu</dir>
+        </team>
+            <score>0</score>
+            <penalty_taken>0</penalty_taken>
+            <penalty_score>0</penalty_score>
+            <output>match_28/team_l-output.log</output>
+            <error>match_28/team_l-error.log</error>
+            <exception>no</exception>
+          </team_l>
+          <team_r>
+            <team>
+          <teamname>Ri-one</teamname>
+          <country>japan</country>
+          <dir>/home/rione</dir>
+        </team> 
+            <score>1</score>
+            <penalty_taken>0</penalty_taken>
+            <penalty_score>0</penalty_score>
+            <output>match_28/team_r-output.log</output>
+            <error>match_28/team_r-error.log</error>
+            <exception>no</exception>
+          </team_r>
+          <server>
+            <rcg>match_28/201707291606-CSU_Yunlu_0-vs-Ri-one_1.rcg.gz</rcg>
+            <rcl>match_28/201707291606-CSU_Yunlu_0-vs-Ri-one_1.rcl.gz</rcl>
+            <swf>match_28/match_28.swf</swf>
+            <output>match_28/server-output.log</output>
+            <error>match_28/server-error.log</error>
             <statistics>no</statistics>
           </server>
         </match>
