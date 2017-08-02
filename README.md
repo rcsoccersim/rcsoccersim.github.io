@@ -1,4 +1,6 @@
 # The RoboCup Soccer Simulator
 
-## Competitions
-- RoboCup2017
+## Software
+- rcssserver
+- rcssmonitor
+- rcsslogplayer
