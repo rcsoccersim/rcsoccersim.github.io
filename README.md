@@ -1,6 +1,3 @@
-# The RoboCup Soccer Simulator
+# The RoboCup Soccer Simulator: Web Site
 
-## Software
-- rcssserver
-- rcssmonitor
-- rcsslogplayer
+Top Page: https://rcsoccersim.github.io/
