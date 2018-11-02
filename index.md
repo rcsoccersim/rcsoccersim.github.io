@@ -46,7 +46,8 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 # Documentation
 
-- Users Manual
+- [Users Manual](./manual/) (Now, migrating from the old manual)
+- [Old Users Manual](./rcssserver-manual-20030211.pdf)
 
 
 # Events
