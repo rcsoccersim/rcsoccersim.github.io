@@ -53,6 +53,8 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 # Events
 
 - Upcoming Events
+  - RoboCup2020
+- Past Events
   - [RoboCup2019](./robocup2019/)
 
 <!--
