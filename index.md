@@ -53,7 +53,8 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 # Events
 
 - Upcoming Events
-  - RoboCup2020
+  - [RoboCup2020 Call for Paticipation](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)
+  - RoboCup Asia Pacific 2020 Nagoya
 - Past Events
   - [RoboCup2019](./robocup2019/)
 
