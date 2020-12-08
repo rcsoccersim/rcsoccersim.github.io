@@ -40,7 +40,6 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 - [Server](https://github.com/rcsoccersim/rcssserver/releases)
 - [Monitor](https://github.com/rcsoccersim/rcssmonitor/releases)
-- [LogPlayer](https://github.com/rcsoccersim/rcsslogplayer/releases)
 
 - [Log & Binary Archive](https://archive.robocup.info/Soccer/Simulation/2D/)
 
@@ -53,10 +52,12 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 # Events
 
 - Upcoming Events
-  - [RoboCup2020 Call for Paticipation](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)
-  - RoboCup Asia Pacific 2020 Nagoya
+  - postponed: [RoboCup2020](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)
+  - postponed: [RoboCup Asia Pacific 2020 Nagoya](https://robocupap2020.org/eng/index.html)
 - Past Events
-  - [RoboCup2019](./robocup2019/)
+  - [The Virtual RoboCup Brazil Open 2020 Competition](http://www.cbrobotica.org/)
+  - [JapanOpen2020 online](https://docs.google.com/document/d/1lzh7coqRM1kHWJxnlr-tGMDMC5WFsxUDHPQoZS7m630/edit?usp=sharing)
+  - [RoboCup2019](./robocup2019/) [Information board](https://docs.google.com/document/d/1BNe1-sV_5-AZvmM9SAc4TQwgX4_jbwIenl0QnEGUOyY/edit?usp=sharing)
 
 <!--
 - Past Events
@@ -67,6 +68,7 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 # Community
 
+- [Forum](https://ssim.forum.robocup.org/)
 - [Mailing List](https://lists.cc.gatech.edu/mailman/listinfo/robocup-sim)
 - [RoboCup Soccer Simulation League](https://ssim.robocup.org/)
 - [RoboCup Official Site](https://www.robocup.org/)
