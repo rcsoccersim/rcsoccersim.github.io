@@ -71,6 +71,6 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 # Community
 
 - [Forum](https://ssim.forum.robocup.org/)
-- [Mailing List](https://lists.cc.gatech.edu/mailman/listinfo/robocup-sim)
+- [Mailing List](https://lists.robocup.org/options/robocup-sim)
 - [RoboCup Soccer Simulation League](https://ssim.robocup.org/)
 - [RoboCup Official Site](https://www.robocup.org/)
