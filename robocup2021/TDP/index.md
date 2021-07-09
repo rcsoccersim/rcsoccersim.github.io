@@ -2,7 +2,7 @@
 title: RoboCup2021 Team Description Papers
 ---
 
-https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/robocup2021/TDP
+[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/robocup2021/TDP)
 
 - [ARAS](./TDP_ARAS.pdf)
 - [Alice2021](./TDP_Alice2021.pdf)
@@ -10,7 +10,7 @@ https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/robocup2021/TDP
 - [CYRUS](./TDP_CYRUS.pdf)
 - [FRA-UNIted](./TDP_FRA-UNIted2021.pdf)
 - [HELIOS2021](./TDP_HELIOS2021.pdf)
-- [Hades](./TDP_Hades.pdf]
+- [Hades](./TDP_Hades.pdf)
 - [HfutEngine2021](./TDP_HfutEngine2021.pdf)
 - [ITAndroids](./TDP_ITAndroids.pdf)
 - [Jyo_sen2021](./TDP_Jyo_sen2021.pdf)
