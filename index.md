@@ -52,14 +52,17 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 # Events
 
 - Upcoming Events
-  - [RoboCup2021 online](https://2021.robocup.org/)
-    - [2D Competition: Call for Participation](http://bit.ly/rc2021ssim2dcfp)
-  - postponed: [RoboCup Asia Pacific 2020 Nagoya](https://robocupap2020.org/eng/index.html)
+  - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html)
+
 - Past Events
+  - [RoboCup2021 online](https://2021.robocup.org/)
+    - [Information board](https://docs.google.com/document/d/18FbbsghP-4K5P_G2hUpANdibdUzqepqLAmdL2jZ_FMM/edit?usp=sharing)
+    - [Team Description Papers](./robocup2021/TDP/)
   - postponed: [RoboCup2020](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)
   - [The Virtual RoboCup Brazil Open 2020 Competition](http://www.cbrobotica.org/)
   - [JapanOpen2020 online](https://docs.google.com/document/d/1lzh7coqRM1kHWJxnlr-tGMDMC5WFsxUDHPQoZS7m630/edit?usp=sharing)
-  - [RoboCup2019](./robocup2019/) [Information board](https://docs.google.com/document/d/1BNe1-sV_5-AZvmM9SAc4TQwgX4_jbwIenl0QnEGUOyY/edit?usp=sharing)
+  - [RoboCup2019](./robocup2019/)
+    - [Information board](https://docs.google.com/document/d/1BNe1-sV_5-AZvmM9SAc4TQwgX4_jbwIenl0QnEGUOyY/edit?usp=sharing)
 
 <!--
 - Past Events
