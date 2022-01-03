@@ -52,12 +52,17 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 # Events
 
 - Upcoming Events
+  - [RoboCup 2022](https://2022.robocup.org/)
+    - [Call For Participation](https://docs.google.com/document/d/1y3QxyKUvmJw4V74TQga5wpFP2j41_VG-z16zb-jVg2E/edit?usp=sharing%20Introduction)
+    - [Pre-Registration](https://forms.gle/tKyVA2YXQGLZgt1T7)
+    - [Submitting Qualification Materials](https://forms.gle/s3JmVW8JwuVV4pDx9)
   - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html)
 
 - Past Events
   - [RoboCup2021 online](https://2021.robocup.org/)
     - [Information board](https://docs.google.com/document/d/18FbbsghP-4K5P_G2hUpANdibdUzqepqLAmdL2jZ_FMM/edit?usp=sharing)
     - [Team Description Papers](./robocup2021/TDP/)
+    - [Logs and Binaries](https://drive.google.com/drive/folders/1QoR0ELzM_NCP26jiwIxdfciPhruUUgiL)
   - postponed: [RoboCup2020](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)
   - [The Virtual RoboCup Brazil Open 2020 Competition](http://www.cbrobotica.org/)
   - [JapanOpen2020 online](https://docs.google.com/document/d/1lzh7coqRM1kHWJxnlr-tGMDMC5WFsxUDHPQoZS7m630/edit?usp=sharing)
@@ -77,3 +82,4 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 - [Mailing List](https://lists.robocup.org/options/robocup-sim)
 - [RoboCup Soccer Simulation League](https://ssim.robocup.org/)
 - [RoboCup Official Site](https://www.robocup.org/)
+- [Discord Server](https://discord.gg/yFxkCcatGe)
