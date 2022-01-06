@@ -45,7 +45,7 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 # Documentation
 
-- [Users Manual](./manual/) (Under migrating from the old manual)
+- [Users Manual](https://rcsoccersim.readthedocs.io/) (Under migrating from the old manual)
 - [Old Users Manual](./rcssserver-manual-20030211.pdf)
 
 
