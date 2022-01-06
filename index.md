@@ -41,11 +41,11 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 - [Server](https://github.com/rcsoccersim/rcssserver/releases)
 - [Monitor](https://github.com/rcsoccersim/rcssmonitor/releases)
 
-- [Log & Binary Archive](https://archive.robocup.info/Soccer/Simulation/2D/)
+- [Log & Binary Archive](https://archive.robocup.info/Soccer/Simulation/2D/) (Please note this site is volunteered, not an official one.)
 
 # Documentation
 
-- [Users Manual](./manual/) (Now, migrating from the old manual)
+- [Users Manual](./manual/) (Under migrating from the old manual)
 - [Old Users Manual](./rcssserver-manual-20030211.pdf)
 
 
@@ -56,9 +56,10 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
     - [Call For Participation](https://docs.google.com/document/d/1y3QxyKUvmJw4V74TQga5wpFP2j41_VG-z16zb-jVg2E/edit?usp=sharing%20Introduction)
     - [Pre-Registration](https://forms.gle/tKyVA2YXQGLZgt1T7)
     - [Submitting Qualification Materials](https://forms.gle/s3JmVW8JwuVV4pDx9)
-  - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html)
 
 - Past Events
+  - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html)
+    - [Information board](https://docs.google.com/document/d/1eJGe3B4d-nGcAER82PhEUQ0Jpg3JWbnE3nM0fwnDSL0/edit?usp=sharing)
   - [RoboCup2021 online](https://2021.robocup.org/)
     - [Information board](https://docs.google.com/document/d/18FbbsghP-4K5P_G2hUpANdibdUzqepqLAmdL2jZ_FMM/edit?usp=sharing)
     - [Team Description Papers](./robocup2021/TDP/)
@@ -78,8 +79,20 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 # Community
 
-- [Forum](https://ssim.forum.robocup.org/)
-- [Mailing List](https://lists.robocup.org/options/robocup-sim)
-- [RoboCup Soccer Simulation League](https://ssim.robocup.org/)
-- [RoboCup Official Site](https://www.robocup.org/)
-- [Discord Server](https://discord.gg/yFxkCcatGe)
+Please join 2D Soccer Simulation community where you can ask how to develop your teams, and also discuss the game rules and of course the future of the league!
+You can also receive useful information that the organizers of the events (such as World Competition, RoboCup Asia-Pacific (RCAP), and other local events including Brazil, China, Iran,Japan and Portugal) and the latest update of the soccer simulator.
+
+We reccomend to join our Discord server to stay up to date and to post doubts and ask for help from the community to start a new team.
+The live announcement (such as game schedule and scores) of the official events are also provided in the discord server:
+
+- **[RoboCup Soccer Simulation 2D Discord server](https://discord.gg/yFxkCcatGe)**
+
+We also suggest that you subscribe to the mailing lists to stay up to date and to post doubts and ask for help from the community to start a new team:
+
+- **[RoboCup Soccer Simulation mailing list](https://lists.robocup.org/options/robocup-sim)**
+
+Of course, the official web pages also help you keep up-to-date.
+Please check the web pages periodically.
+
+- **[RoboCup Soccer Simulation League](https://ssim.robocup.org/)**
+- **[RoboCup Federation official web site](https://www.robocup.org/)**
