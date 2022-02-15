@@ -45,8 +45,7 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 # Documentation
 
-- [Users Manual](https://rcsoccersim.readthedocs.io/) (Under migrating from the old manual)
-- [Old Users Manual](./rcssserver-manual-20030211.pdf)
+- [Users Manual](https://rcsoccersim.readthedocs.io/) 
 
 
 # Events
@@ -58,17 +57,12 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
     - [Submitting Qualification Materials](https://forms.gle/s3JmVW8JwuVV4pDx9)
 
 - Past Events
-  - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html)
-    - [Information board](https://docs.google.com/document/d/1eJGe3B4d-nGcAER82PhEUQ0Jpg3JWbnE3nM0fwnDSL0/edit?usp=sharing)
-  - [RoboCup2021 online](https://2021.robocup.org/)
-    - [Information board](https://docs.google.com/document/d/18FbbsghP-4K5P_G2hUpANdibdUzqepqLAmdL2jZ_FMM/edit?usp=sharing)
-    - [Team Description Papers](./robocup2021/TDP/)
-    - [Logs and Binaries](https://drive.google.com/drive/folders/1QoR0ELzM_NCP26jiwIxdfciPhruUUgiL)
-  - postponed: [RoboCup2020](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)
+  - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html) ([Information board](https://docs.google.com/document/d/1eJGe3B4d-nGcAER82PhEUQ0Jpg3JWbnE3nM0fwnDSL0/edit?usp=sharing))
+  - [RoboCup2021 online](https://2021.robocup.org/) ([Information board](https://docs.google.com/document/d/18FbbsghP-4K5P_G2hUpANdibdUzqepqLAmdL2jZ_FMM/edit?usp=sharing)) ([Team Description Papers](./robocup2021/TDP/))
+  - ~~[RoboCup2020](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)~~ postponed
   - [The Virtual RoboCup Brazil Open 2020 Competition](http://www.cbrobotica.org/)
   - [JapanOpen2020 online](https://docs.google.com/document/d/1lzh7coqRM1kHWJxnlr-tGMDMC5WFsxUDHPQoZS7m630/edit?usp=sharing)
-  - [RoboCup2019](./robocup2019/)
-    - [Information board](https://docs.google.com/document/d/1BNe1-sV_5-AZvmM9SAc4TQwgX4_jbwIenl0QnEGUOyY/edit?usp=sharing)
+  - [RoboCup2019](./robocup2019/) ([Information board](https://docs.google.com/document/d/1BNe1-sV_5-AZvmM9SAc4TQwgX4_jbwIenl0QnEGUOyY/edit?usp=sharing))
 
 <!--
 - Past Events
