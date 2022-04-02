@@ -45,7 +45,7 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 # Documentation
 
-- [Users Manual](https://rcsoccersim.readthedocs.io/) 
+- [Users Manual](https://rcsoccersim.readthedocs.io/)
 
 
 # Events
@@ -83,7 +83,7 @@ The live announcement (such as game schedule and scores) of the official events 
 
 We also suggest that you subscribe to the mailing lists to stay up to date and to post doubts and ask for help from the community to start a new team:
 
-- **[RoboCup Soccer Simulation mailing list](https://lists.robocup.org/options/robocup-sim)**
+- **[RoboCup Soccer Simulation mailing list](https://lists.robocup.org/listinfo/robocup-sim)**
 
 Of course, the official web pages also help you keep up-to-date.
 Please check the web pages periodically.
