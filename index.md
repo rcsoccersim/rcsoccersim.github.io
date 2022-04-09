@@ -53,8 +53,8 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 - Upcoming Events
   - [RoboCup 2022](https://2022.robocup.org/)
     - [Call For Participation](https://docs.google.com/document/d/1y3QxyKUvmJw4V74TQga5wpFP2j41_VG-z16zb-jVg2E/edit?usp=sharing%20Introduction)
-    - [Pre-Registration](https://forms.gle/tKyVA2YXQGLZgt1T7)
-    - [Submitting Qualification Materials](https://forms.gle/s3JmVW8JwuVV4pDx9)
+    - [List of Qualified Teams](https://ssim.robocup.org/2022/04/05/qualified-teams-robocup-2022-soccer-simulation-2d/)
+    - [Team Description Papers](./robocup2022/TDP/index.md)
 
 - Past Events
   - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html) ([Information board](https://docs.google.com/document/d/1eJGe3B4d-nGcAER82PhEUQ0Jpg3JWbnE3nM0fwnDSL0/edit?usp=sharing))
