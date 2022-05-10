@@ -57,6 +57,11 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
     - [Team Description Papers](./robocup2022/TDP/index.md)
 
 - Past Events
+  - [IranOpen 2022](http://iranopenrobocup.ir/)
+    - [Major League Information Board](https://docs.google.com/document/d/1maHc0JDC3UpwaHXjVX6OfWvQbx4CJlrzEz4uPr2zpjA/edit?usp=sharing)
+    - [Starter League Information Board](https://docs.google.com/document/d/1nHRUk_lDFsd7pD4iyuubOKA_BuF31TPzqf6JR_G933o/edit?usp=sharing)
+    - [Logs](https://drive.google.com/drive/folders/10rSIPsBaEkys9XbGQdS4x4I7vNOMcg0s?usp=sharing)
+    - [Binaries](https://drive.google.com/drive/folders/1reupGqEzefktZJFgqSmoVTdJjnQ46Wpm?usp=sharing)
   - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html) ([Information board](https://docs.google.com/document/d/1eJGe3B4d-nGcAER82PhEUQ0Jpg3JWbnE3nM0fwnDSL0/edit?usp=sharing))
   - [RoboCup2021 online](https://2021.robocup.org/) ([Information board](https://docs.google.com/document/d/18FbbsghP-4K5P_G2hUpANdibdUzqepqLAmdL2jZ_FMM/edit?usp=sharing)) ([Team Description Papers](./robocup2021/TDP/))
   - ~~[RoboCup2020](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)~~ postponed
