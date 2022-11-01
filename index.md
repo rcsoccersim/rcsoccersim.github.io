@@ -50,23 +50,15 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 
 # Events
 
-- Upcoming Events
+## Upcoming Events
   - [RoboCup 2023](https://2023.robocup.org/)
+    - [Call for Participation](https://docs.google.com/document/d/13-VFRA1dDpzZlPVcHX42XT6_82X4hR0BmNqlRQ4eOe8/edit?usp=sharing)
 
-- Past Events
-  - [RoboCup 2022](https://2022.robocup.org/)
-    - [Information Board](https://docs.google.com/document/d/1mP4SHTXTgdkruqdR7llE3jNgcOpjlB1-N-zHoGmsx0I/edit?usp=sharing)
-    - [Team Description Papers](./robocup2022/TDP/index.md)
-    - [Logs](https://drive.google.com/drive/folders/109Vjif6GmYswQw3B9edYK-HELCigzKk8?usp=sharing)
-    - [Binaries](https://drive.google.com/drive/folders/1DhqovuqXBKZ1YNFvkmXn4hfiIopj4DOe?usp=sharing)
-    - [Call For Participation](https://docs.google.com/document/d/1y3QxyKUvmJw4V74TQga5wpFP2j41_VG-z16zb-jVg2E/edit?usp=sharing%20Introduction)
-    - [List of Qualified Teams](https://ssim.robocup.org/2022/04/05/qualified-teams-robocup-2022-soccer-simulation-2d/)
-    - [Rules](https://docs.google.com/document/d/1XPKRjVzhFiJk65EsZckMRZkdgvKcaRvxButGBzvjszE/edit?usp=sharing)
-  - [IranOpen 2022](http://iranopenrobocup.ir/)
-    - [Major League Information Board](https://docs.google.com/document/d/1maHc0JDC3UpwaHXjVX6OfWvQbx4CJlrzEz4uPr2zpjA/edit?usp=sharing)
-    - [Starter League Information Board](https://docs.google.com/document/d/1nHRUk_lDFsd7pD4iyuubOKA_BuF31TPzqf6JR_G933o/edit?usp=sharing)
-    - [Logs](https://drive.google.com/drive/folders/10rSIPsBaEkys9XbGQdS4x4I7vNOMcg0s?usp=sharing)
-    - [Binaries](https://drive.google.com/drive/folders/1reupGqEzefktZJFgqSmoVTdJjnQ46Wpm?usp=sharing)
+## Past Events
+  - [RoboCup 2022](https://2022.robocup.org/)([Information Board](https://docs.google.com/document/d/1mP4SHTXTgdkruqdR7llE3jNgcOpjlB1-N-zHoGmsx0I/edit?usp=sharing))([Team Description Papers](./robocup2022/TDP/index.md))([Logs](https://drive.google.com/drive/folders/109Vjif6GmYswQw3B9edYK-HELCigzKk8?usp=sharing))([Binaries](https://drive.google.com/drive/folders/1DhqovuqXBKZ1YNFvkmXn4hfiIopj4DOe?usp=sharing))
+  - [IranOpen 2022](http://iranopenrobocup.ir/)([Major Information
+    Board](https://docs.google.com/document/d/1maHc0JDC3UpwaHXjVX6OfWvQbx4CJlrzEz4uPr2zpjA/edit?usp=sharing))([Starter
+    Information Board](https://docs.google.com/document/d/1nHRUk_lDFsd7pD4iyuubOKA_BuF31TPzqf6JR_G933o/edit?usp=sharing))
   - [RoboCup Asia Pacific 2021](https://2021.robocupap.org/eng/index.html) ([Information board](https://docs.google.com/document/d/1eJGe3B4d-nGcAER82PhEUQ0Jpg3JWbnE3nM0fwnDSL0/edit?usp=sharing))
   - [RoboCup2021 online](https://2021.robocup.org/) ([Information board](https://docs.google.com/document/d/18FbbsghP-4K5P_G2hUpANdibdUzqepqLAmdL2jZ_FMM/edit?usp=sharing)) ([Team Description Papers](./robocup2021/TDP/))
   - ~~[RoboCup2020](https://ssim.robocup.org/soccer-simulation-2d/2d-competition/2020-2/call-for-participation/)~~ postponed
