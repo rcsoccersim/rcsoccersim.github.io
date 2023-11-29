@@ -51,10 +51,11 @@ accessed via [https://github.com/rcsoccersim/](https://github.com/rcsoccersim/).
 # Events
 
 ## Upcoming Events
-  - [RoboCup 2023](https://2023.robocup.org/)
-    - [Call for Participation](https://docs.google.com/document/d/13-VFRA1dDpzZlPVcHX42XT6_82X4hR0BmNqlRQ4eOe8/edit?usp=sharing)
+  - [RoboCup2024](https://2024.robocup.org/)
+    - [Call for Participation](./robocup2024/cfp)
 
 ## Past Events
+  - [RoboCup 2023](https://2023.robocup.org/) ([Information Board](https://docs.google.com/document/d/1cTkWiUoDbj9lIQBSaObfzY2TfyoFIf4I0ViokpEC0NU/edit?usp=sharing))
   - [RoboCup 2022](https://2022.robocup.org/)([Information Board](https://docs.google.com/document/d/1mP4SHTXTgdkruqdR7llE3jNgcOpjlB1-N-zHoGmsx0I/edit?usp=sharing))([Team Description Papers](./robocup2022/TDP/index.md))([Logs](https://drive.google.com/drive/folders/109Vjif6GmYswQw3B9edYK-HELCigzKk8?usp=sharing))([Binaries](https://drive.google.com/drive/folders/1DhqovuqXBKZ1YNFvkmXn4hfiIopj4DOe?usp=sharing))
   - [IranOpen 2022](http://iranopenrobocup.ir/)([Major Information
     Board](https://docs.google.com/document/d/1maHc0JDC3UpwaHXjVX6OfWvQbx4CJlrzEz4uPr2zpjA/edit?usp=sharing))([Starter
