@@ -27,23 +27,23 @@ pre-registration of your team. Please see below in detail.
 
 ## Important Dates*
 
-- Qualification Deadline: Feb 1st – 23:59 UTC
-- Qualification Notification:  Feb 15th  – 23:59 UTC
+- Qualification Deadline: Feb 17th – 23:59 UTC
+- Qualification Notification:  Feb 29th  – 23:59 UTC
 - * Deadline may extend if the Federation's official deadline surpasses expectations.
 
 ## Summary (How to Participate?)
 
-- Qualification Submission Deadline: Feb 1st – 23:59 UTC
+- Qualification Submission Deadline: Feb 17th – 23:59 UTC
   - Submit information via online form
   - Upload TDP, Log files
   - https://forms.gle/hGe1gtnqpXrBtD8G8
-- Qualification Notification: Feb 15th  – 23:59 UTC
+- Qualification Notification: Feb 29th  – 23:59 UTC
 
 
 ## Pre-registration and Qualification Materials
 
 All teams wishing to qualify need to pre-register. Pre-registered
-teams have to submit two qualification materials before Feb 1st, 2024:
+teams have to submit two qualification materials before Feb 17th, 2024:
 
 - Team Description Paper
 - Log Files
