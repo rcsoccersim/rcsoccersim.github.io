@@ -27,8 +27,8 @@ pre-registration of your team. Please see below in detail.
 
 ## Important Dates*
 
-- Qualification Deadline: Feb 17th – 23:59 UTC
-- Qualification Notification:  Feb 29th  – 23:59 UTC
+- Qualification Deadline: ~~Feb 17th – 23:59 UTC~~ Feb 29th  – 23:59 UTC
+- Qualification Notification:  ~~Feb 29th  – 23:59 UTC~~ March 16th
 - * Deadline may extend if the Federation's official deadline surpasses expectations.
 
 ## Summary (How to Participate?)
