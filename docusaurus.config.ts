@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
+  title: 'RoboCup Soccer Simulation 2D',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -66,7 +66,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Soccer Simulation',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -74,9 +74,27 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'serverManual',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Server Manual',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'openSourceProjects',
+          position: 'left',
+          label: 'Open Source Projects',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'papers',
+          position: 'left',
+          label: 'Papers',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'competitions',
+          position: 'left',
+          label: 'Competitions',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
