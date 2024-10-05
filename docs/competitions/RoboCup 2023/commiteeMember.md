@@ -7,7 +7,10 @@
 
 ## Technical Committee
 
+- Aref Sayareh
+- ????
 
 ## Organization Committee
 
-
+- Hidehisa Akiyama
+- Omid Amini
