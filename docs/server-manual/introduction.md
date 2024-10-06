@@ -1,5 +1,6 @@
-% -*- coding: utf-8; -*-
-
+---
+sidebar_position: 1
+---
 # Introduction
 
 We are in the early days of RoboCup [^cite_kitano95ijcai], with half a
@@ -164,11 +165,11 @@ control-commands to the server.
 Each client can control only one player 56 . So a team consists of the
 same number of clients as players. Communications between the clients
 must be done via soccerserver using say and hear protocols. (See
-section {ref}`sec-playercommandprotocol`.) One of the purposes of soccerserver
+section ref`sec-playercommandprotocol`.) One of the purposes of soccerserver
 is evaluation of multi-agent systems, in which efficiency of communication between
 agents is one of the criteria. Users must realize control of multiple
 clients by such restricted communication.
-
+//TODO fix ref`sec-playercommandprotocol`
 ## History
 
 In this section we will first describe the history of the soccerserver
@@ -356,7 +357,7 @@ as measured by the goal-difference, really varied not only from team
 to team, but also for the same team between phases. The evaluation
 methodology itself and analysis of the results became open research
 problems in themselves. To facilitate this line of research, the data
-from the evaluation was made public at: <http://www.isi.edu/~galk/Eval/>
+from the evaluation was made public at: [http://www.isi.edu/~galk/Eval/](http://www.isi.edu/~galk/Eval/)
 
 #### RoboCup99
 
@@ -463,16 +464,15 @@ that is based on reStructured text and that you are reading here.
 This manual is the joint effort of the authors from a diverse range of
 universities and organizations, which build upon the original work of
 Itsuki Noda. If there are errors, inconsistencies, or oddities, please
-notify <mailto:johank@dsv.su.se> or <mailto:fruit@uni-koblenz.de> with the location of
+notify [mailto:johank@dsv.su.se](mailto:johank@dsv.su.se) or [mailto:fruit@uni-koblenz.de](mailto:fruit@uni-koblenz.de) with the location of
 the error and a suggestion of how it should be corrected.
 
 We are always looking for anyone who has an idea on how to improve the
 manual, as well as proofread or (re)write a section of the manual. If
 you have any ideas, or feel that you can contribute with anything to
 the SoccerServer Manual Effort.
-.. please mail <mailto:johank@dsv.su.se> or <mailto:fruit@uni-koblenz.de>.
+.. please mail [mailto:johank@dsv.su.se](mailto:johank@dsv.su.se) or [mailto:fruit@uni-koblenz.de](mailto:fruit@uni-koblenz.de).
 
-% The latest manual can be downloaded at http://www.dsv.su.se/~johank/RoboCup/manual.
 
 ## Reader's Guide to the Manual
 
@@ -501,4 +501,7 @@ ______________________________________________________________________
 
 [^f2]: The J-League is the professional soccer league in Japan.
 
-[^f3]: In reference to Deep Blue and its games with Kasparov, see <http://www.chess.ibm.com>.
+[^f3]: In reference to Deep Blue and its games with Kasparov, see [http://www.chess.ibm.com](http://www.chess.ibm.com).
+
+// TODO footnote
+// TODO check citations

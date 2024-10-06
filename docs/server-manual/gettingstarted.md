@@ -1,7 +1,6 @@
-% -*- coding: utf-8; -*-
-
-(cha-gettingstarted)=
-
+---
+sidebar_position: 3
+---
 # Getting Started
 
 This section contains all the information necessary to get the RoboCup Soccer
@@ -13,7 +12,7 @@ case. :-)
 ## The Homepage
 
 The official homepage of the RoboCup Soccer Simulator can be found at
-<https://rcsoccersim.github.io/> .
+[https://rcsoccersim.github.io](https://rcsoccersim.github.io) .
 This page contains (links to) useful information about RoboCup in general and
 the RoboCup Soccer Simulator.
 
@@ -94,11 +93,11 @@ The default configuration will set up to install the simulator components in
 the following locations:
 
 - /usr/local/bin
-  : for the executables
+  - for the executables
 - /usr/local/include
-  : for the headers
+  - for the headers
 - /usr/local/lib
-  : for the libraries
+  - for the libraries
 
 You may need administrator privileges to install the simulator into
 the default location.
@@ -386,7 +385,7 @@ or at least point you in the right direction.
 
 If you run into any errors in configuring, building or running the
 simulator, which are not reported here please submit a bug report via
-the RoboCup Soccer Simulator website, <https://rcsoccersim.github.io/>,
+the RoboCup Soccer Simulator website, [https://rcsoccersim.github.io](https://rcsoccersim.github.io/),
 especially if you can provide a patch or hint to the solution of the
 problem.
 
@@ -398,3 +397,5 @@ ______________________________________________________________________
     player types.
 
 [^f2]: The names listed are the names of the people who have verified the platform.
+
+//TODO: check foot note

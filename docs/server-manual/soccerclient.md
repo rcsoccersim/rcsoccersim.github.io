@@ -1,5 +1,6 @@
-% -*- coding: utf-8; -*-
-
+---
+sidebar_position: 6
+---
 # Soccer Client
 
 ## Protocols
@@ -262,7 +263,7 @@ Sender is one of the followings:
 Body sensor returns all the states of the player such as remaining stamina, view mode
 and the speed of the player at the beginning of each cycle:
 
-> (sense_body *Time* (view_mode { high | low } { narrow | normal | wide })
+> (sense_body *Time* (view_mode ( high | low ) ( narrow | normal | wide ))
 > (stamina *Stamina* *Effort*) (speed *Speed* *Angle*) (head_angle *Angle*)
 > (kick *Count*) (dash *Count*) (turn *Count*) (say *Count*)
 > (turn_neck *Count*) (catch *Count*) (move *Count*) (change_view *Count*))

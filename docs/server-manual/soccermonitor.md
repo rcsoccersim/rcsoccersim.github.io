@@ -1,7 +1,6 @@
-% -*- coding: utf-8; -*-
-
-(cha-soccermonitor)=
-
+---
+sidebar_position: 5
+---
 # Soccer Monitor
 
 ## Introduction
@@ -17,7 +16,7 @@ the game.
 To connect the soccer monitor with the soccer server, you can use the command
 following:
 
-```
+```bash
 $ rcssmonitor
 ```
 
@@ -25,14 +24,14 @@ By specifying the options, you can modify the parameters of soccer monitor
 instead of modifying monitor configuration file.
 You can find available options by:
 
-```
+```bash
 $ rcssmonitor --help
 ```
 
 If you use script **rcsoccersim** to start the server, a monitor will be
 automatically started and connected with the server:
 
-```
+```bash
 $ rcsoccersim
 ```
 
@@ -56,10 +55,12 @@ When the server is connected with the monitor, it will send information to
 the monitor every cycle.
 rcssserver-15 provides four different formats (version 1 ~ 4).
 The server will decide which format is used according to the initial command
-sent by the monitor (see {ref}`sec-commandsfrommonitor`).
+sent by the monitor (see ref`sec-commandsfrommonitor`).
 The detailed data structure information can be found in
-appendix {ref}`sec-appendixmonitorstructs`.
+appendix ref`sec-appendixmonitorstructs`.
 
+//TODO fix ref`sec-commandsfrommonitor`
+//TODO ref`sec-appendixmonitorstructs`
 ### Version 1
 
 rcssserver sends dispinfo_t structs to the soccer monitor.
@@ -283,23 +284,23 @@ dispinfo_t2 contains a union with five different types of information
   It also contains information on team's images and information on
   player exchanges.
 
-> - team graphic: The team graphic format requires a 256x64 image to
->   be broken up into 8x8 tiles and has the form:
->
->   ```
->   (team_graphic_{l|r} (<X> <Y> "<XPM line>" ... "<XPM line>"))
->   ```
->
->   Where X and Y are the co-ordinates of the 8x8 tile in the complete 256x64
->   image, starting at 0 and ranging upto 31 and 7 respectively.
->   Each XPM line is a line from the 8x8 xpm tile.
->
-> - substitutions: substitutions are now explicitly recorded in the
->   message board in the form:
->
->   ```
->   (change_player_type {l|r} <unum> <player_type>)
->   ```
+  - team graphic: The team graphic format requires a 256x64 image to
+    be broken up into 8x8 tiles and has the form:
+ 
+    ```
+    (team_graphic_{l|r} (<X> <Y> "<XPM line>" ... "<XPM line>"))
+    ```
+ 
+    Where X and Y are the co-ordinates of the 8x8 tile in the complete 256x64
+    image, starting at 0 and ranging upto 31 and 7 respectively.
+    Each XPM line is a line from the 8x8 xpm tile.
+ 
+  - substitutions: substitutions are now explicitly recorded in the
+    message board in the form:
+ 
+    ```
+    (change_player_type {l|r} <unum> <player_type>)
+    ```
 
 - player_type_t: information describing different player's abilities and tradeoffs
 - server_params_t: parameters and configurations of soccerserver
@@ -341,17 +342,17 @@ The *msg* type message may contain *team_graphic* data, as in the version 2 form
 
 The following table shows the format of other types of messages.
 
-| From server to monitor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (show *Time* *PlayMode* *Score* *Ball* Player\*+)*Time* ::= simulation cycle of rcssserver*PlayMode* ::= (pm *PlayModeID*)*Score* ::= (tm *LeftName* *RightName* *LeftScore* *RightScore* \[*PenaltyScore*\])*PenaltyScore* ::= *LeftPenaltyScore* *LeftPenaltyMiss* *RightPenaltyScore* *RightPenaltyMiss**Ball* ::= ((b) *X* *Y* *VelX* *VelY*)*Player* ::=((*Side* *Unum*) *Type* *State* *X* *Y* *VelX* *VelY* *Body* *Neck* \[*PointX* *PointY*\](v *ViewQuality* *ViewWidth) (s \*Stamina* *Effort* *Recovery* \[*Capacity*\]))\[(f *FocusSide* *FocusUnum*)\](c *KickCount* *DashCount* *TurnCount* *CatchCount* *MoveCount* *TurnNeckCount* *ChangeViewCount*)*SayCount* *TackleCount* *PointtoCount* *AttentiontoCount*)) |
-| (msg *Time* *Board* "*Message*"+)*Time* ::= simulation cycle of rcssserver*Board* ::= message board type id*Message* ::= message string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+| From server to monitor  |
+| ------------- |
+| (show Time PlayMode Score Ball *Player*+)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Time ::= simulation cycle of rcssserver<br></br>&nbsp;&nbsp;&nbsp;&nbsp;PlayMode ::= (pm PlayModeID)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Score ::= (tm LeftName RightName LeftScore RightScore [PenaltyScore])<br></br>&nbsp;&nbsp;&nbsp;&nbsp;PenaltyScore ::= LeftPenaltyScore LeftPenaltyMiss RightPenaltyScore RightPenaltyMiss<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Ball ::= ((b) X Y VelX VelY)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Player ::=<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((Side Unum) Type State X Y VelX VelY Body Neck [PointX PointY]<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(v ViewQuality ViewWidth) (s *Stamina Effort Recovery [Capacity]))<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(f FocusSide FocusUnum)]<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c KickCount DashCount TurnCount CatchCount MoveCount TurnNeckCount ChangeViewCount)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SayCount TackleCount PointtoCount AttentiontoCount))         |
+| (msg Time Board “Message”+)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Time ::= simulation cycle of rcssserver<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Board ::= message board type id<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Message ::= message string         |
+
 
 ### Version 4
 
 The version 4 protocol is almost same as the version 3.
 The information of players' stamina capacity is contained in each player data of the show type message.
-
-(sec-commandsfrommonitor)=
 
 ## Communication from Monitor to Server
 
@@ -367,7 +368,7 @@ a player, that connects on port 6000 as well) .
 "(dispinit)" is for information version 1, while "(dispinit version 2)" is
 for version 2.
 You can change the version by setting the according monitor parameter.
-(See {ref}`sec-settingsvariables`)
+(See ref`sec-settingsvariables`) //TODO fix ref`sec-settingsvariables`
 
 ```
 (dispstart)
@@ -485,7 +486,7 @@ The format is as follows:
 
 > - short mode:
 >   this is the mode part of the dispinfo_t struct
->   (see {ref}`sec-version1protocol` Version 1) SHOW_MODE for showinfo_t
+>   (see ref`sec-version1protocol` Version 1) SHOW_MODE for showinfo_t //TODO ref`sec-version1protocol`
 >   information MSG_MODE for msginfo_t information
 >
 > > - If mode is SHOW_MODE, a showinfo_t struct is following.
@@ -518,28 +519,26 @@ heterogenous players and optimizes space. The format is as follows:
   characters 'ULG'.
 - char version : version of the logfile format, i.e. 3
 - body: The rest of the file contains shorts that specify which data structures will follow.
-  : - If the short is PM_MODE,
-      : - a char specifying the play mode follows.
-          This is only written when the playmode changes.
-    - If the short is TEAM_MODE,
-      : - a team_t struct for the left side and
-        - a team_t struct for the right side follow.
-          Team data is only written if a new team connects or the score changes.
+  - If the short is PM_MODE,
+    - a char specifying the play mode follows. This is only written when the playmode changes.
+  - If the short is TEAM_MODE,
+    - a team_t struct for the left side and
+    - a team_t struct for the right side follow. Team data is only written if a new team connects or the score changes.
     - If the short is SHOW_MODE,
-      : - a short_showinfo_t2 struct specifying ball and player positions and
+      - a short_showinfo_t2 struct specifying ball and player positions and
           states follows.
     - If the short is MSG_MODE,
-      : - a short specifying the message board,
-        - a short specifying the length of the message,
-        - a string containing the message will follow.
+      - a short specifying the message board,
+      - a short specifying the length of the message,
+      - a string containing the message will follow.
     - If the short is PARAM_MODE,
-      : - a server_params_t struct specifying the current server parameters follows.
+      - a server_params_t struct specifying the current server parameters follows.
           This is only written once at the beginning of the logfile.
     - If the short is PPARAM_MODE,
-      : - a player_params_t struct specifying the current hetro player parameters.
+      - a player_params_t struct specifying the current hetro player parameters.
           This is only written once at the beginning of the logfile.
     - If the short is PT_MODE,
-      : - a player_type_t struct specifying the parameters of a specific player type
+      - a player_type_t struct specifying the parameters of a specific player type
           follows.
           This is only written once for each player type at the beginning of the logfile.
 
@@ -573,14 +572,13 @@ Its grammar is almost the same as monitor protocol version 3.
 
 `msg` may contain various string data, such as `team_graphic`, the result of the game, and so on.
 Starting with the server version 12.1.0, the game result is recorded using *msg* data at the end of the game log.
-See {ref}`sec-monitorv3protocol` in detail.
+See ref`sec-monitorv3protocol` in detail. //todo
 
+//TODO fix ref`sec-monitorv3protocol`
 ### Version 5 Protocol
 
 The version 5 logfile protocol is adopted in rcssserver version 13 or later.
 Its grammar is almost the same as the version 4 protocol, except adding stamina_capacity information to each player data.
-
-(sec-settingsvariables)=
 
 ### Settings and Parameters
 
@@ -603,7 +601,7 @@ Of course, you can directly edit this configuration file.
 ## What’s New
 
 16.0:
-: - Support illegal defense information.
+  - Support illegal defense information.
   - Integrate a log player feature.
   - Implement a time-shift reply feature.
   - Remove a buffering mode.
@@ -611,41 +609,41 @@ Of course, you can directly edit this configuration file.
   - Support CMake.
 
 15.0:
-: - Support v15 server parameters.
+  - Support v15 server parameters.
 
 14.1:
-: - Support an auto reconnection feature.
+  - Support an auto reconnection feature.
 
 14.0:
-: - Reimplement using Qt4.
+  - Reimplement using Qt4.
   - Support players' card status.
   - Implement a buffering mode.
 
 13.1:
-: - Support a team_graphic message.
+  - Support a team_graphic message.
 
 13.0:
-: - Support the monitor protocl version 4.
+  - Support the monitor protocl version 4.
   - Support a stamina capacity information.
 
 12.1:
-: - Support pointto information.
+  - Support pointto information.
   - Implement an auto reconnection feature.
 
 12.0:
-: - Support the monitor protocl version 3.
+  - Support the monitor protocl version 3.
 
 11.0.2:
-: - Support the penalty kick scores.
+  - Support the penalty kick scores.
 
 11.0:
-: - Support 64bits OS.
+  - Support 64bits OS.
 
 10.0:
-: - Ported to OS X.
+  - Ported to OS X.
 
 9.1:
-: - Support a keepaway field.
+  - Support a keepaway field.
 
 8.03:
 
@@ -687,11 +685,11 @@ Of course, you can directly edit this configuration file.
 | status_font         | 7x14bold                                   | Fixed     | status line font \[team name and score, time, play_mode\]   |
 | popup_msg           | off                                        | Off       | flag for pop up and down “GOAL!!” and “Offside!” \[on/off\] |
 | Goal_label_width    | 120                                        | 120       | pop up and down “GOAL!!” label width                        |
-| Goal_label_font     | -adobe-times bold-r-*-*-34-*-*- *-*-*-*-\* | Fixed     | pop up and down “GOAL!!” label font                         |
+| Goal_label_font     | 34 | Fixed     | pop up and down “GOAL!!” label font                         |
 | Goal_score_width    | 40                                         | 40        | pop up and down “GOAL!!” score width                        |
-| Goal_score_font     | -adobe-times bold-r-*-*-25-*-*- *-*-*-*-\* | Fixed     | pop up and down “GOAL!!” score font                         |
+| Goal_score_font     | 25 | Fixed     | pop up and down “GOAL!!” score font                         |
 | Offside_label_width | 120                                        | 120       | pop up and down“Offside!” label width                       |
-| Offside_label_font  | -adobe-times bold-r-*-*-34-*-*- *-*-*-*-\* | Fixed     | pop up and down “Offside!” label font                       |
+| Offside_label_font  | 34 | Fixed     | pop up and down “Offside!” label font                       |
 | eval                | off                                        | Off       | flag for evaluation mode                                    |
 | redraw_player       | on                                         | Off       | always redraw player (needed for RH 5.2)                    |
 
@@ -722,7 +720,9 @@ Of course, you can directly edit this configuration file.
   (dispplayer side unum posx posy ang)
   ```
 
-  (contributed by Artur Merke) See {ref}`sec-commandsfrommonitor`.
+  (contributed by Artur Merke) See ref`sec-commandsfrommonitor`. //TODO
+
+  // TODO fix ref`sec-commandsfrommonitor`
 
 7.00:
 
