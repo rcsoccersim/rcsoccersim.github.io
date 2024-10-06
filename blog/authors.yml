@@ -21,3 +21,12 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+naderec:
+  name: Nader Zare
+  title: Member of Executive Committee
+  url: https://github.com/naderzare
+  image_url: https://avatars.githubusercontent.com/u/25696836?v=4
+  page: true
+  socials:
+    github: naderzare
