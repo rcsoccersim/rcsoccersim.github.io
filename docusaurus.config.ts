@@ -111,8 +111,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Server Manual',
+              to: '/docs/server-manual/intro',
             },
           ],
         },
