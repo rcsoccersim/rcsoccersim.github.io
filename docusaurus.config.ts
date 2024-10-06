@@ -120,30 +120,34 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/yFxkCcatGe',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              label: 'Mailing List',
+              href: 'https://lists.robocup.org/mm/lists/robocup-sim.lists.robocup.org/',
+            }
           ],
         },
         {
           title: 'More',
           items: [
             {
+              label: 'RoboCup',
+              href: 'https://github.com/facebook/docusaurus',
+            },
+            {
               label: 'Blog',
               to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/rcsoccersim',
             },
+            {
+              label: 'Log & Binary Archive',
+              href: 'https://archive.robocup.info/Soccer/Simulation/2D/',
+            }
           ],
         },
       ],
