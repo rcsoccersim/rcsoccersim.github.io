@@ -1,20 +1,11 @@
-% -*- coding: utf-8; -*-
-
-Last update: {{ today }}
-
-(cha-soccerserver)=
-
 # Soccer Server
 
 ## Objects
 
-:::{figure} ./images/objects.*
-:align: center
-:name: objects
-:scale: 80%
+![Objects](img/server-manual/objects.png) //TODO
 
 UML diagram of the objects in the simulation
-:::
+
 
 ## Protocols
 

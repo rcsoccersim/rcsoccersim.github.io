@@ -1,5 +1,3 @@
-% -*- coding: utf-8; -*-
-
 # Introduction
 
 We are in the early days of RoboCup [^cite_kitano95ijcai], with half a
@@ -472,7 +470,6 @@ you have any ideas, or feel that you can contribute with anything to
 the SoccerServer Manual Effort.
 .. please mail <mailto:johank@dsv.su.se> or <mailto:fruit@uni-koblenz.de>.
 
-% The latest manual can be downloaded at http://www.dsv.su.se/~johank/RoboCup/manual.
 
 ## Reader's Guide to the Manual
 
@@ -502,3 +499,6 @@ ______________________________________________________________________
 [^f2]: The J-League is the professional soccer league in Japan.
 
 [^f3]: In reference to Deep Blue and its games with Kasparov, see <http://www.chess.ibm.com>.
+
+// TODO footnote
+// TODO check citations

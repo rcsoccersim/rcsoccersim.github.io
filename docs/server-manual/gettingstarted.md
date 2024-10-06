@@ -1,7 +1,3 @@
-% -*- coding: utf-8; -*-
-
-(cha-gettingstarted)=
-
 # Getting Started
 
 This section contains all the information necessary to get the RoboCup Soccer
@@ -94,11 +90,11 @@ The default configuration will set up to install the simulator components in
 the following locations:
 
 - /usr/local/bin
-  : for the executables
+  - for the executables
 - /usr/local/include
-  : for the headers
+  - for the headers
 - /usr/local/lib
-  : for the libraries
+  - for the libraries
 
 You may need administrator privileges to install the simulator into
 the default location.
@@ -398,3 +394,5 @@ ______________________________________________________________________
     player types.
 
 [^f2]: The names listed are the names of the people who have verified the platform.
+
+//TODO: check foot note

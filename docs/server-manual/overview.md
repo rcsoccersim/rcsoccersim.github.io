@@ -1,5 +1,3 @@
-% -*- coding: utf-8; -*-
-
 # Overview
 
 ## Getting Started
@@ -111,8 +109,6 @@ section is to describe how these rules work, and how they affect the
 game.
 
 ### Rules Judged by the Automated Referee
-
-(sec-overview-referee)=
 
 #### Kick-Off
 
