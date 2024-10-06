@@ -9,68 +9,32 @@ and **server::max_dash_power**.
 For the current values of parameters for the dash model, see
 the following table:
 
-```{eval-rst}
-.. table:: Dash and Stamina Model Parameters
-
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   || Default Parameters             || Default Value (Range)     || Heterogeneous Player Parameters          || Value     |
-   ||  ``server.conf``               ||                           ||   ``player.conf``                        ||           |
-   +=================================+============================+===========================================+============+
-   | server::min_dash_power          |-100.0                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::max_dash_power          |100.0                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::player_decay            || 0.4 ([0.3, 0.5])          || player::player_decay_delta_min           || -0.1      |
-   | server::inertia_moment          || 5.0 ([2.5, 7.5])          || player::player_decay_delta_max           || 0.1       |
-   |                                 |                            || player::inertia_moment_delta_factor      || 25.0      |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::player_accel_max        | 1.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::player_rand             | 0.1                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::player_speed_max        | 1.05                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::player_speed_max_min    | 0.75                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::stamina_max             |8000.0                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::stamina_capacity        |130600.0                    |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   || server::stamina_inc_max        || 45.0  ([40.2, 52.2])      || player::new_dash_power_rate_delta_min    || -0.0012   |
-   || server::dash_power_rate        || 0.006 ([0.0048, 0.0068])  || player::new_dash_power_rate_delta_max    || 0.0008    |
-   |                                 |                            || player::new_stamina_inc_max_delta_factor || -6000     |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   || server::extra_stamina          || 50.0  ([50.0, 100.0])     || player::extra_stamina_delta_min          || 0.0       |
-   || server::effort_init            || 1.0   ([0.8, 1.0])        || player::extra_stamina_delta_max          || 50.0      |
-   || server::effort_min             || 0.6   ([0.4, 0.6])        || player::effort_max_delta_factor          || -0.004    |
-   |                                 |                            || player::effort_min_delta_factor          || -0.004    |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::effort_dec              | 0.3                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::effort_dec_thr          | 0.005                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::effort_inc              | 0.01                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::effort_inc_thr          | 0.6                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::recover_dec_thr         | 0.3                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::recover_dec             | 0.002                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::recover_init            | 1.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::recover_min             | 0.5                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::wind_ang                | 0.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::wind_dir                | 0.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::wind_force              | 0.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::wind_rand               | 0.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-
-```
+| Default Parameters             | Default Value (Range)     | Heterogeneous Player Parameters          | Value     |
+|-------------------------------|----------------------------|------------------------------------------|-----------|
+| `server.conf`                 |                            | `player.conf`                           |           |
+| server::min_dash_power        | -100.0                     |                                          |           |
+| server::max_dash_power        | 100.0                      |                                          |           |
+| server::player_decay server::inertia_moment | 0.4 ([0.3, 0.5]) <br></br> 5.0 ([2.5, 7.5])            | `player::player_decay_delta_min` <br></br> `player::player_decay_delta_max` <br></br> `player::inertia_moment_delta_factor`                      |-0.1 <br></br> 0.1 <br></br> 25.0           |
+| server::player_accel_max      | 1.0                        |                                          |           |
+| server::player_rand           | 0.1                        |                                          |           |
+| server::player_speed_max      | 1.05                       |                                          |           |
+| server::player_speed_max_min  | 0.75                       |                                          |           |
+| server::stamina_max           | 8000.0                     |                                          |           |
+| server::stamina_capacity      | 130600.0                   |                                          |           |
+| server::stamina_inc_max <br></br> server::dash_power_rate      |45.0 ([40.2, 52.2]) <br></br> 0.006 ([0.0048, 0.0068])|  `player::new_dash_power_rate_delta_min`<br></br>`player::new_dash_power_rate_delta_max`<br></br>`player::new_stamina_inc_max_delta_factor`                    |    -0.0012<br></br>0.0008<br></br>-6000  |
+| server::extra_stamina <br></br> server::effort_init <br></br> server::effort_min  |  50.0 ([50.0, 100.0]) <br></br> 1.0 ([0.8, 1.0]) <br></br> 0.6 ([0.4, 0.6])                          | `player::extra_stamina_delta_min` <br></br> `player::extra_stamina_delta_max` <br></br>`player::effort_max_delta_factor` <br></br>`player::effort_min_delta_factor`               |   0.0<br></br>50.0<br></br>-0.004<br></br>-0.004  |
+| server::effort_dec            | 0.3                        |                                          |           |
+| server::effort_dec_thr        | 0.005                      |                                          |           |
+| server::effort_inc            | 0.01                       |                                          |           |
+| server::effort_inc_thr        | 0.6                        |                                          |           |
+| server::recover_dec_thr       | 0.3                        |                                          |           |
+| server::recover_dec           | 0.002                      |                                          |           |
+| server::recover_init          | 1.0                        |                                          |           |
+| server::recover_min           | 0.5                        |                                          |           |
+| server::wind_ang              | 0.0                        |                                          |           |
+| server::wind_dir              | 0.0                        |                                          |           |
+| server::wind_force            | 0.0                        |                                          |           |
+| server::wind_rand             | 0.0                        |                                          |           |
 
 Each player has a certain amount of stamina that will be consumed by
 **dash** commands.
@@ -97,7 +61,7 @@ The effort of a player is a value between **effort_min** and **effort_max**;
 it is dependent on the stamina management of the player (see below).
 
 $$
-{\mathrm edp} = {\mathrm effort} \cdot {\mathrm dash\_power\_rate} \cdot {\mathrm power}
+\mathrm edp = \mathrm effort \cdot \mathrm dash\_power\_rate \cdot \mathrm power
 $$ (eq:effectivedash)
 
 *edp* and the players current body direction are tranformed into vector and
@@ -126,13 +90,13 @@ $n + 1$, acceleration $\vec{a}_n$ is applied:
    on the simulated soccer field. The responsible parameter for the
    noise is **server::player_rand**. Both direction and length
    of the noise vector are within the interval
-   $[ -|\vec{v}_{n}| \cdot {\mathrm player\_rand} \ldots |\vec{v}_{n}| \cdot {\mathrm player\_rand}]$.
+   $[ -|\vec{v}_{n}| \cdot \mathrm player\_rand \ldots |\vec{v}_{n}| \cdot \mathrm player\_rand]$.
 4. The new position of the player $\vec{p}_{n+1}$ is the old position
    $\vec{p}_{n}$ plus the velocity vector $\vec{v}_{n}$
    (i.e.the maximum distance difference for the player between two
    simulation steps is **player_speed_max**).
 5. **player_decay** is applied for the velocity of the player:
-   $\vec{v}_{n+1} = \vec{v}_{n} \cdot {\mathrm player\_decay}$.
+   $\vec{v}_{n+1} = \vec{v}_{n} \cdot \mathrm player\_decay $.
    Acceleration $\vec{a}_{n+1}$ is set to zero.
 
 ## Sideward and Omni-Directional Dashes
@@ -180,12 +144,17 @@ For values between these four main
 directions a linear interpolation of the effective power will be applied.
 The following formula explains the maths behind the sideward dash model.
 
-$$
-dir\_rate = \begin{cases}
-               back\_dash\_rate - ( back\_dash\_rate - side\_dash\_rate ) * ( 1.0 - ( fabs( dir ) - 90.0 ) / 90.0 ) & \text{if } fabs( dir ) > 90.0 \\
-               side\_dash\_rate + ( 1.0 - side\_dash\_rate ) * ( 1.0 - fabs( dir ) / 90.0 ) ) & \text{else}
-            \end{cases}
-$$ (eq:omniDashEffPower)
+<!----$$
+dir\_rate = \left\{ 
+  \begin{array}{ll}
+    back\_dash\_rate - (back\_dash\_rate - side\_dash\_rate) \cdot \left(1.0 - (|dir| - 90.0)/90.0\right), & |dir| > 90.0 \\ 
+    side\_dash\_rate + (1.0 - side\_dash\_rate) \cdot \left(1.0 - |dir| / 90.0\right), & \text{otherwise}
+  \end{array}
+\right.
+$$--->
+
+
+
 
 As discussed in the description of the forward/backward dash model in the
 preceding section, there exists the server parameter
@@ -207,31 +176,91 @@ model as it is commen, for example, in the MidSize League.
 The following table summarizes all Soccer Server parameters that are of
 relevance for omni-directional dashing.
 
-```{eval-rst}
-.. table:: Ominidirectional Dash Parameters
+| Default Parameters <br></br>`server.conf`                     | Default Value (Range)     | Heterogeneous Player Parameters <br></br>`player.conf`   | Value |
+|---------------------------------------|----------------------------|--------------------------------|-------|
+| server::max_dash_angle                | 180.0                      |                                |       |
+| server::min_dash_angle                | -180.0                     |                                |       |
+| server::side_dash_rate                | 0.4                        |                                |       |
+| server::back_dash_rate                | 0.6                        |                                |       |
+| server::dash_angle_step               | 1                          |                                |       |
 
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   || Default Parameters             || Default Value (Range)     || Heterogeneous Player Parameters          || Value     |
-   ||  ``server.conf``               ||                           ||   ``player.conf``                        ||           |
-   +=================================+============================+===========================================+============+
-   | server::server::max_dash_angle  | 180.0                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::server::min_dash_angle  |-180.0                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::side_dash_rate          | 0.4                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::back_dash_rate          | 0.6                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::dash_angle_step         | 1                          |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-
-```
 
 ## Bipedal Dash Model
+Since rcssserver version 19, a bipedal dash model has been introduced.
+In the bipedal model, players can independently issue dash commands to the left and right legs.
+This means that players can now apply different accelerations to each leg.
+With the bipedal dash model, players can perform acceleration and direction changes simultaneously.
+The bipedal dash model is based on the differential drive dynamics model used in two-wheeled mobile robots and is available regardless of the client version.
 
-```{eval-rst}
-.. include:: soccerserver/bipedal-dash-model.rst
-```
+In the bipedal dash model, parameters can be independently assigned to each leg using the dash command.
+The parameters, namely power and direction, are the same as the dash command in versions 18 and earlier.
+The derivation formula for acceleration obtained for each leg also follows the conventional model.
+The differences from the conventional model lie in the stamina consumption,
+the derivation formula for the player's body acceleration obtained as a result,
+and the player's rotation based on the speed difference between both legs.
+
+Stamina consumed by each leg is half of the conventional model.
+The overall stamina consumption is the sum of stamina consumption for both legs.
+In other words, when the same power is applied to both legs `(dash (l power dir) (r power dir))`,
+the stamina consumption is the same as applying that power to both legs in the conventional model `(dash power dir)`.
+
+The dash command can be issued not only simultaneously to both legs but also separately.
+Even if the dash command is issued separately,
+as long as a dash command has been issued to both legs by the time of the cycle update,
+the same effect as issuing simultaneously can be achieved.
+If the dash command is issued to only one leg, rotation of the player does not occur,
+and acceleration is obtained solely from the individual leg.
+
+Based on the given command parameters, velocity is first derived for each leg.
+This derivation formula is the same as the conventional model.
+Provisional accelerations $\hat{a}_L$ and $\hat{a}_R$ are independently calculated for each leg.
+Next, the current player velocity $v_t$ and the provisional velocities $\hat{v}_L$ and $\hat{v}_R$
+for each leg are obtained from the provisional accelerations.
+The provisional velocity $\hat{v}^{t+1}$ for the player's body is then determined by the average of $\hat{v}_L$ and $\hat{v}_R$.
+The player's body acceleration $a^t$ is reverse-calculated from the difference between $\hat{v}^{t+1}$ and $v^t$.
+Noise is added according to the update formula in section {ref}`sec-movementmodels`, and the velocity for the next step, $v{t+1}$, is updated.
+
+<!---Correct this refrence later--->
+
+$$
+edp_L = effort \times dash\_power\_rate \times dash\_rate \times dash\_power_L \\
+edp_R = effort \times dash\_power\_rate \times dash\_rate \times dash\_power_R \\
+accel\_dir_L = body\_angle^t + dash\_dir_L \\
+accel\_dir_R = body\_angle^t + dash\_dir_R \\
+a_L = edp_L \times (\cos(accel\_dir_L), \sin(accel\_dir_L)) \\ 
+a_R = edp_R \times (\cos(accel\_dir_R), \sin(accel\_dir_R)) \\ 
+v_L = v^t + a_L \\ 
+v_R = v^t + a_R \\ 
+v_{next} = (v_L + v_R) / 2 \\ 
+a^t = v_{next} - v^t
+$$
+
+
+
+When dash parameters are assigned to both legs and there is a difference in the velocity component of each leg in the body direction,
+the player rotates based on that speed difference.
+The rotation equation is identical to the differential drive kinematics.
+
+$$
+e = (cos(body\_angle^t), sin(body\_angle^t) \\
+v_{L,body} = (v_t + a_L) \cdot e \\
+v_{R,body} = (v_t + a_R) \cdot e
+$$
+
+
+$$
+\omega = \frac{(v_L - v_R)}{b}
+$$
+
+
+$$
+body\_angle^{t+1} = body\_angle^{t} + (1.0 + random(-player\_rand, player\_rand)) \times \omega
+$$
+
+
+where $\omega$ is the angular velocity,
+and $b$ is the width between wheels (=player_size x 2).
+
 
 ## Stamina Model
 

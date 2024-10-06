@@ -1,3 +1,4 @@
+# Bipedal Dash Model
 Since rcssserver version 19, a bipedal dash model has been introduced.
 In the bipedal model, players can independently issue dash commands to the left and right legs.
 This means that players can now apply different accelerations to each leg.
@@ -30,9 +31,12 @@ Next, the current player velocity $v_t$ and the provisional velocities $\hat{v}_
 for each leg are obtained from the provisional accelerations.
 The provisional velocity $\hat{v}^{t+1}$ for the player's body is then determined by the average of $\hat{v}_L$ and $\hat{v}_R$.
 The player's body acceleration $a^t$ is reverse-calculated from the difference between $\hat{v}^{t+1}$ and $v^t$.
-Noise is added according to the update formula in section {ref}`sec-movementmodels`, and the velocity for the next step, $v{t+1}$, is updated.
+Noise is added according to the update formula in section [salam]`sec-movementmodels`, and the velocity for the next step, $v{t+1}$, is updated.
+
+<!---Correct this refrence later--->
 
 $$
+\begin{align*}
 edp_L &= effort \times dash\_power\_rate \times dash\_rate \times dash\_power_L \\
 edp_R &= effort \times dash\_power\_rate \times dash\_rate \times dash\_power_R \\
 accel\_dir_L &= body\_angle^t + dash\_dir_L \\
@@ -43,6 +47,7 @@ accel\_dir_R &= body\_angle^t + dash\_dir_R \\
 \vec{\hat{v}_R} &= (\vec{v^t} + \vec{\hat{a}_R}) \\
 \vec{\hat{v}^{t+1}} &= \frac{ \vec{\hat{v}_L} +  \vec{\hat{v}_R} }{2}  \\
 \vec{a^t} &= \vec{\hat{v}^{t+1}} - \vec{v^t}
+\end{align*}
 $$
 
 When dash parameters are assigned to both legs and there is a difference in the velocity component of each leg in the body direction,
@@ -50,14 +55,18 @@ the player rotates based on that speed difference.
 The rotation equation is identical to the differential drive kinematics.
 
 $$
+\begin{align*}
 \vec{e} &= (cos(body\_angle^t), sin(body\_angle^t)) \\
 \hat{v}_{L,body} &= (\vec{v_{t}} + \vec{a_L}) \cdot \vec{e} \\
 \hat{v}_{R,body} &= (\vec{v_{t}} + \vec{a_R}) \cdot \vec{e}
+\end{align*}
 $$
 
 $$
+\begin{align*}
 \omega &= \frac{(\hat{v}_{L,body} - \hat{v}_{R,body})}{b} \\
 body\_angle^{t+1} &= body\_angle^{t} + (1.0 + random(-player\_rand,player\_rand)) \times \omega
+\end{align*}
 $$
 
 where $\omega$ is the angular velocity,

@@ -1,12 +1,16 @@
-# Basics
+# Movement Models
+
+## Basics
 
 In each simulation step, movement of each object is calculated as following manner:
 
 $$
+\begin{align*}
 (u_x^{t+1},u_y^{t+1}) &= (v_x^t,v_y^t)+(a_x^t,a_y^t) : accelerate \\
  (p_x^{t+1},p_y^{t+1}) &= (p_x^t,p_y^t)+(u_x^{t+1},u_y^{t+1}) : move \\
  (v_x^{t+1},v_y^{t+1}) &= decay \times (u_x^{t+1},u_y^{t+1}) : decay\ speed \\
  (a_x^{t+1},a_y^{t+1}) &= (0,0) : reset\ acceleration
+\end{align*}
 $$ (eq:u-t)
 
 where, $(p_x^t,p_y^t)$, and $(v_x^t,v_y^t)$ are respectively position
@@ -22,7 +26,7 @@ $$
 
 where $\theta^t$ is the direction of the object in timestep $t$ and
 power_rate is `dash_power_rate` or is calculated from `kick_power_rate`
-as described in Sec. {ref}`sec-kickmodel`.
+as described in Sec. [salam]`sec-kickmodel`.
 In the case of a player, this is just the direction the player is facing.
 In the case of a ball, its direction is given as the following manner:
 
@@ -34,18 +38,20 @@ where $\theta^t_{ball}$ and $\theta^t_{kicker}$ are directions of
 ball and kicking player respectively, and *Direction* is the second parameter
 of a **kick** command.
 
-# Movement Noise Model
+## Movement Noise Model
 
 In order to reflect unexpected movements of objects in real world,
 rcssserver adds noise to the movement of objects and parameters of commands.
 
 Concerned with movements,
 noise is added into Eqn.:ref:`eq:u-t` as follows:
+<!---Correct this refrence later--->
 **TODO: new noise model. See \[12.0.0 pre-20071217\] in NEWS**
 
 $$
-(u_x^{t+1},u_y^{t+1}) = (v_x^{t}, v_y^{t}) + (a_x^{t}, a_y^{t}) + (\tilde{r}_{\mathrm rmax},\tilde{r}_{\mathrm rmax})
+(u_x^{t+1}, u_y^{t+1}) = (v_x^{t}, v_y^{t}) + (a_x^{t}, a_y^{t}) + (r_{max}, r_{max})
 $$
+
 
 where $\tilde{r}_{\mathrm rmax}$ is a random number whose distribution
 is uniform over the range $[-{\mathrm rmax},{\mathrm rmax}]$.
@@ -53,7 +59,7 @@ ${\mathrm rmax}$ is a parameter that depends on amount of velocity
 of the object as follows:
 
 $$
-{\mathrm rmax} = {\mathrm rand} \cdot |(v_x^{t}, v_y^{t})|
+\mathrm rmax = \mathrm rand \cdot |(v_x^{t}, v_y^{t})|
 $$
 
 where ${\mathrm rand}$ is a parameter specified by **server::player_rand**
@@ -63,14 +69,13 @@ Noise is added also into the *Power* and *Moment* arguments of a
 command as follows:
 
 $$
-argument = (1 + \tilde{r}_{\mathrm rand}) \cdot argument
+argument = (1 + \tilde{r}_{rand}) \cdot argument
 $$
 
-(sec-collisionmodel)=
 
-# Collision Model
+## Collision Model
 
-## Collision with other movable objects
+### Collision with other movable objects
 
 If at the end of the simulation cycle, two objects overlap, then the
 objects are moved back until they do not overlap.
@@ -78,14 +83,18 @@ Then the velocities are multiplied by -0.1.
 Note that it is possible for the ball to go through a player as long
 as the ball and the player never overlap at the end of the cycle.
 
-## Collision with goal posts
+### Collision with goal posts
 
 Goal posts are circular with a radius of 6cm and they are located at:
 
 $$
-x &= \pm (FIELD\_LENGTH \cdot 0.5 - 6cm)\\
-y &= \pm (GOAL\_WIDTH \cdot 0.5 + 6cm)
+x = \pm \left(FIELD\_LENGTH \cdot 0.5 - 6\, \text{cm}\right)
 $$
+
+$$
+y = \pm \left(GOAL\_WIDTH \cdot 0.5 + 6\, \text{cm}\right)
+$$
+
 
 The goal posts have different collision dynamics than other
 objects. An object collides with a post if it's path gets within

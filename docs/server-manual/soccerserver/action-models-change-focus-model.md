@@ -25,4 +25,6 @@ Additionally, if a player changes their view angle to a smaller one,
 the server will automatically move the focus point back into the
 player's view angle.
 
-See {ref}`sec-visionsensor` in detail about the vison sensor.
+See [salam]`sec-visionsensor` in detail about the vison sensor.
+
+<!--- correct the refrence --->

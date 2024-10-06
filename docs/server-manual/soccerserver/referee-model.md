@@ -1,135 +1,78 @@
+# Referee Model
 The Automated Referee sends messages to the players, so that players know the actual
 play mode of the game. The rules and the behavior for the automated referee are
-described in Sec. {ref}`sec-overview-referee`.
+described in Sec. [salam]`sec-overview-referee`.
 Players receive the referee messages as hear messages.
 A player can hear referee messages in every situation independent of
 the number of messages the player heard from other players.
+<!-- Correct refrence text -->
 
-(sec-playmodes)=
-
-# Play Modes and referee messages
+## Play Modes and referee messages
 
 The change of the play mode is announced by the referee. Additionally, there are some
 referee messages announcing events like a goal or a foul. If you have a look into the
 server source code, you will notice some additional play modes that are currently not
 used. Both play modes and referee messages are announced using (referee String ),
 where String is the respective play mode or message string. The play modes are listed
-in {numref}`tab-playmode`, for the messages see {numref}`tab-refereemessages`.
+in cases`tab-playmode`, for the messages see cases`tab-refereemessages`.
 
-```{eval-rst}
-.. table:: Play Modes
-   :name: tab-playmode
+<!-- Correct refrence text -->
 
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |Play Mode                    |tc    | subsequent play mode | comment                                  |
-   +=============================+======+======================+==========================================+
-   |before_kick_off              |0     |  kick_off\_\ *Side*  |at the beginning of a half                |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |play_on                      |      |                      |during normal play                        |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |time_over                    |      |                      |End of the game                           |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |kick_off\_\ *Side*           |      |                      |announce start of play                    |
-   |                             |      |                      |(after pressing the Kick Off button)      |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |kick_in\_\ *Side*            |      |                      |                                          |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |free_kick\_\ *Side*          |      |                      |                                          |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |corner_kick\_\ *Side*        |      |                      |when the ball goes out of play over the   |
-   |                             |      |                      |goal line, without a goal being scored    |
-   |                             |      |                      |and having last been touched by a member  |
-   |                             |      |                      |of the defending team.                    |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |goal_kick_*Side*             |      |  play_on             |play mode changes once                    |
-   |                             |      |                      |the ball leaves the penalty area          |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |goal_*Side*                  |      |                      |currently unused                          |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |drop_ball                    |0     | play_on              |                                          |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |offside\_\ *Side*            |30    | free_kick\_\ *Side*  |An offside player who is closer to the    |
-   |                             |      |                      |opponent's goal when his teammate hits    |
-   |                             |      |                      |the ball, both in front of the ball and   |
-   |                             |      |                      |in front of the last player of the        |
-   |                             |      |                      |opposing team.                            |
-   |                             |      |                      |The offside rule prevents players from    |
-   |                             |      |                      |concentrating in front of the opponent's  |
-   |                             |      |                      |goal, as no player can stand near the     |
-   |                             |      |                      |opponent's goal and have a chance to      |
-   |                             |      |                      |score by waiting for the ball, and the    |
-   |                             |      |                      |possibility of sending long passes close  |
-   |                             |      |                      |to the opponent's goal is limited. In     |
-   |                             |      |                      |this way, defenders can distance          |
-   |                             |      |                      |themselves from their own goal and        |
-   |                             |      |                      |participate more during the game.         |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |penalty_kick\_\ *Side*       |      |                      |When the game ends in a draw of 6,000     |
-   |                             |      |                      |cycles and overtime, the winner will be   |
-   |                             |      |                      |determined by penalty kicks.              |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |foul_charge\_\ *Side*        |      |                      |Pushing the opposing player               |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |back_pass\_\ *Side*          |      |                      |A goalkeeper is not allowed to catch the  |
-   |                             |      |                      |ball inside his own penalty area if a     |
-   |                             |      |                      |teammate sends the ball to him.           |
-   |                             |      |                      |The opposing team will receive an         |
-   |                             |      |                      |indirect free-kick at the point of touch  |
-   |                             |      |                      |if the goalkeeper makes the mistake.      |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |free_kick_fault\_\ *Side*    |      |                      |Players are not allowd to kick the ball   |
-   |                             |      |                      |to themselves after a free kick. If a     |
-   |                             |      |                      |player does kick the ball to themselves   |
-   |                             |      |                      |after a free kick, a free kick is awarded |
-   |                             |      |                      |to the opposing team at the point that    |
-   |                             |      |                      |the second kick occurred.                 |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |indirect_free_kick\_\ *Side* |      |                      |In a direct free kick, the player can     |
-   |                             |      |                      |shoot the ball directly towards the goal, |
-   |                             |      |                      |but an indirect free kick cannot and      |
-   |                             |      |                      |must pass the ball to a teammate.         |
-   +-----------------------------+------+----------------------+------------------------------------------+
-   |illegal_defense\_\ *Side*    |      |                      |                                          |
-   +-----------------------------+------+----------------------+------------------------------------------+
-```
+| Play Mode                    | tc   | Subsequent Play Mode     | Comment                                                                 |
+|------------------------------|------|--------------------------|-------------------------------------------------------------------------|
+| before_kick_off              | 0    | kick_off_\*Side*         | at the beginning of a half                                              |
+| play_on                      |      |                          | during normal play                                                      |
+| time_over                    |      |                          | End of the game                                                         |
+| kick_off_\*Side*             |      |                          | announce start of play (after pressing the Kick Off button)             |
+| kick_in_\*Side*              |      |                          |                                                                         |
+| free_kick_\*Side*            |      |                          |                                                                         |
+| corner_kick_\*Side*          |      |                          | when the ball goes out of play over the goal line, without a goal being |
+|                              |      |                          | scored and having last been touched by a member of the defending team.  |
+| goal_kick_\*Side*            |      | play_on                  | play mode changes once the ball leaves the penalty area                 |
+| goal_\*Side*                 |      |                          | currently unused                                                        |
+| drop_ball                    | 0    | play_on                  |                                                                         |
+| offside_\*Side*              | 30   | free_kick_\*Side*        | An offside player who is closer to the opponent's goal when his         |
+|                              |      |                          | teammate hits the ball, both in front of the ball and in front of the   |
+|                              |      |                          | last player of the opposing team. The offside rule prevents players     |
+|                              |      |                          | from concentrating in front of the opponent's goal.                     |
+| penalty_kick_\*Side*         |      |                          | When the game ends in a draw of 6,000 cycles and overtime, the winner   |
+|                              |      |                          | will be determined by penalty kicks.                                    |
+| foul_charge_\*Side*          |      |                          | Pushing the opposing player                                             |
+| back_pass_\*Side*            |      |                          | A goalkeeper is not allowed to catch the ball inside his own penalty    |
+|                              |      |                          | area if a teammate sends the ball to him. The opposing team will        |
+|                              |      |                          | receive an indirect free-kick at the point of touch if the goalkeeper   |
+|                              |      |                          | makes the mistake.                                                      |
+| free_kick_fault_\*Side*      |      |                          | Players are not allowed to kick the ball to themselves after a free     |
+|                              |      |                          | kick. If a player does kick the ball to themselves after a free kick,   |
+|                              |      |                          | a free kick is awarded to the opposing team at the point that the       |
+|                              |      |                          | second kick occurred.                                                   |
+| indirect_free_kick_\*Side*   |      |                          | In a direct free kick, the player can shoot the ball directly towards   |
+|                              |      |                          | the goal, but an indirect free kick cannot and must pass the ball to a  |
+|                              |      |                          | teammate.                                                               |
+| illegal_defense_\*Side*      |      |                          |                                                                         |
 
 where Side is either the character *l* or *r*, OSide means opponent’s side.
 tc is the time (in number of cycles) until the subsequent play mode will be announced
 
-```{eval-rst}
-.. table:: Referee Messages
-   :name: tab-refereemessages
+| Message                   | tc   | Subsequent Play Mode     | Comment                                               |
+|---------------------------|------|--------------------------|-------------------------------------------------------|
+| goal_\*Side*\_\*n*        | 50   | kick_off_\*OSide*        | announce the *n* th goal for a team                    |
+| foul_\*Side*              | 0    | free_kick_\*OSide*       | announce a foul                                       |
+| yellow_card_\*Side*\_\*Unum* | 0 |                          | announce a yellow card information                     |
+| red_card_\*Side*\_\*Unum* | 0    |                          | announce a red card information                        |
+| goalie_catch_ball_\*Side* | 0    | free_kick_\*OSide*       |                                                       |
+| time_up_without_a_team    | 0    | time_over                | sent if there was no opponent until the end of the     |
+|                           |      |                          | second half                                           |
+| time_up                   | 0    | time_over                | sent once the game is over (if the time is ≥ second    |
+|                           |      |                          | half and the scores for each team are different)       |
+| half_time                 | 0    | before_kick_off          |                                                       |
+| time_extended             | 0    | before_kick_off          |                                                       |
 
-   +-------------------------+------+----------------------+----------------------------------------+
-   |Message                  |tc    | subsequent play mode | comment                                |
-   +=========================+======+======================+========================================+
-   |goal_*Side*_*n*          | 50   | kick_off_*OSide*     |announce the *n* th goal for a team     |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |foul_*Side*              | 0    | free_kick_*OSide*    |announce a foul                         |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |yellow_card_*Side*_*Unum*| 0    |                      |announce an yellow card information     |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |red_card_*Side*_*Unum*   | 0    |                      |announce a red card information         |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |goalie_catch_ball_*Side* | 0    | free_kick_*OSide*    |                                        |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |time_up_without_a_team   | 0    | time_over            |sent if there was no opponent until     |
-   |                         |      |                      |the end of the second half              |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |time_up                  | 0    | time_over            |sent once the game is over              |
-   |                         |      |                      |(if the time is ≥ second half and       |
-   |                         |      |                      |the scores for each team are different) |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |half_time                | 0    | before_kick_off      |                                        |
-   +-------------------------+------+----------------------+----------------------------------------+
-   |time_extended            | 0    | before_kick_off      |                                        |
-   +-------------------------+------+----------------------+----------------------------------------+
-```
 
 where *Side* is either the character `l` or `r`, *OSide* means opponent’s side.
 tc is the time (in number of cycles) until the subsequent play mode will be announced.
 
-# Time Referee
+## Time Referee
 
 **TODO**
 
@@ -138,7 +81,7 @@ tc is the time (in number of cycles) until the subsequent play mode will be anno
 - \[12.1.3\] server::extra_half_time
 - \[13.0.0\] change a length of overtime
 
-# Offside Referee
+## Offside Referee
 
 The offside referee is a module that observes the field, particularly passes, to check whether the offside foul happens.
 This module determines offside lines every cycle, then specifies several candidates from players which would result in an offside if they receive a pass.
@@ -165,12 +108,14 @@ offside_kick_margin = 9.15
 
 This parameter determines the radius of area that every player in the team which has done offside foul must stay out when the other team wants to free-kick. If there is a player in that area, server moves them out of that.
 
-:::{figure} ./images/offside-example.*
-:align: center
-:name: offside-example
-:::
+<p align="center">
+  <img src="./../../../static/img/server-manual/offside-example.jpg" alt="Offside Example">
+  </img>
+</p>
 
-# FreeKick Referee
+
+
+## FreeKick Referee
 
 Free kicks are detected automatically by the soccer server in many relevant cases.
 The Free kick referee is a module that observes the play mode, to check whether the free kick foul happens and what should teams do.
@@ -242,7 +187,7 @@ void FreeKickRef::placePlayersForGoalkick
 
 This method sends the opponent players out of the penalty area if a goal kick occurs.
 
-# Touch Referee
+## Touch Referee
 
 **TODO**
 
@@ -253,28 +198,33 @@ Checking for goals, out of bounds and within penalty area no
 complies with FIFA regulations. For a goal to be scored the ball
 must be totally within the goal - i.e.
 
-$$
+```math
 |ball.x| > FIELD\_LENGTH \cdot 0.5 + ball\_radius
-$$
+```
 
 Similarly the ball must be completely out of the pitch before it is
 considered out - i.e
 
-$$
-|ball.x| &> FIELD\_LENGTH \cdot 0.5 + ball\_radius \: ||\\
-|ball.y| &> FIELD\_WIDTH \cdot 0.5 + ball\_radius
-$$
+
+```math
+\begin{align}
+   |ball.x| &> FIELD\_LENGTH \cdot 0.5 + ball\_radius \: ||\\
+   |ball.y| &> FIELD\_WIDTH \cdot 0.5 + ball\_radius
+\end{align}
+```
 
 Lastly the ball is within the penalty area (and thus catchable) if
 the ball is at least partially within the penalty area - i.e.
 
-$$
-|ball.y| &<= PENALTY\_WIDTH \cdot 0.5 + ball\_radius \: \&\&\\
-|ball.x| &<= FIELD\_LENGTH \cdot 0.5 + ball\_radius \: \&\&\\
-|ball.x| &>= FIELD\_LENGTH \cdot 0.5 - (PENALTY\_LENGTH \cdot 0.5 + ball\_radius)
-$$
+```math
+\begin{align}
+   |ball.y| &<= PENALTY\_WIDTH \cdot 0.5 + ball\_radius \: \&\&\\
+   |ball.x| &<= FIELD\_LENGTH \cdot 0.5 + ball\_radius \: \&\&\\
+   |ball.x| &>= FIELD\_LENGTH \cdot 0.5 - (PENALTY\_LENGTH \cdot 0.5 + ball\_radius)
+\end{align}
+```
 
-# Catch Referee
+## Catch Referee
 
 **TODO**
 
@@ -283,9 +233,8 @@ $$
 - \[12.0.0 pre-20071217\] change the rule of goalies' catch vioration
 - \[12.1.1\] fix the back pass rule
 
-(sec-foulreferee)=
 
-# Foul Referee
+## Foul Referee
 
 **TODO**
 
@@ -300,11 +249,11 @@ Side and uniform number information of penalized player are appended to the card
 
 > (referee TIME yellow_card\_\[lr\]\_\[1-11\]) or (referee TIME red_card\_\[lr\]\_\[1-11\])
 
-# Ball Stuck Referee
+## Ball Stuck Referee
 
 **TODO: server::ball_stuck_area. \[11.0.0\] in NEWS**
 
-# Illegal Defense Referee
+## Illegal Defense Referee
 
 From the server version 16, a new referee module has been added to control the number of defensive players.
 We have four new variables in **server_param** to change the parameters of this referee.

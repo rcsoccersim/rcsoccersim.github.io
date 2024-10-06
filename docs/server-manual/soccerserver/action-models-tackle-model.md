@@ -42,28 +42,15 @@ Once the player executes the tackle command, whether successful or not, the play
 - \[13.0.0\] forbid backward tackle
 - \[14.0.0\] increasing tackle noise using server::tackle_rand_factor
 
-```{eval-rst}
-.. table:: Parameters for the tackle command
+| Parameter in `server.conf`               | Value     |
+|-------------------------------------------|-----------|
+| tackle_dist                               | 2         |
+| tackle_back_dist                          | 0         |
+| tackle_width                              | 1.25      |
+| tackle_cycles                             | 10        |
+| tackle_exponent                           | 6         |
+| tackle_power_rate                         | 0.027     |
+| max_tackle_power                          | 100       |
+| max_back_tackle_power                     | 0         |
+| tackle_rand_factor                        | 2         |
 
-   +-------------------------------------------------+-----------+
-   |Parameter in ``server.conf``                     | Value     |
-   +=================================================+===========+
-   |tackle_dist                                      |2          |
-   +-------------------------------------------------+-----------+
-   |tackle_back_dist                                 |0          |
-   +-------------------------------------------------+-----------+
-   |tackle_width                                     |1.25       |
-   +-------------------------------------------------+-----------+
-   |tackle_cycles                                    |10         |
-   +-------------------------------------------------+-----------+
-   |tackle_exponent                                  |6          |
-   +-------------------------------------------------+-----------+
-   |tackle_power_rate                                |0.027      |
-   +-------------------------------------------------+-----------+
-   |max_tackle_power                                 |100        |
-   +-------------------------------------------------+-----------+
-   |max_back_tackle_power                            |0          |
-   +-------------------------------------------------+-----------+
-   |tackle_rand_factor                               |2          |
-   +-------------------------------------------------+-----------+
-```

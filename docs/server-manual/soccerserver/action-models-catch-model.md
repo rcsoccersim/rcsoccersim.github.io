@@ -1,11 +1,12 @@
 # Catch Model
 
-:::{figure} ./images/catcharea.*
-:align: center
-:name: catcharea
 
-Catchable area of the goalie when doing a (catch 45)
-:::
+<div align="center">
+  <img src="./../../../static/img/server-manual/catcharea.png" alt="Field Detailed" />
+  <br />
+  <p>Catchable area of the goalie when doing a (catch 45)</p>
+</div>
+
 
 The goalie is the only player with the ability to catch a ball. The
 goalie can catch the ball in play mode `play_on` in any direction,
@@ -13,35 +14,22 @@ if the ball is within the catchable area and the goalie is inside the
 penalty area.  If the goalie catches into direction $\varphi$,
 the catchable area is a rectangular area of length
 **server::catchable_area_l** and width **server::catchable_area_w** in
-direction $\varphi$ (see {numref}`catcharea`).
+direction $\varphi$ (see cases`catcharea`).
 The ball will be caught with probability
 **server::catch_probability**, if it is inside this area (and it will
 not be caught if it is outside this area).
-For the current values of catch command parameters see {numref}`param-goaliecatch`:
+For the current values of catch command parameters see cases`param-goaliecatch`:
 
-```{eval-rst}
-.. table::  Parameters for the goalie catch command
-   :name: param-goaliecatch
+| Parameter in `server.conf` and `player.conf`       | Value      |
+|-----------------------------------------------------|------------|
+| server::catchable_area_l                             | 2.0       |
+| server::catchable_area_w                             | 1.0       |
+| server::catch_probability                             | 1.0       |
+| server::catch_ban_cycle                              | 5          |
+| server::goalie_max_moves                             | 2          |
+| player::catchable_area_l_stretch_max                | 1.3        |
+| player::catchable_area_l_stretch_min                | 1          |
 
-   +-------------------------------------------------+-----------+
-   |Parameter in ``server.conf`` and ``player.conf`` |Value      |
-   +=================================================+===========+
-   |server::catchable_area_l                         |2.0        |
-   +-------------------------------------------------+-----------+
-   |server::catchable_area_w                         |1.0        |
-   +-------------------------------------------------+-----------+
-   |server::catch_probability                        |1.0        |
-   +-------------------------------------------------+-----------+
-   |server::catch_ban_cycle                          |5          |
-   +-------------------------------------------------+-----------+
-   |server::goalie_max_moves                         |2          |
-   +-------------------------------------------------+-----------+
-   |player::catchable_area_l_stretch_max             |1.3        |
-   +-------------------------------------------------+-----------+
-   |player::catchable_area_l_stretch_min             |1          |
-   +-------------------------------------------------+-----------+
-
-```
 
 First time when goalie has been introduced in Soccer Simulation 2D was with server
 version 4.0.0:
@@ -52,30 +40,6 @@ that enable to capture the ball.
 With server version 4.0.2 another parameter named **server::catch_probability** has
 been introduced. This parameter represents the probability that a goalie succeed to
 catch the ball by a catch command. (default value: 1.0)
-
-% In 2008 a new catch model has been introduced in server version 12.0.0. In the old model
-
-% if the ball would been in the rectangle determined by the position of the goalie and ball,
-
-% catch direction from the catch command, catchable_area_l and catchabale_area_w, the ball
-
-% would been successfully caught. In the new designed model, the catch probability is set to
-
-% unreliable catches. If ball is not within the goalie's reliable catch area, the catch
-
-% probability is calculated according to the ball position, so the goalie's catch command might
-
-% be failed. With this server version, the value of the parameter catchable_area_l has been
-
-% changed from 2.0 to 1.2. If you want to test this rule, you need to change the
-
-% **server::catchable_area_l** (default value: 1.2) parameter to the value greater than
-
-% **server::reliable_catch_area_l** (default value: 1.2).
-
-% And **server::min_catch_probability** (default value: 1) also need to be change to [0, 1].
-
-% All these parameters are defined in server.conf file.
 
 If the goalie successfully catches a ball it is moved adjacent
 to and facing the ball and both the goalie and ball have their
@@ -99,7 +63,7 @@ player::catchable_area_l_stretch_max (default value: 1.3)
 
 The following pseudo code shows a trade-off rule of the catch model:
 
-```c
+```cحح
 // catchable_area_l_stretch is the heterogeneous parameter, currenlty within [1.0,1.3]
 
 double this_catchable_are_delta = server::catchable_area_l * (catchable_area_l_stretch - 1.0)

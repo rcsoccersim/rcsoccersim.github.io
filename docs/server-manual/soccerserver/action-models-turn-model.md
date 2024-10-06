@@ -27,21 +27,10 @@ value plus a value between
 ${\mathrm player\_decay\_delta\_min \times inertia\_moment\_delta\_factor}$ and
 ${\mathrm player\_decay\_delta\_max \times inertia\_moment\_delta\_factor}$.
 
-```{eval-rst}
-.. table:: Turn Model Parameter
+| Default Parameters        | Default Value (Range) | Heterogeneous Player Parameters     | Value |
+|--------------------------|-----------------------|-------------------------------------|-------|
+| Name                     |                       | Name                                |       |
+| server::minmoment        | -180                  |                                     |       |
+| server::maxmoment        | 180                   |                                     |       |
+| server::inertia_moment   | 5.0 ([2.5, 7.5])     | player::player_decay_delta_min<br></br>player::player_decay_delta_max <br></br>player::inertia_moment_delta_factor      | -0.1<br></br>0.1<br></br>25 |
 
-   +-----------------------+------------------------+--------------------------------------+--------+
-   || Default Parameters   || Default Value (Range) || Heterogeneous Player Parameters     || Value |
-   ||  ``server.conf``     |                        ||  ``player.conf``                    |        |
-   +=======================+========================+======================================+========+
-   |       Name            |                        |         Name                         |        |
-   +-----------------------+------------------------+--------------------------------------+--------+
-   |server::minmoment      | -180                   |                                      |        |
-   +-----------------------+------------------------+--------------------------------------+--------+
-   |server::maxmoment      |  180                   |                                      |        |
-   +-----------------------+------------------------+--------------------------------------+--------+
-   |server::inertia_moment | 5.0([2.5, 7.5])        || player::player_decay_delta_min      || -0.1  |
-   |                       |                        || player::player_decay_delta_max      || 0.1   |
-   |                       |                        || player::inertia_moment_delta_factor || 25    |
-   +-----------------------+------------------------+--------------------------------------+--------+
-```
