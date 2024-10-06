@@ -1,3 +1,6 @@
+---
+sidebar_position: 8
+---
 # References and Furter Reading
 
 ## General Papers
@@ -66,7 +69,7 @@
 
 ## Other supporting documents
 
-[fifa01]: Laws of the games. by FIFA on <http://www.fifa.com>, 2000. Verified on 12th February 2001.
+[fifa01]: Laws of the games. by FIFA on [http://www.fifa.com](http://www.fifa.com), 2000. Verified on 12th February 2001.
 
 [stevens90]: W.R. Stevens. UNIX Network Programming. Prentice Hall, 1990.
 

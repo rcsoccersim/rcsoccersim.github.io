@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Overview
 
 ## Getting Started
@@ -32,7 +35,9 @@ executed in a given cycle, must arrive at the server during the right
 interval.  Therefore, slow performance of a player that results in
 missing action opportunities has a major impact on the performance of
 the team as a whole.  A detailed description of the server can be
-found in Chapter {ref}`cha-soccerserver`.
+found in Chapter ref`cha-soccerserver`.
+
+#TODO ref`cha-soccerserver`
 
 ### The Monitor
 
@@ -60,8 +65,9 @@ As you will discover later on, to run a game on the server, a monitor
 is not required.  However, if needed, a number of monitors can be
 connected to the server at the same time (for example if you want to
 show the same game at different terminals).  For further details on
-the monitor please have a look at Chapter {ref}`cha-soccermonitor`.
+the monitor please have a look at Chapter ref`cha-soccermonitor`.
 
+//TODO fix ref`cha-soccermonitor`.
 ### The Logplayer
 
 The logplayer can be thought of as a video player.  It is a tool that

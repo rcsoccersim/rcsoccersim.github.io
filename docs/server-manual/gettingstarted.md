@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Getting Started
 
 This section contains all the information necessary to get the RoboCup Soccer
@@ -9,7 +12,7 @@ case. :-)
 ## The Homepage
 
 The official homepage of the RoboCup Soccer Simulator can be found at
-<https://rcsoccersim.github.io/> .
+[https://rcsoccersim.github.io](https://rcsoccersim.github.io) .
 This page contains (links to) useful information about RoboCup in general and
 the RoboCup Soccer Simulator.
 
@@ -382,7 +385,7 @@ or at least point you in the right direction.
 
 If you run into any errors in configuring, building or running the
 simulator, which are not reported here please submit a bug report via
-the RoboCup Soccer Simulator website, <https://rcsoccersim.github.io/>,
+the RoboCup Soccer Simulator website, [https://rcsoccersim.github.io](https://rcsoccersim.github.io/),
 especially if you can provide a patch or hint to the solution of the
 problem.
 

@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Soccer Monitor
 
 ## Introduction
@@ -52,10 +55,12 @@ When the server is connected with the monitor, it will send information to
 the monitor every cycle.
 rcssserver-15 provides four different formats (version 1 ~ 4).
 The server will decide which format is used according to the initial command
-sent by the monitor (see {ref}`sec-commandsfrommonitor`).
+sent by the monitor (see ref`sec-commandsfrommonitor`).
 The detailed data structure information can be found in
-appendix {ref}`sec-appendixmonitorstructs`.
+appendix ref`sec-appendixmonitorstructs`.
 
+//TODO fix ref`sec-commandsfrommonitor`
+//TODO ref`sec-appendixmonitorstructs`
 ### Version 1
 
 rcssserver sends dispinfo_t structs to the soccer monitor.
@@ -340,8 +345,8 @@ The following table shows the format of other types of messages.
 
 | From server to monitor  |
 | ------------- |
-| (show Time PlayMode Score Ball *Player*+)<br>&nbsp;&nbsp;&nbsp;&nbsp;Time ::= simulation cycle of rcssserver<br>&nbsp;&nbsp;&nbsp;&nbsp;PlayMode ::= (pm PlayModeID)<br>&nbsp;&nbsp;&nbsp;&nbsp;Score ::= (tm LeftName RightName LeftScore RightScore [PenaltyScore])<br>&nbsp;&nbsp;&nbsp;&nbsp;PenaltyScore ::= LeftPenaltyScore LeftPenaltyMiss RightPenaltyScore RightPenaltyMiss<br>&nbsp;&nbsp;&nbsp;&nbsp;Ball ::= ((b) X Y VelX VelY)<br>&nbsp;&nbsp;&nbsp;&nbsp;Player ::=<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((Side Unum) Type State X Y VelX VelY Body Neck [PointX PointY]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(v ViewQuality ViewWidth) (s *Stamina Effort Recovery [Capacity]))<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(f FocusSide FocusUnum)]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c KickCount DashCount TurnCount CatchCount MoveCount TurnNeckCount ChangeViewCount)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SayCount TackleCount PointtoCount AttentiontoCount))         |
-| (msg Time Board “Message”+)<br>&nbsp;&nbsp;&nbsp;&nbsp;Time ::= simulation cycle of rcssserver<br>&nbsp;&nbsp;&nbsp;&nbsp;Board ::= message board type id<br>&nbsp;&nbsp;&nbsp;&nbsp;Message ::= message string         |
+| (show Time PlayMode Score Ball *Player*+)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Time ::= simulation cycle of rcssserver<br></br>&nbsp;&nbsp;&nbsp;&nbsp;PlayMode ::= (pm PlayModeID)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Score ::= (tm LeftName RightName LeftScore RightScore [PenaltyScore])<br></br>&nbsp;&nbsp;&nbsp;&nbsp;PenaltyScore ::= LeftPenaltyScore LeftPenaltyMiss RightPenaltyScore RightPenaltyMiss<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Ball ::= ((b) X Y VelX VelY)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Player ::=<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((Side Unum) Type State X Y VelX VelY Body Neck [PointX PointY]<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(v ViewQuality ViewWidth) (s *Stamina Effort Recovery [Capacity]))<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(f FocusSide FocusUnum)]<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c KickCount DashCount TurnCount CatchCount MoveCount TurnNeckCount ChangeViewCount)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SayCount TackleCount PointtoCount AttentiontoCount))         |
+| (msg Time Board “Message”+)<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Time ::= simulation cycle of rcssserver<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Board ::= message board type id<br></br>&nbsp;&nbsp;&nbsp;&nbsp;Message ::= message string         |
 
 
 ### Version 4
@@ -363,7 +368,7 @@ a player, that connects on port 6000 as well) .
 "(dispinit)" is for information version 1, while "(dispinit version 2)" is
 for version 2.
 You can change the version by setting the according monitor parameter.
-(See {ref}`sec-settingsvariables`) //TODO
+(See ref`sec-settingsvariables`) //TODO fix ref`sec-settingsvariables`
 
 ```
 (dispstart)
@@ -481,7 +486,7 @@ The format is as follows:
 
 > - short mode:
 >   this is the mode part of the dispinfo_t struct
->   (see {ref}`sec-version1protocol` Version 1) SHOW_MODE for showinfo_t
+>   (see ref`sec-version1protocol` Version 1) SHOW_MODE for showinfo_t //TODO ref`sec-version1protocol`
 >   information MSG_MODE for msginfo_t information
 >
 > > - If mode is SHOW_MODE, a showinfo_t struct is following.
@@ -567,8 +572,9 @@ Its grammar is almost the same as monitor protocol version 3.
 
 `msg` may contain various string data, such as `team_graphic`, the result of the game, and so on.
 Starting with the server version 12.1.0, the game result is recorded using *msg* data at the end of the game log.
-See {ref}`sec-monitorv3protocol` in detail. //todo
+See ref`sec-monitorv3protocol` in detail. //todo
 
+//TODO fix ref`sec-monitorv3protocol`
 ### Version 5 Protocol
 
 The version 5 logfile protocol is adopted in rcssserver version 13 or later.
@@ -714,7 +720,9 @@ Of course, you can directly edit this configuration file.
   (dispplayer side unum posx posy ang)
   ```
 
-  (contributed by Artur Merke) See {ref}`sec-commandsfrommonitor`. //TODO
+  (contributed by Artur Merke) See ref`sec-commandsfrommonitor`. //TODO
+
+  // TODO fix ref`sec-commandsfrommonitor`
 
 7.00:
 
