@@ -21,3 +21,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroBanner {
+  background-image: url('/img/ss2d.svg'); /* Relative to the `static` folder */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  color: white;
+}

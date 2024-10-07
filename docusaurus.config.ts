@@ -130,7 +130,11 @@ const config: Config = {
             {
               label: 'Mailing List',
               href: 'https://lists.robocup.org/mm/lists/robocup-sim.lists.robocup.org/',
-            }
+            },
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@rcsoccersim',
+            },
           ],
         },
         {
