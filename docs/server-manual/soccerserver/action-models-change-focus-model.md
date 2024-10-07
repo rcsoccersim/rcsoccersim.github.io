@@ -8,10 +8,6 @@ The focus point affects the visual sensor noise model, with the noise
 of observed objects increasing as the distance between the focus point
 and the object increases.
 
-% The initial position of the focus point is the player's position,
-% and if a player does not change the focus point position, the
-% server visual noise model behaves as in server v.17.
-
 The initial position of the focus point is the player's position.
 Players can change the position of the focus point by sending a
 **change_focus** command.

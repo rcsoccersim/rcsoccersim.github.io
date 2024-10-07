@@ -113,21 +113,9 @@ Visual information arrives from the server in the following basic format:
 *Distance*, *Direction*, *DistChng* and *DirChng* are calculated in the
 following way:
 
-```math
-p_{rx} = p_{xt} - p_{xo} \\
-p_{ry} = p_{yt} - p_{yo} \\
-v_{rx} = v_{xt} - v_{xo} \\
-v_{ry} = v_{yt} - v_{yo} \\
-a_o = \text{AgentBodyDir} + \text{AgentHeadDir} \\
-\text{Distance} = \sqrt{p_{rx}^2 + p_{ry}^2} \\
-\text{Direction} = \arctan \left( \frac{p_{ry}}{p_{rx}} \right) - a_o \\
-e_{rx} = \frac{p_{rx}}{\text{Distance}} \\
-e_{ry} = \frac{p_{ry}}{\text{Distance}} \\
-\text{DistChng} = (v_{rx} \cdot e_{rx}) + (v_{ry} \cdot e_{ry}) \\
-\text{DirChng} = \left( \frac{-(v_{rx} \cdot e_{ry}) + (v_{ry} \cdot e_{rx})}{\text{Distance}} \right) \cdot \frac{180}{\pi} \\
-\text{BodyDir} = \text{PlayerBodyDir} - a_o \\
-\text{HeadDir} = \text{PlayerHeadDir} - a_o
-```
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq1.png)
+</div>
 
 where $(p_{xt},p_{yt})$ is the absolute position of the target object,
 $(p_{xo},p_{yo})$ is the absolute position of the sensing player,
@@ -168,10 +156,9 @@ Currently there are 55 flags (the goals counts as flags) and 4 lines to be
 seen. All of the flags and lines are shown in cases`field-detailed`.
 <!-- correct the refrence -->
 
-<p align="center">
-  <img src="./../../../static/img/server-manual/field-detailed.png" alt="Field Detailed">
-  </img>
-</p>
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/field-detailed.png)
+</div>
 
 **Figure:** The flags and lines in the simulation.
 
@@ -226,24 +213,23 @@ The player can also influence the frequency and quality of the information
 by changing *ViewWidth* and *ViewQuality*.
 
 To calculate the current view frequency and view angle of the agent
-use equations {eq}`view-freq` and {eq}`view-angle`.
+use equations [salam]`view-freq` and [salam]`view-angle`.
 
 <!-- Correct this refrence -->
 
 
-```math
-view\_frequency = sense\_step * view\_quality\_factor * view\_width\_factor
-```
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq2.png)
+</div>
 
 where view_quality_factor is 1 if *ViewQuality* is `high`
 and 0.5 if *ViewQuality* is `low`;
 view_width_factor is 2 if *ViewWidth* is `narrow`,
 1 if *ViewWidth* is `normal`, and 0.5 if *ViewWidth* is `wide`.
 
-```math
-
-view\_angle = visible\_angle * view\_width\_factor
-```
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq3.png)
+</div>
 
 where view_width_factor is 0.5 if *ViewWidth* is `narrow`,
 1 if *ViewWidth* is `normal`, and 2 if *ViewWidth* is `wide`.
@@ -256,11 +242,9 @@ but not the exact name of the object.
 Moreover, in this case, the capitalized name, that is "B", "P", "G" and "F",
 is used as the name of the object rather than "b", "p", "g" and "f".
 
-<p align="center">
-  <img src="./../../../static/img/server-manual/view-example.png" alt="Field Detailed">
-  </img>
-</p>
-
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/view-example.png)
+</div>
 
 The visible range of an individual agent in the soccer server.
 The viewing agent is the one shown as two semi-circles. The light
@@ -395,15 +379,9 @@ the values sent from the server is quantized.
 For example, the distance value of the object, in the case where the object
 in sight is a ball or a player, is quantized in the following manner:
 
-```math
-\begin{align*}
-p_{rfx} &= p_{xf} - p_{xo} \\
-p_{rfy} &= p_{yf} - p_{yo} \\
-f &= \sqrt{p_{rfx}^2 + p_{rfy}^2} \\
-f' &= \exp\left(\mathrm{Quantize}\left(\log(f), \text{quantize\_step}\right)\right) \\
-d'' &= \mathrm{Quantize}\left(\max(0.0, d - (f - f')), 0.1\right)
-\end{align*}
-```
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq4.png)
+</div>
 
 
 where $(p_{xf},p_{yf})$ is the absolute position of the focus point of the observer,
@@ -414,9 +392,9 @@ of the focus point to the object respectively,
 and $d''$ is the result distance value sent to the observer.
 $Quantize(V,Q)$ is as follow:
 
-$$
-{\mathrm Quantize}(V,Q) = {\mathrm ceiling}(V/Q) \cdot Q
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq5.png)
+</div>
 
 This means that players can not know the exact positions of very far objects.
 For example, when distance from the focus point is about 100.0 the
@@ -425,9 +403,9 @@ noise is less than 1.0.
 
 In the case of lines, the distance value is quantized in the following manner.
 
-$$
-d' = {\mathrm Quantize}(\exp({\mathrm Quantize}(\log(d),quantize\_step\_l)),0.1)
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq6.png)
+</div>
 
 ### Visual Sensor Noise Model: Gaussian
 
@@ -440,12 +418,9 @@ If the command is accepted, rcssserver sent a reply message, `(ok gaussian_see)`
 In this model, the noised distance in the player's observation is
 determined by a Gaussian distribution:
 
-```math
-\begin{align}
-s &= d \cdot r_d + f \cdot r_f \\
-d' &= d \cdot \max(0.0, \text{NormalDistribution}(d, s))
-\end{align}
-```
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq7.png)
+</div>
 
 where $d$ is the exact distance from the observer to the object,
 $f$ is the exact distance from the focus point to the object,
@@ -485,7 +460,7 @@ he information is automatically sent to the player every
 
 The format of the body sensor message is:
 
-'''
+```
 (sense_body Time
     (view_mode ViewQuality ViewWidth)
     (stamina Stamina Effort Capacity)
@@ -502,10 +477,10 @@ The format of the body sensor message is:
     (arm (movable MovableCycles) (expires ExpireCycles) (count PointtoCount))
     (focus (target [none|[l|r] Unum]) (count AttentiontoCount))
     (tackle (expires ExpireCycles) (count TackleCount))
-    (collision {none|[(ball)] [(player)] [(post)]})
-    (foul (charged FoulCycles) (card {red|yellow|none}))
+    (collision [none|[(ball)] [(player)] [(post)]])
+    (foul (charged FoulCycles) (card [red|yellow|none]))
     (focus_point FocusDist FocusDir)
-'''
+```
 
 
 - *ViewQuality* is one of `high` and `low`.

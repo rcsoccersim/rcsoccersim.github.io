@@ -24,9 +24,10 @@ both objects *minus* the radius of the ball *minus* the radius of the player.
 The first thing to be calculated for the kick is the effective kick power ep:
 
 
-$$
-\mathrm ep = \mathrm kick\_power \cdot \mathrm kick\_power\_rate
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq1.png)
+  
+</div>
 
 If the ball is not directly in front of the player, the effective kick
 power will be reduced by a certain amount dependent on the position of
@@ -54,18 +55,15 @@ kick power will be reduced by 25% of the original kick power.
 
 The overall worst case for kicking the ball is if a player kicks a
 distant ball behind itself: 50% of kick power will be used.
-For the effective kick power, we get the formula {eq}`eq:effectivekick2`.
+For the effective kick power, we get the formula [salam].
 (dir diff means the absolute direction difference between ball and the player’s body
 direction, dist diff means the absolute distance between ball and
 player.)
 <!---Correct this refrence later--->
-$$
-0 \leq dir\_diff \leq 180^\circ \land 0 \leq dist\_diff \leq kickable\_margin
-$$
 
-$$
-ep = ep \cdot \left(1 - 0.25 \cdot \frac{dir\_diff}{180^\circ} - 0.25 \cdot \frac{dist\_ball}{kickable\_margin}\right)
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq2.png)
+</div>
 
 
 The effective kick power is used to calculate $\vec{a}_{{n}_{i}}$,

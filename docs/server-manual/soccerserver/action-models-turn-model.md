@@ -9,9 +9,9 @@ player will turn. However, there is a concept of inertia that makes it
 more difficult to turn when you are moving.
 Specifically, the actual angle the player is turned is as follows:
 
-$$
-{\mathrm actual\_angle} = {\mathrm moment \div (1.0 + inertia\_moment} \times {\mathrm player\_speed)}
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/turn_model_eq1.png)
+</div>
 
 **server::inertia_moment** is a server.conf parameter with default
 value 5.0.
@@ -22,10 +22,9 @@ cycle, the fastest that a player can be going when executing a turn is
 $player\_speed\_max \times player\_decay$, which means the effective turn for a default player
 (with default values) is $\pm60$.
 
-For heterogeneous players, the inertia moment is the default inertia
-value plus a value between
-${\mathrm player\_decay\_delta\_min \times inertia\_moment\_delta\_factor}$ and
-${\mathrm player\_decay\_delta\_max \times inertia\_moment\_delta\_factor}$.
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/turn_model_eq2.png)
+</div>
 
 | Default Parameters        | Default Value (Range) | Heterogeneous Player Parameters     | Value |
 |--------------------------|-----------------------|-------------------------------------|-------|

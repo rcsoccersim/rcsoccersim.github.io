@@ -2,9 +2,9 @@
 
 
 <div align="center">
-  <img src="./../../../static/img/server-manual/catcharea.png" alt="Field Detailed" />
-  <br />
-  <p>Catchable area of the goalie when doing a (catch 45)</p>
+  ![Field Detailed](./../../../static/img/server-manual/catcharea.png)
+  
+  Catchable area of the goalie when doing a (catch 45)
 </div>
 
 
@@ -14,11 +14,11 @@ if the ball is within the catchable area and the goalie is inside the
 penalty area.  If the goalie catches into direction $\varphi$,
 the catchable area is a rectangular area of length
 **server::catchable_area_l** and width **server::catchable_area_w** in
-direction $\varphi$ (see cases`catcharea`).
+direction $\varphi$ (see cases`catcharea`).<!----correct this refrence---->
 The ball will be caught with probability
 **server::catch_probability**, if it is inside this area (and it will
 not be caught if it is outside this area).
-For the current values of catch command parameters see cases`param-goaliecatch`:
+For the current values of catch command parameters see cases`param-goaliecatch`:<!----correct this refrence---->
 
 | Parameter in `server.conf` and `player.conf`       | Value      |
 |-----------------------------------------------------|------------|
@@ -63,7 +63,7 @@ player::catchable_area_l_stretch_max (default value: 1.3)
 
 The following pseudo code shows a trade-off rule of the catch model:
 
-```cحح
+```cpp
 // catchable_area_l_stretch is the heterogeneous parameter, currenlty within [1.0,1.3]
 
 double this_catchable_are_delta = server::catchable_area_l * (catchable_area_l_stretch - 1.0)

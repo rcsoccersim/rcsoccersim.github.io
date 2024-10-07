@@ -60,9 +60,10 @@ current effort of the player.
 The effort of a player is a value between **effort_min** and **effort_max**;
 it is dependent on the stamina management of the player (see below).
 
-$$
-\mathrm edp = \mathrm effort \cdot \mathrm dash\_power\_rate \cdot \mathrm power
-$$ (eq:effectivedash)
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq1.png)
+  
+</div>
 
 *edp* and the players current body direction are tranformed into vector and
 added to the players current acceleration vector $\vec{a}_n$
@@ -112,7 +113,7 @@ command:
 
 $$
 dash(power,dir)
-$$ (eq:omniDash)
+$$
 
 where $power$ determines the relative strength of the dash
 and $dir$ represents the direction of the dash accelaration
@@ -144,14 +145,10 @@ For values between these four main
 directions a linear interpolation of the effective power will be applied.
 The following formula explains the maths behind the sideward dash model.
 
-<!----$$
-dir\_rate = \left\{ 
-  \begin{array}{ll}
-    back\_dash\_rate - (back\_dash\_rate - side\_dash\_rate) \cdot \left(1.0 - (|dir| - 90.0)/90.0\right), & |dir| > 90.0 \\ 
-    side\_dash\_rate + (1.0 - side\_dash\_rate) \cdot \left(1.0 - |dir| / 90.0\right), & \text{otherwise}
-  \end{array}
-\right.
-$$--->
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq2.png)
+  
+</div>
 
 
 
@@ -218,45 +215,27 @@ Next, the current player velocity $v_t$ and the provisional velocities $\hat{v}_
 for each leg are obtained from the provisional accelerations.
 The provisional velocity $\hat{v}^{t+1}$ for the player's body is then determined by the average of $\hat{v}_L$ and $\hat{v}_R$.
 The player's body acceleration $a^t$ is reverse-calculated from the difference between $\hat{v}^{t+1}$ and $v^t$.
-Noise is added according to the update formula in section {ref}`sec-movementmodels`, and the velocity for the next step, $v{t+1}$, is updated.
+Noise is added according to the update formula in section salam, and the velocity for the next step, $v{t+1}$, is updated.
 
 <!---Correct this refrence later--->
 
-$$
-edp_L = effort \times dash\_power\_rate \times dash\_rate \times dash\_power_L \\
-edp_R = effort \times dash\_power\_rate \times dash\_rate \times dash\_power_R \\
-accel\_dir_L = body\_angle^t + dash\_dir_L \\
-accel\_dir_R = body\_angle^t + dash\_dir_R \\
-a_L = edp_L \times (\cos(accel\_dir_L), \sin(accel\_dir_L)) \\ 
-a_R = edp_R \times (\cos(accel\_dir_R), \sin(accel\_dir_R)) \\ 
-v_L = v^t + a_L \\ 
-v_R = v^t + a_R \\ 
-v_{next} = (v_L + v_R) / 2 \\ 
-a^t = v_{next} - v^t
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq3.png)
+  
+</div>
+
+
 
 
 
 When dash parameters are assigned to both legs and there is a difference in the velocity component of each leg in the body direction,
 the player rotates based on that speed difference.
-The rotation equation is identical to the differential drive kinematics.
+The rotation dash_model_equation is identical to the differential drive kinematics.
 
-$$
-e = (cos(body\_angle^t), sin(body\_angle^t) \\
-v_{L,body} = (v_t + a_L) \cdot e \\
-v_{R,body} = (v_t + a_R) \cdot e
-$$
-
-
-$$
-\omega = \frac{(v_L - v_R)}{b}
-$$
-
-
-$$
-body\_angle^{t+1} = body\_angle^{t} + (1.0 + random(-player\_rand, player\_rand)) \times \omega
-$$
-
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq4.png)
+  
+</div>
 
 where $\omega$ is the angular velocity,
 and $b$ is the width between wheels (=player_size x 2).

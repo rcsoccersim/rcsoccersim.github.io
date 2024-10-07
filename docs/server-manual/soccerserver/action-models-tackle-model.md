@@ -9,29 +9,29 @@ position of the ball. It can be obtained by the following formula.
 
 The probability of a tackle failure when the ball is in front of the player is:
 
-$$
-{\mathrm fail\_prob = (player\_to\_ball.x \div tackle\_dist)^{tackle\_exponent} + (player\_to\_ball.y \div tackle\_width)^{tackle\_exponent}}
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq1.png)
+</div>
 
 The probability of a tackle failure when the ball is behind the player is:
 
-$$
-{\mathrm fail\_prob = (player\_to\_ball.x \div tackle\_back\_dist)^{tackle\_exponent} + (player\_to\_ball.y \div tackle\_back\_width)^{tackle\_exponent}}
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq2.png)
+</div>
 
 The probability of processing success is:
 
-$$
-{\mathrm tackle\_prob = 1.0 – fail\_prob}
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq3.png)
+</div>
 
 In this case, when the ball is in front of the player, it is used to *tackle_dist* (default is 2.0), otherwise it is used to **tackle_back_dist** (default is 0.5); **player_to_ball** is a vector from the player to the ball, relative to the body direction of the player. When the tackle command is successful, it will give the ball an acceleration in its own body direction.
 
 The execution effect of tackle is similar to that of kick, which is obtained by multiplying the parameter **tackle_power_rate** (default is 0.027) with power. It can be expressed by the following formula:
 
-$$
-{\mathrm effective\_power} = {\mathrm power} \times {\mathrm tackle\_power\_rate}
-$$
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq4.png)
+</div>
 
 Once the player executes the tackle command, whether successful or not, the player can no longer move within 10 cycles. The following table shows the parameters used in tackle command.
 
