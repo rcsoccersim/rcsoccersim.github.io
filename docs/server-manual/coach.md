@@ -832,8 +832,13 @@ choose to ignore the directive for now.
    Directives are lists of actions for individual sets of players and come in
    two forms:
   
-    - **(do TEAM UNUM SET ACTION LIST)** (affirmative mode: players should take these actions)
-    - **(dont TEAM UNUM SET ACTION LIST)** (negative mode: players should avoid taking these actions)
+    - **(do TEAM UNUM SET ACTION LIST)**
+  
+      (affirmative mode: players should take these actions)
+  
+    - **(dont TEAM UNUM SET ACTION LIST)**
+  
+      (negative mode: players should avoid taking these actions)
   
    If the actions in the affirmative mode are mutually exclusive, it is up to the player to
    decide which one is to be followed. In rules that are in the model mode, directives
@@ -935,23 +940,35 @@ choose to ignore the directive for now.
     defined as "(arc (pt 0 0) 5 10 0 180)"
 
   - **(null)**
+  
     The null (empty) region.
+  
   - **(reg REG_1 REG_2 . . . REG_n )**
+    
     Defines a region made up of the union of the given regions.
    
     A POINT is any of the following:
+  
       - **(pt X Y)**
-        : X and Y are real and in global coordinates. This is the absolute position
-          (X,Y);
-      - **(pt ball)** The current global position of the ball.
+        
+        X and Y are real and in global coordinates. This is the absolute position
+        (X,Y);
+    
+      - **(pt ball)** 
+        
+        The current global position of the ball.
+    
       - **(pt TEAM UNUM)** The current position of player number UNUM on team
-        : TEAM (either ’our’ or ’opp’). Remember that UNUM can be a variable.
+    
+        TEAM (either ’our’ or ’opp’). Remember that UNUM can be a variable.
+    
       - **(POINT 1 OP POINT 2 )**
-        : This arithmetically combines two points into a new point. POINT i can be
-          made up of arithmetic operators, resulting in a recursive structure.
-          The operators are defined in a natural way, for example:
-          **(pt** $X_1Y_1$ **) OP (pt** $X_2Y_2$ **)** $=$ **(pt** $X_1$ **OP** $X_2$ $Y_1`**OP** :math:`Y_2$ **)**
-          where **OP** is one of $+ − * /$
+    
+        This arithmetically combines two points into a new point. POINT i can be
+        made up of arithmetic operators, resulting in a recursive structure.
+        The operators are defined in a natural way, for example:
+        **(pt** $X_1Y_1$ **) OP (pt** $X_2Y_2$ **)** $=$ **(pt** $X_1$ **OP** $X_2$ $Y_1`**OP** :math:`Y_2$ **)**
+        where **OP** is one of $+ − * /$
    
     The use of these relative points makes it easy to express ideas such as "Move to
     the ball", "If there are 2 teammates within 10m of the ball", etc.
@@ -967,7 +984,7 @@ choose to ignore the directive for now.
    not matter and may be changed by the server. If 0 is included anywhere in the
    set, then the set contains all players 1 - 11. The set can contain variables.
 
-   Format: { :math: `NUM_1 NUM_2 ... NUM_n` }
+   Format:  `NUM_1 NUM_2 ... NUM_n` 
 
 - Variables:
 
@@ -988,23 +1005,23 @@ choose to ignore the directive for now.
    value is set by checking which unums make the condition true. In the example **X**
    is instantiated with the uniform number of the ball owner. In a condition like **ppos**
    it can be necessary to instantiate the variable as a set of unums:
-  >
-    (ppos our \{X} 1 11 REGION)
-    In this example **X** has to be instantiated as the set of unums which are in **REGION**.
-    Note that an instantiation as in
-    (ppos our \{5} 1 1 (rec (pt ball) (pt our \{X}))) is not supported.
+  
+     (ppos our \{X} 1 11 REGION)
+     In this example **X** has to be instantiated as the set of unums which are in **REGION**.
+     Note that an instantiation as in
+     (ppos our \{5} 1 1 (rec (pt ball) (pt our \{X}))) is not supported.
 
 ### Futher Resources
 
 - The CLang Corpus contains examples of actual CLang messages:
-  : <http://www-2.cs.cmu.edu/> ̃ pfr/soccer/clang corpus.html
+  [http://www-2.cs.cmu.edu/](http://www-2.cs.cmu.edu/) ̃ pfr/soccer/clang corpus.html
 - The Multi-Agent Modeling Special Interest Group (MAMSIG) provides binaries
-  : and sources of coachable teams and online coaches:
+  and sources of coachable teams and online coaches:
 
-    <http://www.cl-ki.uni-osnabrueck.de/> ̃ tsteffen/mamsig
+    [http://www.cl-ki.uni-osnabrueck.de/](http://www.cl-ki.uni-osnabrueck.de/) ̃ tsteffen/mamsig
 - The Coach-mailing-list discusses Clang details, competition rules, and coaching
   : methods:
-    <http://robocup.biglist.com/coach-l/>
+    [http://robocup.biglist.com/coach-l/](http://robocup.biglist.com/coach-l/)
 
 ### Syntax
 
