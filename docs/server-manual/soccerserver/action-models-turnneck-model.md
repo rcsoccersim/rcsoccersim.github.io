@@ -20,18 +20,12 @@ turn_neck is not affected by momentum like turn is.
 The argument for a *turn_neck command* must be in the range between
 **server::minneckmoment** and **server::maxneckmoment**.
 
-```{eval-rst}
-.. table:: Parameter for the turn neck command
 
-   +-------------------------------------------------+-----------+
-   |Parameter in ``server.conf``                     | Value     |
-   +=================================================+===========+
-   |minneckang                                       | -90       |
-   +-------------------------------------------------+-----------+
-   |maxneckang                                       |  90       |
-   +-------------------------------------------------+-----------+
-   |minneckmoment                                    | -180      |
-   +-------------------------------------------------+-----------+
-   |maxneckmoment                                    |  180      |
-   +-------------------------------------------------+-----------+
-```
+
+|Parameter in ``server.conf``                     | Value     |
+|-------------------------------------------------|-----------|
+|minneckang                                       | -90       |
+|maxneckang                                       |  90       |
+|minneckmoment                                    | -180      |
+|maxneckmoment                                    |  180      |
+

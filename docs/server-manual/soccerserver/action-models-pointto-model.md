@@ -17,17 +17,11 @@ independent of an motion or rotation of the player for at least
 issued or **server::point_to_duration** cycles pass.
 The second form disables a previous call of pointto.
 
-```{eval-rst}
-.. table:: Parameter for the pointto command
+| Parameter in `server.conf`          | Value     |
+|--------------------------------------|-----------|
+| point_to_ban                        | 5         |
+| point_to_duration                   | 20        |
 
-   +-------------------------------------------------+-----------+
-   |Parameter in ``server.conf``                     | Value     |
-   +=================================================+===========+
-   |point_to_ban                                     |  5        |
-   +-------------------------------------------------+-----------+
-   |point_to_duration                                |  20       |
-   +-------------------------------------------------+-----------+
-```
 
 Version 8+ clients can see where a player is pointing, if the player is pointing, the player is in view and they are close enough to determine their team name.
 In these cases the player part of the `see` message has the form (without the newline):

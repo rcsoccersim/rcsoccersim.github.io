@@ -1,5 +1,3 @@
-(sec-kickmodel)=
-
 # Kick Model
 
 The *kick* command takes two parameters, the kick power the player
@@ -7,7 +5,8 @@ client wants to use (between **server::minpower** and
 **server::maxpower**) and the angle the player kicks the ball to.
 The angle is given in degrees and has to be between
 **server::minmoment** and **server::maxmoment**
-(see {numref}`param-kick` for current parameter values).
+(see cases[]`param-kick` for current parameter values).
+<!---Correct this refrence later--->
 
 Once the *kick* command arrived at the server, the kick will be
 executed if the ball is kick-able for the player and the player is not
@@ -24,9 +23,11 @@ both objects *minus* the radius of the ball *minus* the radius of the player.
 
 The first thing to be calculated for the kick is the effective kick power ep:
 
-$$
-{\mathrm ep} = {\mathrm {kick\_power}} \cdot {\mathrm {kick\_power\_rate}}
-$$ (eq:effectivekick1)
+
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq1.png)
+  
+</div>
 
 If the ball is not directly in front of the player, the effective kick
 power will be reduced by a certain amount dependent on the position of
@@ -54,15 +55,16 @@ kick power will be reduced by 25% of the original kick power.
 
 The overall worst case for kicking the ball is if a player kicks a
 distant ball behind itself: 50% of kick power will be used.
-For the effective kick power, we get the formula {eq}`eq:effectivekick2`.
+For the effective kick power, we get the formula [].<!---Correct this refrence later--->
 (dir diff means the absolute direction difference between ball and the player’s body
 direction, dist diff means the absolute distance between ball and
 player.)
-$0\le\mathrm{dir\_diff}\le180^\circ\land0\le\mathrm{dist\_diff}\le\mathrm{kickable\_margin}$
+<!---Correct this refrence later--->
 
-$$
-{\mathrm ep} = \mathrm{ep} \cdot (1 - 0.25 \cdot \frac{\mathrm{dir\_diff}}{180^\circ} - 0.25 \cdot \frac{\mathrm{dist\_ball}}{\mathrm{kickable\_margin}})
-$$ (eq:effectivekick2)
+<div align="center">
+  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq2.png)
+</div>
+
 
 The effective kick power is used to calculate $\vec{a}_{{n}_{i}}$,
 an acceleration vector that will be added to the global ball
@@ -118,45 +120,21 @@ It would be another possibility to accelerate the ball to maximum speed
 without putting it to relative position (0,0\{textdegree}) using a
 compound kick.
 
-```{eval-rst}
-.. table:: Ball and Kick Model Parameters
-   :name: param-kick
-
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   || Default Parameters             || Default Value (Range)     || Heterogeneous Player Parameters          || Value     |
-   ||  ``server.conf``               ||                           ||   ``player.conf``                        ||           |
-   +=================================+============================+===========================================+============+
-   | server::minpower                | -100                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::maxpower                | 100                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::minmoment               | -180                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::maxmoment               | 180                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::kickable_margin         | 0.7 ([0.6, 0.8])           || player::kickable_margin_delta_min        |-0.1        |
-   |                                 |                            || player::kickable_margin_delta_max        |0.1         |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::kick_power_rate         | 0.027                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::kick_rand               | 0.1 ([0.0, 0.2])           || player::kick_rand_delta_factor           |1           |
-   |                                 |                            || player::kickable_margin_delta_min        |-0.1        |
-   |                                 |                            || player::kickable_margin_delta_max        |0.1         |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::ball_size               | 0.085                      |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::ball_decay              | 0.94                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::ball_rand               | 0.05                       |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::ball_speed_max          | 3.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::ball_accel_max          | 2.7                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::wind_force              | 0.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::wind_dir                | 0.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-   | server::wind_rand               | 0.0                        |                                           |            |
-   +---------------------------------+----------------------------+-------------------------------------------+------------+
-```
+| Default Parameters             | Default Value (Range)     | Heterogeneous Player Parameters          | Value     |
+|-------------------------------|----------------------------|------------------------------------------|-----------|
+| `server.conf`                 |                            | `player.conf`                           |           |
+| server::minpower              | -100                       |                                          |           |
+| server::maxpower              | 100                        |                                          |           |
+| server::minmoment             | -180                       |                                          |           |
+| server::maxmoment             | 180                        |                                          |           |
+| server::kickable_margin       | 0.7 ([0.6, 0.8])          | `player::kickable_margin_delta_min`<br></br>`player::kickable_margin_delta_max`      | -0.1 <br></br> 0.1    |
+| server::kick_power_rate       | 0.027                      |                                          |           |
+| server::kick_rand             | 0.1 ([0.0, 0.2])          | `player::kick_rand_delta_factor` <br></br>`player::kickable_margin_delta_min` <br></br>`player::kickable_margin_delta_max`         | 1 <br></br> -0.1 <br></br> 0.1        |
+| server::ball_size             | 0.085                      |                                          |           |
+| server::ball_decay            | 0.94                       |                                          |           |
+| server::ball_rand             | 0.05                       |                                          |           |
+| server::ball_speed_max        | 3.0                        |                                          |           |
+| server::ball_accel_max        | 2.7                        |                                          |           |
+| server::wind_force            | 0.0                        |                                          |           |
+| server::wind_dir              | 0.0                        |                                          |           |
+| server::wind_rand             | 0.0                        |                                          |           |
