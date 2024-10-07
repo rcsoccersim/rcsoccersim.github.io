@@ -213,7 +213,7 @@ The player can also influence the frequency and quality of the information
 by changing *ViewWidth* and *ViewQuality*.
 
 To calculate the current view frequency and view angle of the agent
-use equations [salam]`view-freq` and [salam]`view-angle`.
+use equations []`view-freq` and []`view-angle`.
 
 <!-- Correct this refrence -->
 
@@ -258,7 +258,7 @@ with which a player's identity is given. Taken from [^cite_stone98].
 <!-- Correct figgure text -->
 
 
-The following example and cases`view-example` are taken from [^cite_stone98].
+The following example and cases[]`view-example` are taken from [^cite_stone98].
 
 <!-- Correct refrence -->
 
@@ -334,7 +334,7 @@ and player *f* would be identified simply as an anonymous player.
 ### Range of View and View Frequency in Synchronous mode
 
 In synchronous mode, the "low" view quality is not available,
-and the view widths in cases`setting-synchronousmode-v17` are available.
+and the view widths in cases[]`setting-synchronousmode-v17` are available.
 In all view widths, rcssserver send see messages at
 **server::synch_see_offset** milliseconds from the beginning
 of the cycle.
@@ -438,7 +438,7 @@ The former two paramters are used for movable object (ball and
 players), and the latter two paramters are used for landmark objects
 (flags and goals).
 In server version 19, all heterogeneous players use same values
-defined in server.conf (cases`server-param-gaussian-model`).
+defined in server.conf (cases[]`server-param-gaussian-model`).
 <!-- Correct refrence text -->
 
 
@@ -500,8 +500,7 @@ The format of the body sensor message is:
 The semantics of the parameters are described where they are actually
 used.
 The *ViewQuality* and *ViewWidth* parameters are for example described
-in the Section [salam]`sec-visionsensor`.
-
+in the Section []`sec-visionsensor`.
 <!-- Correct refrence text -->
 
 The server parameters that affects the body sensor are described in

@@ -21,7 +21,7 @@ commands in the following manner:
 
 where $\theta^t$ is the direction of the object in timestep $t$ and
 power_rate is `dash_power_rate` or is calculated from `kick_power_rate`
-as described in Sec. [salam]`sec-kickmodel`.
+as described in Sec. []`sec-kickmodel`.<!---Correct this refrence later--->
 In the case of a player, this is just the direction the player is facing.
 In the case of a ball, its direction is given as the following manner:
 

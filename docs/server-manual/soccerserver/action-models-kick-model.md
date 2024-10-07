@@ -5,7 +5,7 @@ client wants to use (between **server::minpower** and
 **server::maxpower**) and the angle the player kicks the ball to.
 The angle is given in degrees and has to be between
 **server::minmoment** and **server::maxmoment**
-(see cases`param-kick` for current parameter values).
+(see cases[]`param-kick` for current parameter values).
 <!---Correct this refrence later--->
 
 Once the *kick* command arrived at the server, the kick will be
@@ -55,7 +55,7 @@ kick power will be reduced by 25% of the original kick power.
 
 The overall worst case for kicking the ball is if a player kicks a
 distant ball behind itself: 50% of kick power will be used.
-For the effective kick power, we get the formula [salam].
+For the effective kick power, we get the formula [].<!---Correct this refrence later--->
 (dir diff means the absolute direction difference between ball and the player’s body
 direction, dist diff means the absolute distance between ball and
 player.)

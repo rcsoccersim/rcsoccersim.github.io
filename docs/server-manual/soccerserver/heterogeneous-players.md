@@ -8,7 +8,7 @@ Both teams of a match use the same player types.
 Type 0 is the default type and is always the same.
 If **player::random_seed** is not 0, the fixed set of heterogenous
 player paramters can be generated based on the given seed value.
-cases`tab-hetero` shows the differences of heterogeneous players:
+cases[]`tab-hetero` shows the differences of heterogeneous players:
 
 <!---Correct this refrence later--->
 
@@ -17,7 +17,7 @@ information about the available player types.
 The online coaches can change player types unlimited times before the
 first kick off and change player types **player::subs_max** times
 during other non-`play_on` play modes using the `change_player_type`
-command (see [salam]`sec-coachcommand`).
+command (see []`sec-coachcommand`).
 
 <!---Correct this refrence later--->
 

@@ -14,11 +14,11 @@ if the ball is within the catchable area and the goalie is inside the
 penalty area.  If the goalie catches into direction $\varphi$,
 the catchable area is a rectangular area of length
 **server::catchable_area_l** and width **server::catchable_area_w** in
-direction $\varphi$ (see cases`catcharea`).<!----correct this refrence---->
+direction $\varphi$ (see []`catcharea`).<!----correct this refrence---->
 The ball will be caught with probability
 **server::catch_probability**, if it is inside this area (and it will
 not be caught if it is outside this area).
-For the current values of catch command parameters see cases`param-goaliecatch`:<!----correct this refrence---->
+For the current values of catch command parameters see cases []`param-goaliecatch`:<!----correct this refrence---->
 
 | Parameter in `server.conf` and `player.conf`       | Value      |
 |-----------------------------------------------------|------------|

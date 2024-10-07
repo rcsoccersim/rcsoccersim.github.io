@@ -13,7 +13,7 @@ server will additionally send following messages: `server_param` (a message
 containing the server parameters), `player_param` (a message containing the
 player parameters) and `player_type` (a message containing the player types).
 Finally, the player will receive a message on changed
-players (see Sec. [ref]`sec-heterogeneousplayers`).
+players (see Sec. []`sec-heterogeneousplayers`).
 <!--- Correct the refrence--->
 ## Initial Settings
 

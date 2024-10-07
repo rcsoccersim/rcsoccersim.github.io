@@ -1,7 +1,7 @@
 # Referee Model
 The Automated Referee sends messages to the players, so that players know the actual
 play mode of the game. The rules and the behavior for the automated referee are
-described in Sec. [salam]`sec-overview-referee`.
+described in Sec. []`sec-overview-referee`.<!-- Correct refrence text -->
 Players receive the referee messages as hear messages.
 A player can hear referee messages in every situation independent of
 the number of messages the player heard from other players.
@@ -14,7 +14,7 @@ referee messages announcing events like a goal or a foul. If you have a look int
 server source code, you will notice some additional play modes that are currently not
 used. Both play modes and referee messages are announced using (referee String ),
 where String is the respective play mode or message string. The play modes are listed
-in cases`tab-playmode`, for the messages see cases`tab-refereemessages`.
+in cases[]`tab-playmode`, for the messages see cases[]`tab-refereemessages`.
 
 <!-- Correct refrence text -->
 

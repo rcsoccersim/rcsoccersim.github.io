@@ -215,7 +215,7 @@ Next, the current player velocity $v_t$ and the provisional velocities $\hat{v}_
 for each leg are obtained from the provisional accelerations.
 The provisional velocity $\hat{v}^{t+1}$ for the player's body is then determined by the average of $\hat{v}_L$ and $\hat{v}_R$.
 The player's body acceleration $a^t$ is reverse-calculated from the difference between $\hat{v}^{t+1}$ and $v^t$.
-Noise is added according to the update formula in section salam, and the velocity for the next step, $v{t+1}$, is updated.
+Noise is added according to the update formula in section [], and the velocity for the next step, $v{t+1}$, is updated.
 
 <!---Correct this refrence later--->
 
