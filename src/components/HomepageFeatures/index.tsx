@@ -4,15 +4,27 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  image: string;
   description: JSX.Element;
   link?: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
+    title: 'What is Soccer Simulation?',
+    image: 'img/ss2d.png',
+    description: (
+      <>
+        Soccer simulation 2D is a league in RoboCup that simulates 
+        a soccer game in a 2D environment. 
+        The game is played by two teams of twelve autonomous software agents.
+      </>
+    ),
+    link: '/blog/SS2D'
+  },
+  {
     title: 'How to Start?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    image: 'img/developping2d.png',
     description: (
       <>
         To start using Soccer Simulation 2D, you need to install the server 
@@ -23,7 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'How to Participate?',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    image: 'img/ss2drobocup.png',
     description: (
       <>
         To participate in RoboCup Soccer Simulation 2D League, 
@@ -33,25 +45,13 @@ const FeatureList: FeatureItem[] = [
     ),
     link: '/blog/HowToParticipate'
   },
-  {
-    title: 'What is Soccer Simulation?',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Soccer simulation 2D is a league in RoboCup that simulates 
-        a soccer game in a 2D environment. 
-        The game is played by two teams of twelve autonomous software agents.
-      </>
-    ),
-    link: '/blog/SS2D'
-  },
 ];
 
-function Feature({title, Svg, description, link}: FeatureItem) {
+function Feature({title, image, description, link}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={image} alt={title} className={styles.featureSvg} />
       </div>
       <div className="text--center padding-horiz--md">
       <a href={link}><Heading as="h3">{title}</Heading></a>
