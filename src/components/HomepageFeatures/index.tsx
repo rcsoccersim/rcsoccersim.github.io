@@ -6,6 +6,7 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
+  link?: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -14,41 +15,46 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        To start using Soccer Simulation 2D, you need to install the server 
+        and Start developing your own team from scratch or use the existing ones.
       </>
     ),
+    link: '/blog/HowToStart'
   },
   {
     title: 'How to Participate?',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        To participate in RoboCup Soccer Simulation 2D League, 
+        you need to develop your team, prepare a team description paper (TDP), 
+        submit it to the league committee.
       </>
     ),
+    link: '/blog/HowToParticipate'
   },
   {
-    title: 'Powered by React',
+    title: 'What is Soccer Simulation?',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Soccer simulation 2D is a league in RoboCup that simulates 
+        a soccer game in a 2D environment. 
+        The game is played by two teams of twelve autonomous software agents.
       </>
     ),
+    link: '/blog/SS2D'
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description, link}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+      <a href={link}><Heading as="h3">{title}</Heading></a>
         <p>{description}</p>
       </div>
     </div>
