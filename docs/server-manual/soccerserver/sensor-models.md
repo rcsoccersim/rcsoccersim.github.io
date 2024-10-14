@@ -36,7 +36,11 @@ The format of the aural sensor message from the soccer server is:
 - *Message* is the message. The maximum length is **server::say_msg_size** bytes.
   The possible messages from the referee are described in Section [Play Modes and referee messages](referee-model.md).
 
-The server parameters that affects the aural sensor are described in Table.
+The server parameters that affects the aural sensor are described in [Table 1](#table1).
+
+<a id="table1"></a>
+
+_Table 1: Parameters for the aural sensor._
 
 | Parameter in server.conf | Value |
 |--------------------------|-------|
@@ -44,6 +48,7 @@ The server parameters that affects the aural sensor are described in Table.
 | hear_max                 | 1     |
 | hear_inc                 | 1     |
 | hear_decay               | 1     |
+
 
 
 ### Capacity of the Aural Sensor
@@ -157,14 +162,17 @@ the center line of the player's view crosses the line, and *Direction* is
 the direction of the line.
 
 Currently there are 55 flags (the goals counts as flags) and 4 lines to be
-seen. All of the flags and lines are shown in cases`field-detailed`.
+seen. All of the flags and lines are shown in [Figure 1](#figure1).
 <!-- correct the refrence -->
 
+<a id="figure1"></a>
 <div align="center">
   ![Field Detailed](field-detailed.png)
+
+_Figure 1: The flags and lines in the simulation._
+
 </div>
 
-**Figure:** The flags and lines in the simulation.
 
 
 In protocol versions 13+, when a player's team is visible, their tackling and
@@ -244,9 +252,14 @@ but not the exact name of the object.
 Moreover, in this case, the capitalized name, that is "B", "P", "G" and "F",
 is used as the name of the object rather than "b", "p", "g" and "f".
 
+<a id="figure2"></a>
 <div align="center">
   ![Field Detailed](view-example.png)
+
+_Figure 2: The visible range of an individual agent in the soccer_
+
 </div>
+
 
 The visible range of an individual agent in the soccer server.
 The viewing agent is the one shown as two semi-circles. The light
@@ -260,11 +273,11 @@ with which a player's identity is given. Taken from [[stone98](../references.md#
 <!-- Correct figgure text -->
 
 
-The following example and cases[]`view-example` are taken from [[stone98](../references.md#stone98)].
+The following example and [Figure 2](#figure2) are taken from [[stone98](../references.md#stone98)].
 
 <!-- Correct refrence -->
 
-The meaning of the view_angle parameter is illustrated in cases`view-example`.
+The meaning of the view_angle parameter is illustrated inc[Figure 2](#figure2).
 In this figure, the viewing agent is the one shown as two semi-circles.
 The light semi-circle is its front.
 The black circles represent objects in the world.
@@ -277,7 +290,7 @@ reported as 0 degrees.
 Object *e* would be reported as being roughly $-40^\circ$, while object
 *d* is at roughly $20^\circ$.
 
-Also illustrated in cases`view-example`, the amount of information
+Also illustrated in [Figure 2](#figure2), the amount of information
 describing a player varies with how far away the player is.
 For nearby players, both the team and the uniform number of the player are
 reported.
@@ -302,12 +315,16 @@ Let the player's distance be *dist*. Then
 - If *dist* $\geq$ **team_too_far_length**, then the team name is not
   visible.
 
-For example, in cases`view-example`, assume that all of the labeled circles
+For example, in [Figure 2](#figure2), assume that all of the labeled circles
 are players.
 Then player *c* would be identified by both team name and uniform number;
 player *d* by team name, and with about a 50% chance, uniform number;
 player *e* with about a 25% chance, just by team name, otherwise with neither;
 and player *f* would be identified simply as an anonymous player.
+
+<a id="table2"></a>
+
+_Table 2: Parameters for the visual sensors in server.conf._
 
 | Parameter in `server.conf`          | Value |
 |-------------------------------------|-------|
@@ -317,6 +334,9 @@ and player *f* would be identified simply as an anonymous player.
 | server::quantize_step               | 0.1   |
 | server::quantize_step_l             | 0.01  |
 
+<a id="table3"></a>
+
+_Table 3: Heterogenious parameters for the visual sensors._
 
 | Parameters in player_type           | Value                  |
 |-------------------------------------|------------------------|
@@ -336,7 +356,7 @@ and player *f* would be identified simply as an anonymous player.
 ### Range of View and View Frequency in Synchronous mode
 
 In synchronous mode, the "low" view quality is not available,
-and the view widths in cases[]`setting-synchronousmode-v17` are available.
+and the view widths in the table below are available.
 In all view widths, rcssserver send see messages at
 **server::synch_see_offset** milliseconds from the beginning
 of the cycle.
@@ -346,6 +366,10 @@ The amount of information the player can receive changes depending on
 the distance to the target object, the same as in asynchronous mode.
 
 Settings of the synchronous mode
+
+<a id="table4"></a>
+
+_Table 4: Settings of the synchronous mode_
 
 | Mode   | View Width (degree) | See Frequency   |
 |--------|----------------------|-----------------|
@@ -440,9 +464,12 @@ The former two paramters are used for movable object (ball and
 players), and the latter two paramters are used for landmark objects
 (flags and goals).
 In server version 19, all heterogeneous players use same values
-defined in server.conf (cases[]`server-param-gaussian-model`).
+defined in server.conf .
 <!-- Correct refrence text -->
 
+<a id="table5"></a>
+
+_Table 5: Server parameters for Gaussian model._
 
 | Parameters in player_type          | Value    |
 |-------------------------------------|----------|
@@ -502,12 +529,15 @@ The format of the body sensor message is:
 The semantics of the parameters are described where they are actually
 used.
 The *ViewQuality* and *ViewWidth* parameters are for example described
-in the Section []`sec-visionsensor`.
+in the Section [Vision Sensor Model](#vision-sensor-model).
 <!-- Correct refrence text -->
 
 The server parameters that affects the body sensor are described in
 the following table:
 
+<a id="table6"></a>
+
+_Table 6: Parameters for the body sensor._
 
 | Parameter in `server.conf`       | Value |
 |----------------------------------|-------|

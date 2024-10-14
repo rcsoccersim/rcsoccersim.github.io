@@ -2,9 +2,11 @@
 sidebar_position: 2
 ---
 
-# Player Command Protocol
+# Protocols
 
-## Connecting, reconnecting, and disconnecting
+## Player Command Protocol
+
+### Connecting, reconnecting, and disconnecting
 
 | From player to server                                                                                                              | From server to client                                                                                                                       |
 | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,9 +19,9 @@ server will additionally send following messages: `server_param` (a message
 containing the server parameters), `player_param` (a message containing the
 player parameters) and `player_type` (a message containing the player types).
 Finally, the player will receive a message on changed
-players (see Sec. []`sec-heterogeneousplayers`).
+players (see Sec. [Heterogeneous Players](./heterogeneous-players.md)).
 <!--- Correct the refrence--->
-## Initial Settings
+### Initial Settings
 
 | From player to server                                                                                                                 | From server to player                                        |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -29,7 +31,7 @@ players (see Sec. []`sec-heterogeneousplayers`).
 | (synch_see)                                                                                                                           | (ok synch_see)                                               |
 | (gaussian_see)                                                                                                                        | (ok gaussian_see)                                            |
 
-## Player Control
+### Player Control
 
 | From player to server                                                                                                                                                                                                                                                                                                                                                                                         | Only once per cycle |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
@@ -45,7 +47,7 @@ players (see Sec. []`sec-heterogeneousplayers`).
 | (attentionto *Team* *Unum*)(attentionto *Off*)*Team* ::= `our` \| `opp` \|`left` \| `right` \|`l` \| `r` \|*TeamName**Unum* ::= integer*Off* ::= `false` \| `off`                                                                                                                                                                                                                                             | No                  |
 | (done)                                                                                                                                                                                                                                                                                                                                                                                                        | Yes                 |
 
-## Others
+### Others
 
 | From player to server | From server to player                                                                                                         |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |

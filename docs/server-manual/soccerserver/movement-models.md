@@ -45,6 +45,7 @@ rcssserver adds noise to the movement of objects and parameters of commands.
 Concerned with movements,
 noise is added into Eqn.:ref:`eq:u-t` as follows:
 **TODO: new noise model. See \[12.0.0 pre-20071217\] in NEWS**
+<!--- Correct the refrence--->
 
 <div align="center">
   ![Field Detailed](mov_model_eq4.png)

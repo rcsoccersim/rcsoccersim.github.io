@@ -1,7 +1,11 @@
+---
+sidebar_position: 7
+---
+
 # Referee Model
 The Automated Referee sends messages to the players, so that players know the actual
 play mode of the game. The rules and the behavior for the automated referee are
-described in Sec. []`sec-overview-referee`.<!-- Correct refrence text -->
+described in Sec. [Kick-Off](../overview.md#kick-off).<!-- Correct refrence text -->
 Players receive the referee messages as hear messages.
 A player can hear referee messages in every situation independent of
 the number of messages the player heard from other players.
@@ -14,10 +18,13 @@ referee messages announcing events like a goal or a foul. If you have a look int
 server source code, you will notice some additional play modes that are currently not
 used. Both play modes and referee messages are announced using (referee String ),
 where String is the respective play mode or message string. The play modes are listed
-in cases[]`tab-playmode`, for the messages see cases[]`tab-refereemessages`.
+in [Table 1](#table1), for the messages see [Table 2](#table2).
 
 <!-- Correct refrence text -->
 
+<a id="table1"></a>
+
+_Table 1: Play Mode ._
 | Play Mode                    | tc   | Subsequent Play Mode     | Comment                                                                 |
 |------------------------------|------|--------------------------|-------------------------------------------------------------------------|
 | before_kick_off              | 0    | kick_off_\*Side*         | at the beginning of a half                                              |
@@ -53,6 +60,10 @@ in cases[]`tab-playmode`, for the messages see cases[]`tab-refereemessages`.
 
 where Side is either the character *l* or *r*, OSide means opponent’s side.
 tc is the time (in number of cycles) until the subsequent play mode will be announced
+
+<a id="table2"></a>
+
+_Table 2: Referee Messages ._
 
 | Message                   | tc   | Subsequent Play Mode     | Comment                                               |
 |---------------------------|------|--------------------------|-------------------------------------------------------|

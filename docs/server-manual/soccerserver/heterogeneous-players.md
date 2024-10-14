@@ -1,3 +1,6 @@
+---
+sidebar_position: 6
+---
 # Heterogeneous Players
 With the rcssserver version 7, heterogeneous players were introduced.
 For heterogeneous players, the server generates
