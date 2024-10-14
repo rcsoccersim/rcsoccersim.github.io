@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Dash Model
 
 The **dash** command is used to accelerate the player in direction of
@@ -61,7 +65,7 @@ The effort of a player is a value between **effort_min** and **effort_max**;
 it is dependent on the stamina management of the player (see below).
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq1.png)
+  ![Field Detailed](dash_model_eq1.png)
   
 </div>
 
@@ -146,7 +150,7 @@ directions a linear interpolation of the effective power will be applied.
 The following formula explains the maths behind the sideward dash model.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq2.png)
+  ![Field Detailed](dash_model_eq2.png)
   
 </div>
 
@@ -220,7 +224,7 @@ Noise is added according to the update formula in section [], and the velocity f
 <!---Correct this refrence later--->
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq3.png)
+  ![Field Detailed](dash_model_eq3.png)
   
 </div>
 
@@ -233,7 +237,7 @@ the player rotates based on that speed difference.
 The rotation dash_model_equation is identical to the differential drive kinematics.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq4.png)
+  ![Field Detailed](dash_model_eq4.png)
   
 </div>
 

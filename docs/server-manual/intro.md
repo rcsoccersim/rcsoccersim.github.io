@@ -165,11 +165,11 @@ control-commands to the server.
 Each client can control only one player 56 . So a team consists of the
 same number of clients as players. Communications between the clients
 must be done via soccerserver using say and hear protocols. (See
-section ref`sec-playercommandprotocol`.) One of the purposes of soccerserver
+section [Player Command Protocol](soccerserver/protocols.md#Player-Command-Protocol).) One of the purposes of soccerserver
 is evaluation of multi-agent systems, in which efficiency of communication between
 agents is one of the criteria. Users must realize control of multiple
 clients by such restricted communication.
-//TODO fix ref`sec-playercommandprotocol`
+
 ## History
 
 In this section we will first describe the history of the soccerserver

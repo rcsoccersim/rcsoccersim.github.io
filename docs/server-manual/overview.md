@@ -35,9 +35,7 @@ executed in a given cycle, must arrive at the server during the right
 interval.  Therefore, slow performance of a player that results in
 missing action opportunities has a major impact on the performance of
 the team as a whole.  A detailed description of the server can be
-found in Chapter ref`cha-soccerserver`.
-
-#TODO ref`cha-soccerserver`
+found in Chapter [Soccer Server](./soccerserver)`.
 
 ### The Monitor
 

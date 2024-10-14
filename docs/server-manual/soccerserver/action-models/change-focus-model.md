@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # Change Focus Model
 
 The focus point is a feature developed in server v.18, which can be

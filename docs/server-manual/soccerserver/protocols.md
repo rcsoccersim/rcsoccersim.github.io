@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Player Command Protocol
 
 ## Connecting, reconnecting, and disconnecting
@@ -52,7 +56,7 @@ The server may respond to the above commands with the errors:
 (error unknown command) or
 (error illegal command form)
 
-# Player Sensor Protocol
+## Player Sensor Protocol
 
 The following table shows the protocol for client version 14 or later.
 <!---Correct this table later--->

@@ -1,3 +1,7 @@
+---
+sidebar_position: 12
+---
+
 # Attentionto Model
 
 Version 8 and above players can send `attentionto` commands to focus their attention on a particular player.

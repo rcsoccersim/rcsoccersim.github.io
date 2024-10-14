@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Kick Model
 
 The *kick* command takes two parameters, the kick power the player
@@ -25,7 +29,7 @@ The first thing to be calculated for the kick is the effective kick power ep:
 
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq1.png)
+  ![Field Detailed](kick_model_eq1.png)
   
 </div>
 
@@ -62,7 +66,7 @@ player.)
 <!---Correct this refrence later--->
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq2.png)
+  ![Field Detailed](kick_model_eq2.png)
 </div>
 
 

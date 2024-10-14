@@ -1,8 +1,12 @@
+---
+sidebar_position: 1
+---
+
 # Catch Model
 
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/catcharea.png)
+  ![Field Detailed](catcharea.png)
   
   Catchable area of the goalie when doing a (catch 45)
 </div>

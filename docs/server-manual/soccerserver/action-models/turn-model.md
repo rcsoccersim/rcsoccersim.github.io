@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Turn Model
 
 While *dash* is used to accelerate the player in direction of its
@@ -10,7 +14,7 @@ more difficult to turn when you are moving.
 Specifically, the actual angle the player is turned is as follows:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/turn_model_eq1.png)
+  ![Field Detailed](turn_model_eq1.png)
 </div>
 
 **server::inertia_moment** is a server.conf parameter with default
@@ -23,7 +27,7 @@ $player\_speed\_max \times player\_decay$, which means the effective turn for a 
 (with default values) is $\pm60$.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/turn_model_eq2.png)
+  ![Field Detailed](turn_model_eq2.png)
 </div>
 
 | Default Parameters        | Default Value (Range) | Heterogeneous Player Parameters     | Value |

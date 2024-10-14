@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Sensor Models
 A RoboCup agent has three different sensors (and one special sensor).
 The aural sensor detects messages sent by the referee, the coaches and the
@@ -71,7 +75,7 @@ the player will hear one message from each team selected randomly from
 the messages available.
 
 The way to focus is using `attentionto` commands.
-See [Attentionto Model](action-models-attentionto-model.md) in detail.
+See [Attentionto Model](./action-models/attentionto-model.md) in detail.
 
 ### Range of Communication
 
