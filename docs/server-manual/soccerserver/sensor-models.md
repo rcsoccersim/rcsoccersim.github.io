@@ -217,9 +217,7 @@ The player can also influence the frequency and quality of the information
 by changing *ViewWidth* and *ViewQuality*.
 
 To calculate the current view frequency and view angle of the agent
-use equations []`view-freq` and []`view-angle`.
-
-<!-- Correct this refrence -->
+use the following equations:
 
 
 <div align="center">

@@ -8,18 +8,14 @@ Both teams of a match use the same player types.
 Type 0 is the default type and is always the same.
 If **player::random_seed** is not 0, the fixed set of heterogenous
 player paramters can be generated based on the given seed value.
-cases[]`tab-hetero` shows the differences of heterogeneous players:
-
-<!---Correct this refrence later--->
+Table [parameter differences of heterogeneous players](#the-parameter-differences-of-heterogeneous-players) shows the differences of heterogeneous players:
 
 When players and coaches connect to the server, they can receive
 information about the available player types.
 The online coaches can change player types unlimited times before the
 first kick off and change player types **player::subs_max** times
 during other non-`play_on` play modes using the `change_player_type`
-command (see []`sec-coachcommand`).
-
-<!---Correct this refrence later--->
+command (see [Coach Commands](../coach.md/#commands)
 
 The online coach can substitute a same player type within
 **player::pt_max** times.
@@ -40,6 +36,8 @@ If player::pt_max is 1, each player type except the default type can be used onl
 Each time a player is substituted by some other player type, its
 stamina, recovery and effort is reset to the initial (maximum) value
 of the respective player type.
+
+#### The parameter differences of heterogeneous players
 
 | Parameter                      | Description                                                                                     |
 |--------------------------------|-------------------------------------------------------------------------------------------------|

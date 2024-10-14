@@ -9,7 +9,7 @@ sidebar_position: 4
 In each simulation step, movement of each object is calculated as following manner:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/mov_model_eq1.png)
+  ![Field Detailed](mov_model_eq1.png)
 </div>
 
 where, $(p_x^t,p_y^t)$, and $(v_x^t,v_y^t)$ are respectively position
@@ -20,17 +20,17 @@ acceleration of object, which is derived from Power parameter in `dash`
 commands in the following manner:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/mov_model_eq2.png)
+  ![Field Detailed](mov_model_eq2.png)
 </div>
 
 where $\theta^t$ is the direction of the object in timestep $t$ and
 power_rate is `dash_power_rate` or is calculated from `kick_power_rate`
-as described in Sec. []`sec-kickmodel`.<!---Correct this refrence later--->
+as described in Section [Kick Model](./action-models/kick-model.md).
 In the case of a player, this is just the direction the player is facing.
 In the case of a ball, its direction is given as the following manner:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/mov_model_eq3.png)
+  ![Field Detailed](mov_model_eq3.png)
 </div>
 
 where $\theta^t_{ball}$ and $\theta^t_{kicker}$ are directions of
@@ -44,11 +44,10 @@ rcssserver adds noise to the movement of objects and parameters of commands.
 
 Concerned with movements,
 noise is added into Eqn.:ref:`eq:u-t` as follows:
-<!---Correct this refrence later--->
 **TODO: new noise model. See \[12.0.0 pre-20071217\] in NEWS**
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/mov_model_eq4.png)
+  ![Field Detailed](mov_model_eq4.png)
 </div>
 
 
@@ -58,7 +57,7 @@ ${\mathrm rmax}$ is a parameter that depends on amount of velocity
 of the object as follows:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/mov_model_eq5.png)
+  ![Field Detailed](mov_model_eq5.png)
 </div>
 
 
@@ -69,7 +68,7 @@ Noise is added also into the *Power* and *Moment* arguments of a
 command as follows:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/mov_model_eq6.png)
+  ![Field Detailed](mov_model_eq6.png)
 </div>
 
 
@@ -88,7 +87,7 @@ as the ball and the player never overlap at the end of the cycle.
 Goal posts are circular with a radius of 6cm and they are located at:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/mov_model_eq7.png)
+  ![Field Detailed](mov_model_eq7.png)
 </div>
 
 
