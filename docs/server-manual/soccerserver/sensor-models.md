@@ -253,12 +253,12 @@ Only objects within **server::view_angle**/2, and those within
 **server::visible_distance** of the viewing agent can be seen.
 **unum_far_length**, **unum_too_far_length**, **team_far_length**, and
 **team_too_far_length** affect the amount of precision
-with which a player's identity is given. Taken from [^cite_stone98].
+with which a player's identity is given. Taken from [[stone98](../references.md#stone98)].
 
 <!-- Correct figgure text -->
 
 
-The following example and cases[]`view-example` are taken from [^cite_stone98].
+The following example and cases[]`view-example` are taken from [[stone98](../references.md#stone98)].
 
 <!-- Correct refrence -->
 
