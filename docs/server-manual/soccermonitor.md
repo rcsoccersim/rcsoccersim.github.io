@@ -55,12 +55,10 @@ When the server is connected with the monitor, it will send information to
 the monitor every cycle.
 rcssserver-15 provides four different formats (version 1 ~ 4).
 The server will decide which format is used according to the initial command
-sent by the monitor (see ref`sec-commandsfrommonitor`).
+sent by the monitor (see [Commands From Monitor](#commands-from-monitor)).
 The detailed data structure information can be found in
-appendix ref`sec-appendixmonitorstructs`.
+appendix [Appendix Monitor Structs](#sec-appendixmonitorstructs).
 
-//TODO fix ref`sec-commandsfrommonitor`
-//TODO ref`sec-appendixmonitorstructs`
 ### Version 1
 
 rcssserver sends dispinfo_t structs to the soccer monitor.
@@ -368,7 +366,7 @@ a player, that connects on port 6000 as well) .
 "(dispinit)" is for information version 1, while "(dispinit version 2)" is
 for version 2.
 You can change the version by setting the according monitor parameter.
-(See ref`sec-settingsvariables`) //TODO fix ref`sec-settingsvariables`
+(See [Settings and Parameters](#settings-and-parameters))
 
 ```
 (dispstart)
@@ -486,7 +484,7 @@ The format is as follows:
 
 > - short mode:
 >   this is the mode part of the dispinfo_t struct
->   (see ref`sec-version1protocol` Version 1) SHOW_MODE for showinfo_t //TODO ref`sec-version1protocol`
+>   (see [Version 1 Protocol](#Version-1-Protocol)) SHOW_MODE for showinfo_t
 >   information MSG_MODE for msginfo_t information
 >
 > > - If mode is SHOW_MODE, a showinfo_t struct is following.
@@ -572,9 +570,8 @@ Its grammar is almost the same as monitor protocol version 3.
 
 `msg` may contain various string data, such as `team_graphic`, the result of the game, and so on.
 Starting with the server version 12.1.0, the game result is recorded using *msg* data at the end of the game log.
-See ref`sec-monitorv3protocol` in detail. //todo
+See [Version 3 Protocol](#Version-3-Protocol) in detail.
 
-//TODO fix ref`sec-monitorv3protocol`
 ### Version 5 Protocol
 
 The version 5 logfile protocol is adopted in rcssserver version 13 or later.
@@ -720,9 +717,7 @@ Of course, you can directly edit this configuration file.
   (dispplayer side unum posx posy ang)
   ```
 
-  (contributed by Artur Merke) See ref`sec-commandsfrommonitor`. //TODO
-
-  // TODO fix ref`sec-commandsfrommonitor`
+  (contributed by Artur Merke) See [Communication from Monitor to Server](#communication-from-monitor-to-server) for details.
 
 7.00:
 

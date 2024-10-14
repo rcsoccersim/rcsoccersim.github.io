@@ -504,4 +504,3 @@ ______________________________________________________________________
 [^f3]: In reference to Deep Blue and its games with Kasparov, see [http://www.chess.ibm.com](http://www.chess.ibm.com).
 
 // TODO footnote
-// TODO check citations

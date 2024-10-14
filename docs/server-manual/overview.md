@@ -63,9 +63,8 @@ As you will discover later on, to run a game on the server, a monitor
 is not required.  However, if needed, a number of monitors can be
 connected to the server at the same time (for example if you want to
 show the same game at different terminals).  For further details on
-the monitor please have a look at Chapter ref`cha-soccermonitor`.
+the monitor please have a look at Chapter [Soccer Monitor](./soccermonitor.md).
 
-//TODO fix ref`cha-soccermonitor`.
 ### The Logplayer
 
 The logplayer can be thought of as a video player.  It is a tool that
