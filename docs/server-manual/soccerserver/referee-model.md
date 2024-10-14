@@ -109,7 +109,7 @@ offside_kick_margin = 9.15
 This parameter determines the radius of area that every player in the team which has done offside foul must stay out when the other team wants to free-kick. If there is a player in that area, server moves them out of that.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/offside-example.jpg)
+  ![Field Detailed](offside-example.jpg)
 </div>
 
 
@@ -198,21 +198,21 @@ complies with FIFA regulations. For a goal to be scored the ball
 must be totally within the goal - i.e.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/refree_model_eq1.png)
+  ![Field Detailed](refree_model_eq1.png)
 </div>
 
 Similarly the ball must be completely out of the pitch before it is
 considered out - i.e
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/refree_model_eq2.png)
+  ![Field Detailed](refree_model_eq2.png)
 </div>
 
 Lastly the ball is within the penalty area (and thus catchable) if
 the ball is at least partially within the penalty area - i.e.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/refree_model_eq3.png)
+  ![Field Detailed](refree_model_eq3.png)
 </div>
 
 ## Catch Referee

@@ -118,7 +118,7 @@ Visual information arrives from the server in the following basic format:
 following way:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq1.png)
+  ![Field Detailed](sensor_model_eq1.png)
 </div>
 
 where $(p_{xt},p_{yt})$ is the absolute position of the target object,
@@ -161,7 +161,7 @@ seen. All of the flags and lines are shown in cases`field-detailed`.
 <!-- correct the refrence -->
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/field-detailed.png)
+  ![Field Detailed](field-detailed.png)
 </div>
 
 **Figure:** The flags and lines in the simulation.
@@ -223,7 +223,7 @@ use equations []`view-freq` and []`view-angle`.
 
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq2.png)
+  ![Field Detailed](sensor_model_eq2.png)
 </div>
 
 where view_quality_factor is 1 if *ViewQuality* is `high`
@@ -232,7 +232,7 @@ view_width_factor is 2 if *ViewWidth* is `narrow`,
 1 if *ViewWidth* is `normal`, and 0.5 if *ViewWidth* is `wide`.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq3.png)
+  ![Field Detailed](sensor_model_eq3.png)
 </div>
 
 where view_width_factor is 0.5 if *ViewWidth* is `narrow`,
@@ -247,7 +247,7 @@ Moreover, in this case, the capitalized name, that is "B", "P", "G" and "F",
 is used as the name of the object rather than "b", "p", "g" and "f".
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/view-example.png)
+  ![Field Detailed](view-example.png)
 </div>
 
 The visible range of an individual agent in the soccer server.
@@ -384,7 +384,7 @@ For example, the distance value of the object, in the case where the object
 in sight is a ball or a player, is quantized in the following manner:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq4.png)
+  ![Field Detailed](sensor_model_eq4.png)
 </div>
 
 
@@ -397,7 +397,7 @@ and $d''$ is the result distance value sent to the observer.
 $Quantize(V,Q)$ is as follow:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq5.png)
+  ![Field Detailed](sensor_model_eq5.png)
 </div>
 
 This means that players can not know the exact positions of very far objects.
@@ -408,7 +408,7 @@ noise is less than 1.0.
 In the case of lines, the distance value is quantized in the following manner.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq6.png)
+  ![Field Detailed](sensor_model_eq6.png)
 </div>
 
 ### Visual Sensor Noise Model: Gaussian
@@ -423,7 +423,7 @@ In this model, the noised distance in the player's observation is
 determined by a Gaussian distribution:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq7.png)
+  ![Field Detailed](sensor_model_eq7.png)
 </div>
 
 where $d$ is the exact distance from the observer to the object,
