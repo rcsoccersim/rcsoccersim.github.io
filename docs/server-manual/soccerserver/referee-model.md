@@ -5,11 +5,10 @@ sidebar_position: 7
 # Referee Model
 The Automated Referee sends messages to the players, so that players know the actual
 play mode of the game. The rules and the behavior for the automated referee are
-described in Sec. [Kick-Off](../overview.md#kick-off).<!-- Correct refrence text -->
+described in Sec. [Kick-Off](../overview.md#kick-off).
 Players receive the referee messages as hear messages.
 A player can hear referee messages in every situation independent of
 the number of messages the player heard from other players.
-<!-- Correct refrence text -->
 
 ## Play Modes and referee messages
 
@@ -20,7 +19,6 @@ used. Both play modes and referee messages are announced using (referee String )
 where String is the respective play mode or message string. The play modes are listed
 in [Table 1](#table1), for the messages see [Table 2](#table2).
 
-<!-- Correct refrence text -->
 
 <a id="table1"></a>
 

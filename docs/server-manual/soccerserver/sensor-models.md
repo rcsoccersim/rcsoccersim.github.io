@@ -163,7 +163,6 @@ the direction of the line.
 
 Currently there are 55 flags (the goals counts as flags) and 4 lines to be
 seen. All of the flags and lines are shown in [Figure 1](#figure1).
-<!-- correct the refrence -->
 
 <a id="figure1"></a>
 <div align="center">
@@ -270,12 +269,9 @@ Only objects within **server::view_angle**/2, and those within
 **team_too_far_length** affect the amount of precision
 with which a player's identity is given. Taken from [[stone98](../references.md#stone98)].
 
-<!-- Correct figgure text -->
-
 
 The following example and [Figure 2](#figure2) are taken from [[stone98](../references.md#stone98)].
 
-<!-- Correct refrence -->
 
 The meaning of the view_angle parameter is illustrated inc[Figure 2](#figure2).
 In this figure, the viewing agent is the one shown as two semi-circles.
@@ -356,11 +352,10 @@ _Table 3: Heterogenious parameters for the visual sensors._
 ### Range of View and View Frequency in Synchronous mode
 
 In synchronous mode, the "low" view quality is not available,
-and the view widths in the table below are available.
+and the view widths in [Table4](#table4) the table below are available.
 In all view widths, rcssserver send see messages at
 **server::synch_see_offset** milliseconds from the beginning
 of the cycle.
-<!-- Correct refrence text -->
 
 The amount of information the player can receive changes depending on
 the distance to the target object, the same as in asynchronous mode.
@@ -464,8 +459,7 @@ The former two paramters are used for movable object (ball and
 players), and the latter two paramters are used for landmark objects
 (flags and goals).
 In server version 19, all heterogeneous players use same values
-defined in server.conf .
-<!-- Correct refrence text -->
+defined in server.conf[(Table 5)](#table5).
 
 <a id="table5"></a>
 
@@ -530,7 +524,6 @@ The semantics of the parameters are described where they are actually
 used.
 The *ViewQuality* and *ViewWidth* parameters are for example described
 in the Section [Vision Sensor Model](#vision-sensor-model).
-<!-- Correct refrence text -->
 
 The server parameters that affects the body sensor are described in
 the following table:

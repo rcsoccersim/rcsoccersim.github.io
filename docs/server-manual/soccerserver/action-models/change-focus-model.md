@@ -27,4 +27,3 @@ player's view angle.
 
 See [Vision Sensor Model](../sensor-models.md#vision-sensor-model) in detail about the vison sensor.
 
-<!--- correct the refrence --->
