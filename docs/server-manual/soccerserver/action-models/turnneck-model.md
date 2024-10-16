@@ -23,7 +23,9 @@ The argument for a *turn_neck command* must be in the range between
 **server::minneckmoment** and **server::maxneckmoment**.
 
 
+<a id="table1"></a>
 
+_Table 1: Parameter for the turn neck command_
 |Parameter in ``server.conf``                     | Value     |
 |-------------------------------------------------|-----------|
 |minneckang                                       | -90       |

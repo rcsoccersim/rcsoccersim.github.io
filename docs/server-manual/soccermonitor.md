@@ -55,9 +55,12 @@ When the server is connected with the monitor, it will send information to
 the monitor every cycle.
 rcssserver-15 provides four different formats (version 1 ~ 4).
 The server will decide which format is used according to the initial command
-sent by the monitor (see [Commands From Monitor](#commands-from-monitor)).
+sent by the monitor (see [Communication from Monitor to Server](#communication-from-monitor-to-server)).
 The detailed data structure information can be found in
 appendix [Appendix Monitor Structs](#sec-appendixmonitorstructs).
+
+<!--- Correct the refrence--->
+
 
 ### Version 1
 
@@ -274,6 +277,8 @@ rcssserver sends dispinfo_t2 structs to the soccer monitor instead of
 dispinfo_t structs which is used in version 1.
 dispinfo_t2 contains a union with five different types of information
 (the data structures are printed in appendix :ref"`sec-appendixmonitorstructs`:
+
+<!----------correct this refrence there is no appendix monitor------------------>
 
 - showinfo_t2: information needed to draw the scene.
   It includes all information on coordinates and speed of players and

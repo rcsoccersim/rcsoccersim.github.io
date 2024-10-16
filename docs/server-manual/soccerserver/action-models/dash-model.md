@@ -13,6 +13,10 @@ and **server::max_dash_power**.
 For the current values of parameters for the dash model, see
 the following table:
 
+<a id="table1"></a>
+
+_Table 1: Dash and Stamina Model Parameters_
+
 | Default Parameters             | Default Value (Range)     | Heterogeneous Player Parameters          | Value     |
 |-------------------------------|----------------------------|------------------------------------------|-----------|
 | `server.conf`                 |                            | `player.conf`                           |           |
@@ -176,6 +180,10 @@ model as it is commen, for example, in the MidSize League.
 
 The following table summarizes all Soccer Server parameters that are of
 relevance for omni-directional dashing.
+
+<a id="table2"></a>
+
+_Table 2: Ominidirectional Dash Parameters_
 
 | Default Parameters <br></br>`server.conf`                     | Default Value (Range)     | Heterogeneous Player Parameters <br></br>`player.conf`   | Value |
 |---------------------------------------|----------------------------|--------------------------------|-------|

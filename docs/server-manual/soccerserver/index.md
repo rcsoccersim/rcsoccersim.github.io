@@ -4,6 +4,7 @@ sidebar_position: 4
 
 # Soccer Server
 
+- [Objects](objects.md)
 - [Protocols](protocols.md)
 - [Sensor Models](sensor-models.md)
 - [Movement Models](movement-models.md)

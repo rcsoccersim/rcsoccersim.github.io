@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # Using Soccerserver
 To start the server either type:
 
@@ -48,6 +52,10 @@ to hide team names from opponents. There are two parameters inside server.conf, 
 allow each side's name to be set to a fixed string. If the parameter is empty, the
 real name of the team will be reported to the opponent.
 
+<a id="table1"></a>
+
+_Table 1: Server parameters for Anonymous mode._
+
 | Parameter                | Description                                                  |
 |--------------------------|--------------------------------------------------------------|
 | server::fixed_teamname_l | Fixed name of the left team, which is sent to the right team. |
@@ -68,6 +76,10 @@ real name of the team will be reported to the opponent.
 - \[9.4.3\] CSVSaver
 
 ## The Soccerserver Parameters
+
+<a id="table2"></a>
+
+_Table 2: Parameters adjustable in `server.conf`_
 
 | Name                        | Current Value in `server.conf` | Description                                                                                     |
 |-----------------------------|-------------------------------|-------------------------------------------------------------------------------------------------|
@@ -177,6 +189,9 @@ real name of the team will be reported to the opponent.
 | ball_stuck_area             | 3.0                           | players closer to the ball than this area can be stuck                                           |
 | ball_weight                 | 0.2                           | ball weight                                                                                      |
 
+<a id="table3"></a>
+
+_Table 3: Parameters adjustable in Anonymous mode in `player.conf`_
 
 | Name                            | Current Value in `player.conf` | Description                                                                      |
 |---------------------------------|--------------------------------|----------------------------------------------------------------------------------|
@@ -210,6 +225,10 @@ real name of the team will be reported to the opponent.
 | player_speed_max_delta_max     | 0                              | defines the upper bound of player's maximum speed                                 |
 | player_speed_max_delta_min     | 0                              | defines the lower bound of player's maximum speed                                 |
 | stamina_inc_max_delta_factor    | 0                              |                                                                                  |
+
+<a id="table4"></a>
+
+_Table 4: Parameters adjustable in `CSVSaver.conf`_
 
 | Name     | Current Value in `CSVSaver.conf` | Description                                                                                      |
 |----------|----------------------------------|--------------------------------------------------------------------------------------------------|

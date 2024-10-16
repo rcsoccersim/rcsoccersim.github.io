@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # The Soccer Simulation
 In [Movement Models](movement-models.md), we gave a description on how the objects are moved with respect to their accelerations and velocities. In this section, we describe at what point in time acceleration
 and velocities are applied to the objects during the simulation.
