@@ -97,7 +97,7 @@ $n+1$ acceleration $\vec{a}_{n}$ is applied:
    $\vec{v}_{n}$.
    Both noise and wind are configurable in `server.conf`.
    The responsible parameter for the noise is **server::ball_rand**.
-   Both direction and length of the noise vector are within the interval $[ -|\vec{v}_{n}| \cdot \mathrm{ball\_rand} \ldots |\vec{v}_{n}| \cdot \mathrm{ball\_rand}]`$.
+   Both direction and length of the noise vector are within the interval $[ -|\vec{v}_{n}| \cdot \mathrm{ball\_rand} \ldots |\vec{v}_{n}| \cdot \mathrm{ball\_rand}]$.
    Parameters responsible for the wind are **server::wind_force**,
    **server::wind_dir** and **server::wind_rand**.
 4. The new position of the ball $\vec{p}_{n+1}$ is the old
