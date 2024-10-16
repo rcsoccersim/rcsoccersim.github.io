@@ -18,7 +18,7 @@ information about the available player types.
 The online coaches can change player types unlimited times before the
 first kick off and change player types **player::subs_max** times
 during other non-`play_on` play modes using the `change_player_type`
-command (see [Coach Commands](../coach.md/#commands)
+command (see [Coach Commands](../coach.md#commands))
 
 The online coach can substitute a same player type within
 **player::pt_max** times.
