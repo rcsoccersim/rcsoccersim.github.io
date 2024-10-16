@@ -1,3 +1,7 @@
+---
+sidebar_position: 12
+---
+
 # Attentionto Model
 
 Version 8 and above players can send `attentionto` commands to focus their attention on a particular player.
@@ -13,5 +17,4 @@ and `<UNUM>` is integer identifying a member of the team specified.
 Players can only focus on one player at a time (each attentionto command
 overrides the previous) and cannot focus on themselves.
 
-See []`sec-sensormodels` in detail about the aural sensor.
-<!---Correct this refrence later--->
+See [Section Sensor Model](./../sensor-models.md) in detail about the aural sensor.

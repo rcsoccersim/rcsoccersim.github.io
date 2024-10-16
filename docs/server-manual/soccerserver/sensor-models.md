@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Sensor Models
 A RoboCup agent has three different sensors (and one special sensor).
 The aural sensor detects messages sent by the referee, the coaches and the
@@ -32,7 +36,11 @@ The format of the aural sensor message from the soccer server is:
 - *Message* is the message. The maximum length is **server::say_msg_size** bytes.
   The possible messages from the referee are described in Section [Play Modes and referee messages](referee-model.md).
 
-The server parameters that affects the aural sensor are described in Table.
+The server parameters that affects the aural sensor are described in [Table 1](#table1).
+
+<a id="table1"></a>
+
+_Table 1: Parameters for the aural sensor._
 
 | Parameter in server.conf | Value |
 |--------------------------|-------|
@@ -40,6 +48,7 @@ The server parameters that affects the aural sensor are described in Table.
 | hear_max                 | 1     |
 | hear_inc                 | 1     |
 | hear_decay               | 1     |
+
 
 
 ### Capacity of the Aural Sensor
@@ -71,7 +80,7 @@ the player will hear one message from each team selected randomly from
 the messages available.
 
 The way to focus is using `attentionto` commands.
-See [Attentionto Model](action-models-attentionto-model.md) in detail.
+See [Attentionto Model](./action-models/attentionto-model.md) in detail.
 
 ### Range of Communication
 
@@ -114,7 +123,7 @@ Visual information arrives from the server in the following basic format:
 following way:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq1.png)
+  ![Field Detailed](sensor_model_eq1.png)
 </div>
 
 where $(p_{xt},p_{yt})$ is the absolute position of the target object,
@@ -153,14 +162,16 @@ the center line of the player's view crosses the line, and *Direction* is
 the direction of the line.
 
 Currently there are 55 flags (the goals counts as flags) and 4 lines to be
-seen. All of the flags and lines are shown in cases`field-detailed`.
-<!-- correct the refrence -->
+seen. All of the flags and lines are shown in [Figure 1](#figure1).
 
+<a id="figure1"></a>
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/field-detailed.png)
+  ![Field Detailed](field-detailed.png)
+
+_Figure 1: The flags and lines in the simulation._
+
 </div>
 
-**Figure:** The flags and lines in the simulation.
 
 
 In protocol versions 13+, when a player's team is visible, their tackling and
@@ -213,13 +224,11 @@ The player can also influence the frequency and quality of the information
 by changing *ViewWidth* and *ViewQuality*.
 
 To calculate the current view frequency and view angle of the agent
-use equations []`view-freq` and []`view-angle`.
-
-<!-- Correct this refrence -->
+use the following equations:
 
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq2.png)
+  ![Field Detailed](sensor_model_eq2.png)
 </div>
 
 where view_quality_factor is 1 if *ViewQuality* is `high`
@@ -228,7 +237,7 @@ view_width_factor is 2 if *ViewWidth* is `narrow`,
 1 if *ViewWidth* is `normal`, and 0.5 if *ViewWidth* is `wide`.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq3.png)
+  ![Field Detailed](sensor_model_eq3.png)
 </div>
 
 where view_width_factor is 0.5 if *ViewWidth* is `narrow`,
@@ -242,9 +251,14 @@ but not the exact name of the object.
 Moreover, in this case, the capitalized name, that is "B", "P", "G" and "F",
 is used as the name of the object rather than "b", "p", "g" and "f".
 
+<a id="figure2"></a>
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/view-example.png)
+  ![Field Detailed](view-example.png)
+
+_Figure 2: The visible range of an individual agent in the soccer_
+
 </div>
+
 
 The visible range of an individual agent in the soccer server.
 The viewing agent is the one shown as two semi-circles. The light
@@ -253,16 +267,13 @@ Only objects within **server::view_angle**/2, and those within
 **server::visible_distance** of the viewing agent can be seen.
 **unum_far_length**, **unum_too_far_length**, **team_far_length**, and
 **team_too_far_length** affect the amount of precision
-with which a player's identity is given. Taken from [^cite_stone98].
-
-<!-- Correct figgure text -->
+with which a player's identity is given. Taken from [[stone98](../references.md#stone98)].
 
 
-The following example and cases[]`view-example` are taken from [^cite_stone98].
+The following example and [Figure 2](#figure2) are taken from [[stone98](../references.md#stone98)].
 
-<!-- Correct refrence -->
 
-The meaning of the view_angle parameter is illustrated in cases`view-example`.
+The meaning of the view_angle parameter is illustrated inc[Figure 2](#figure2).
 In this figure, the viewing agent is the one shown as two semi-circles.
 The light semi-circle is its front.
 The black circles represent objects in the world.
@@ -275,7 +286,7 @@ reported as 0 degrees.
 Object *e* would be reported as being roughly $-40^\circ$, while object
 *d* is at roughly $20^\circ$.
 
-Also illustrated in cases`view-example`, the amount of information
+Also illustrated in [Figure 2](#figure2), the amount of information
 describing a player varies with how far away the player is.
 For nearby players, both the team and the uniform number of the player are
 reported.
@@ -300,12 +311,16 @@ Let the player's distance be *dist*. Then
 - If *dist* $\geq$ **team_too_far_length**, then the team name is not
   visible.
 
-For example, in cases`view-example`, assume that all of the labeled circles
+For example, in [Figure 2](#figure2), assume that all of the labeled circles
 are players.
 Then player *c* would be identified by both team name and uniform number;
 player *d* by team name, and with about a 50% chance, uniform number;
 player *e* with about a 25% chance, just by team name, otherwise with neither;
 and player *f* would be identified simply as an anonymous player.
+
+<a id="table2"></a>
+
+_Table 2: Parameters for the visual sensors in server.conf._
 
 | Parameter in `server.conf`          | Value |
 |-------------------------------------|-------|
@@ -315,6 +330,9 @@ and player *f* would be identified simply as an anonymous player.
 | server::quantize_step               | 0.1   |
 | server::quantize_step_l             | 0.01  |
 
+<a id="table3"></a>
+
+_Table 3: Heterogenious parameters for the visual sensors._
 
 | Parameters in player_type           | Value                  |
 |-------------------------------------|------------------------|
@@ -334,16 +352,19 @@ and player *f* would be identified simply as an anonymous player.
 ### Range of View and View Frequency in Synchronous mode
 
 In synchronous mode, the "low" view quality is not available,
-and the view widths in cases[]`setting-synchronousmode-v17` are available.
+and the view widths in [Table4](#table4) the table below are available.
 In all view widths, rcssserver send see messages at
 **server::synch_see_offset** milliseconds from the beginning
 of the cycle.
-<!-- Correct refrence text -->
 
 The amount of information the player can receive changes depending on
 the distance to the target object, the same as in asynchronous mode.
 
 Settings of the synchronous mode
+
+<a id="table4"></a>
+
+_Table 4: Settings of the synchronous mode_
 
 | Mode   | View Width (degree) | See Frequency   |
 |--------|----------------------|-----------------|
@@ -380,7 +401,7 @@ For example, the distance value of the object, in the case where the object
 in sight is a ball or a player, is quantized in the following manner:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq4.png)
+  ![Field Detailed](sensor_model_eq4.png)
 </div>
 
 
@@ -393,7 +414,7 @@ and $d''$ is the result distance value sent to the observer.
 $Quantize(V,Q)$ is as follow:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq5.png)
+  ![Field Detailed](sensor_model_eq5.png)
 </div>
 
 This means that players can not know the exact positions of very far objects.
@@ -404,7 +425,7 @@ noise is less than 1.0.
 In the case of lines, the distance value is quantized in the following manner.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq6.png)
+  ![Field Detailed](sensor_model_eq6.png)
 </div>
 
 ### Visual Sensor Noise Model: Gaussian
@@ -419,7 +440,7 @@ In this model, the noised distance in the player's observation is
 determined by a Gaussian distribution:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/sensor_model_eq7.png)
+  ![Field Detailed](sensor_model_eq7.png)
 </div>
 
 where $d$ is the exact distance from the observer to the object,
@@ -438,9 +459,11 @@ The former two paramters are used for movable object (ball and
 players), and the latter two paramters are used for landmark objects
 (flags and goals).
 In server version 19, all heterogeneous players use same values
-defined in server.conf (cases[]`server-param-gaussian-model`).
-<!-- Correct refrence text -->
+defined in server.conf[(Table 5)](#table5).
 
+<a id="table5"></a>
+
+_Table 5: Server parameters for Gaussian model._
 
 | Parameters in player_type          | Value    |
 |-------------------------------------|----------|
@@ -500,12 +523,14 @@ The format of the body sensor message is:
 The semantics of the parameters are described where they are actually
 used.
 The *ViewQuality* and *ViewWidth* parameters are for example described
-in the Section []`sec-visionsensor`.
-<!-- Correct refrence text -->
+in the Section [Vision Sensor Model](#vision-sensor-model).
 
 The server parameters that affects the body sensor are described in
 the following table:
 
+<a id="table6"></a>
+
+_Table 6: Parameters for the body sensor._
 
 | Parameter in `server.conf`       | Value |
 |----------------------------------|-------|

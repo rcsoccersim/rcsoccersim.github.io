@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Dash Model
 
 The **dash** command is used to accelerate the player in direction of
@@ -8,6 +12,10 @@ The valid range for the acceleration *power* can be configured in
 and **server::max_dash_power**.
 For the current values of parameters for the dash model, see
 the following table:
+
+<a id="table1"></a>
+
+_Table 1: Dash and Stamina Model Parameters_
 
 | Default Parameters             | Default Value (Range)     | Heterogeneous Player Parameters          | Value     |
 |-------------------------------|----------------------------|------------------------------------------|-----------|
@@ -61,7 +69,7 @@ The effort of a player is a value between **effort_min** and **effort_max**;
 it is dependent on the stamina management of the player (see below).
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq1.png)
+  ![Field Detailed](dash_model_eq1.png)
   
 </div>
 
@@ -146,7 +154,7 @@ directions a linear interpolation of the effective power will be applied.
 The following formula explains the maths behind the sideward dash model.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq2.png)
+  ![Field Detailed](dash_model_eq2.png)
   
 </div>
 
@@ -172,6 +180,10 @@ model as it is commen, for example, in the MidSize League.
 
 The following table summarizes all Soccer Server parameters that are of
 relevance for omni-directional dashing.
+
+<a id="table2"></a>
+
+_Table 2: Ominidirectional Dash Parameters_
 
 | Default Parameters <br></br>`server.conf`                     | Default Value (Range)     | Heterogeneous Player Parameters <br></br>`player.conf`   | Value |
 |---------------------------------------|----------------------------|--------------------------------|-------|
@@ -215,12 +227,10 @@ Next, the current player velocity $v_t$ and the provisional velocities $\hat{v}_
 for each leg are obtained from the provisional accelerations.
 The provisional velocity $\hat{v}^{t+1}$ for the player's body is then determined by the average of $\hat{v}_L$ and $\hat{v}_R$.
 The player's body acceleration $a^t$ is reverse-calculated from the difference between $\hat{v}^{t+1}$ and $v^t$.
-Noise is added according to the update formula in section [], and the velocity for the next step, $v{t+1}$, is updated.
-
-<!---Correct this refrence later--->
+Noise is added according to the update formula in section [Movement Model](./../movement-models.md), and the velocity for the next step, $v{t+1}$, is updated.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq3.png)
+  ![Field Detailed](dash_model_eq3.png)
   
 </div>
 
@@ -233,7 +243,7 @@ the player rotates based on that speed difference.
 The rotation dash_model_equation is identical to the differential drive kinematics.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/dash_model_eq4.png)
+  ![Field Detailed](dash_model_eq4.png)
   
 </div>
 

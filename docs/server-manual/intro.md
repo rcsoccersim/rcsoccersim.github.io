@@ -3,9 +3,9 @@ sidebar_position: 1
 ---
 # Introduction
 
-We are in the early days of RoboCup [^cite_kitano95ijcai], with half a
+We are in the early days of RoboCup [[kitano95ijcai](references.md#kitano95ijcai)], with half a
 century to go before we can "...build a team of robot soccer players,
-which can beat a human world cup champion team" [^cite_robocup97].
+which can beat a human world cup champion team" [[robocup97](references.md#robocup97)].
 The challenge posed by the goal is enormous and inspires hundreds of
 researchers yearly throughout the world to engage themselves and their
 students in RoboCup.
@@ -23,7 +23,7 @@ reference manual for the experienced users.
 
 ## Background
 
-Mackworth [^cite_mackworth93] introduced the idea of using soccer-playing
+Mackworth [[mackworth93](references.md#mackworth93)] introduced the idea of using soccer-playing
 robots in research. Unfortunately, the idea did not get the proper
 response until the idea was further developed and adapted by Kitano,
 Asada, and Kuniyoshi, when proposing a Japanese research programme,
@@ -33,7 +33,7 @@ thereafter changed name to the Robot World Cup Initiative or RoboCup
 for short. RoboCup is sometimes referred to as the RoboCup challenge
 or the RoboCup domain.
 
-In 1995, Kitano et al. [^cite_kitano95ijcai] proposed the first Robot World
+In 1995, Kitano et al. [[kitano95ijcai](references.md#kitano95ijcai)] proposed the first Robot World
 Cup Soccer Games and Conferences to take place in 1997. The aim of
 RoboCup was to present a new standard problem for AI and robotics,
 somewhat jokingly described as the life of AI after Deep Blue [^f3]
@@ -71,10 +71,10 @@ following:
 There will be several technological advancements, even if the goal of
 the robotic soccer team is not reached, starting with
 Team-Partitioned, Opaque-Transition Reinforcement Learning (TPOT-RL)
-[^cite_stone98] which has found application in the domain of packet routing in
+[[stone98](references.md#stone98)] which has found application in the domain of packet routing in
 computer networks. TPOT-RL is a distributed learning method in domains
 where “agents have limited information about environmental state
-transitions” ([^cite_stone98], p. 22).
+transitions” ([[stone98](references.md#stone98)], p. 22).
 
 In most RoboCup leagues, the teams consist of either robots or
 programs that cooperate in order to defeat the opponent team. RoboCup
@@ -93,7 +93,7 @@ only focus on it.
 ### Simulated League
 
 The RoboCup simulator league is based on the RoboCup simulator called
-the soccer server [^cite_noda97robocup97], a physical soccer simulation system.
+the soccer server [[noda97robocup97](references.md#noda97robocup97)], a physical soccer simulation system.
 All games are visualised by displaying the field of the simulator by the
 soccer monitor on a computer screen. The soccer server is written to support
 competition among multiple virtual soccer players in an uncertain
@@ -118,17 +118,17 @@ use loopholes.
 Since the first version of the soccer server was completed in 1995,
 there have been four world cups and one pre-world cup event, not to
 mention all other RoboCup-related events. The 1996 pre-RoboCup event
-[^cite_prerobocup96] was held in Osaka, with only seven entrants in the
+[[prerobocup96](references.md#prerobocup96)] was held in Osaka, with only seven entrants in the
 competition which ended with a Japanese victory by the team Ogalets from
 Tokyo University. In Nagoya the following year, the first formal competition
 was held in conjunction with the IJCAI’97 conference. The competition
-had 29 teams participating, and the winner was AT Humboldt [^cite_burkhard97].
+had 29 teams participating, and the winner was AT Humboldt [[burkhard97](references.md#burkhard97)].
 The RoboCup world cup of 1998 was played in conjunction with the human
-world cup in Paris, and the winning team was CMUnited98 [^cite_cmunited98].
+world cup in Paris, and the winning team was CMUnited98 [[cmunited98](references.md#cmunited98)].
 During the world cup, media was heavily covering the event, as it was public
 in a museum in the suburbs of Paris. The year after, the world cup was
 held in conjunction with IJCAI’99 in Stockholm, and the winners (once
-again) were CMUnited99 [^cite_cmunited99]. An unchanged version of the champion
+again) were CMUnited99 [[cmunited99](references.md#cmunited99)]. An unchanged version of the champion
 team must participate, as a benchmark, in the next world cup. The
 benchmarking teams have always been able to win their group, but only
 in 2000 did the benchmark team advance further than the first game
@@ -165,11 +165,11 @@ control-commands to the server.
 Each client can control only one player 56 . So a team consists of the
 same number of clients as players. Communications between the clients
 must be done via soccerserver using say and hear protocols. (See
-section ref`sec-playercommandprotocol`.) One of the purposes of soccerserver
+section [Player Command Protocol](soccerserver/protocols.md#Player-Command-Protocol).) One of the purposes of soccerserver
 is evaluation of multi-agent systems, in which efficiency of communication between
 agents is one of the criteria. Users must realize control of multiple
 clients by such restricted communication.
-//TODO fix ref`sec-playercommandprotocol`
+
 ## History
 
 In this section we will first describe the history of the soccerserver
@@ -497,11 +497,10 @@ help the newcomer to get to terms with the different parts.
 
 ______________________________________________________________________
 
-[^f1]: Parts of this chapter is taken directly from [^cite_kummeneje01phl]
+[^f1]: Parts of this chapter is taken directly from [[kummeneje01phl](references.md#kummeneje01phl)]
 
 [^f2]: The J-League is the professional soccer league in Japan.
 
 [^f3]: In reference to Deep Blue and its games with Kasparov, see [http://www.chess.ibm.com](http://www.chess.ibm.com).
 
 // TODO footnote
-// TODO check citations

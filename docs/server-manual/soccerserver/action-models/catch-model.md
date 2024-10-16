@@ -1,12 +1,13 @@
+---
+sidebar_position: 1
+---
+
 # Catch Model
 
-
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/catcharea.png)
-  
-  Catchable area of the goalie when doing a (catch 45)
+  ![Field Detailed](catcharea.png)
+  #### Catchable area of the goalie when doing a (catch 45)
 </div>
-
 
 The goalie is the only player with the ability to catch a ball. The
 goalie can catch the ball in play mode `play_on` in any direction,
@@ -14,12 +15,13 @@ if the ball is within the catchable area and the goalie is inside the
 penalty area.  If the goalie catches into direction $\varphi$,
 the catchable area is a rectangular area of length
 **server::catchable_area_l** and width **server::catchable_area_w** in
-direction $\varphi$ (see []`catcharea`).<!----correct this refrence---->
+direction $\varphi$ see fig [Catchable area of the goalie when doing a (catch 45)](#catchable-area-of-the-goalie-when-doing-a-catch-45).
 The ball will be caught with probability
 **server::catch_probability**, if it is inside this area (and it will
 not be caught if it is outside this area).
-For the current values of catch command parameters see cases []`param-goaliecatch`:<!----correct this refrence---->
+For the current values of catch command parameters see [table](#parameters-for-the-goalie-catch-command).
 
+#### Parameters for the goalie catch command
 | Parameter in `server.conf` and `player.conf`       | Value      |
 |-----------------------------------------------------|------------|
 | server::catchable_area_l                             | 2.0       |
@@ -29,7 +31,6 @@ For the current values of catch command parameters see cases []`param-goaliecatc
 | server::goalie_max_moves                             | 2          |
 | player::catchable_area_l_stretch_max                | 1.3        |
 | player::catchable_area_l_stretch_min                | 1          |
-
 
 First time when goalie has been introduced in Soccer Simulation 2D was with server
 version 4.0.0:

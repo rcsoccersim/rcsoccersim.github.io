@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Tackle Model
 
 The tackle command is to accelerate the ball towards the player's
@@ -10,19 +14,19 @@ position of the ball. It can be obtained by the following formula.
 The probability of a tackle failure when the ball is in front of the player is:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq1.png)
+  ![Field Detailed](tackle_model_eq1.png)
 </div>
 
 The probability of a tackle failure when the ball is behind the player is:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq2.png)
+  ![Field Detailed](tackle_model_eq2.png)
 </div>
 
 The probability of processing success is:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq3.png)
+  ![Field Detailed](tackle_model_eq3.png)
 </div>
 
 In this case, when the ball is in front of the player, it is used to *tackle_dist* (default is 2.0), otherwise it is used to **tackle_back_dist** (default is 0.5); **player_to_ball** is a vector from the player to the ball, relative to the body direction of the player. When the tackle command is successful, it will give the ball an acceleration in its own body direction.
@@ -30,7 +34,7 @@ In this case, when the ball is in front of the player, it is used to *tackle_dis
 The execution effect of tackle is similar to that of kick, which is obtained by multiplying the parameter **tackle_power_rate** (default is 0.027) with power. It can be expressed by the following formula:
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/tackle_model_eq4.png)
+  ![Field Detailed](tackle_model_eq4.png)
 </div>
 
 Once the player executes the tackle command, whether successful or not, the player can no longer move within 10 cycles. The following table shows the parameters used in tackle command.

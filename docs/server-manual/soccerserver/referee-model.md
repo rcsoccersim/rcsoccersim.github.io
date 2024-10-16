@@ -1,11 +1,14 @@
+---
+sidebar_position: 7
+---
+
 # Referee Model
 The Automated Referee sends messages to the players, so that players know the actual
 play mode of the game. The rules and the behavior for the automated referee are
-described in Sec. []`sec-overview-referee`.<!-- Correct refrence text -->
+described in Sec. [Kick-Off](../overview.md#kick-off).
 Players receive the referee messages as hear messages.
 A player can hear referee messages in every situation independent of
 the number of messages the player heard from other players.
-<!-- Correct refrence text -->
 
 ## Play Modes and referee messages
 
@@ -14,10 +17,12 @@ referee messages announcing events like a goal or a foul. If you have a look int
 server source code, you will notice some additional play modes that are currently not
 used. Both play modes and referee messages are announced using (referee String ),
 where String is the respective play mode or message string. The play modes are listed
-in cases[]`tab-playmode`, for the messages see cases[]`tab-refereemessages`.
+in [Table 1](#table1), for the messages see [Table 2](#table2).
 
-<!-- Correct refrence text -->
 
+<a id="table1"></a>
+
+_Table 1: Play Mode ._
 | Play Mode                    | tc   | Subsequent Play Mode     | Comment                                                                 |
 |------------------------------|------|--------------------------|-------------------------------------------------------------------------|
 | before_kick_off              | 0    | kick_off_\*Side*         | at the beginning of a half                                              |
@@ -53,6 +58,10 @@ in cases[]`tab-playmode`, for the messages see cases[]`tab-refereemessages`.
 
 where Side is either the character *l* or *r*, OSide means opponent’s side.
 tc is the time (in number of cycles) until the subsequent play mode will be announced
+
+<a id="table2"></a>
+
+_Table 2: Referee Messages ._
 
 | Message                   | tc   | Subsequent Play Mode     | Comment                                               |
 |---------------------------|------|--------------------------|-------------------------------------------------------|
@@ -109,7 +118,7 @@ offside_kick_margin = 9.15
 This parameter determines the radius of area that every player in the team which has done offside foul must stay out when the other team wants to free-kick. If there is a player in that area, server moves them out of that.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/offside-example.jpg)
+  ![Field Detailed](offside-example.jpg)
 </div>
 
 
@@ -198,21 +207,21 @@ complies with FIFA regulations. For a goal to be scored the ball
 must be totally within the goal - i.e.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/refree_model_eq1.png)
+  ![Field Detailed](refree_model_eq1.png)
 </div>
 
 Similarly the ball must be completely out of the pitch before it is
 considered out - i.e
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/refree_model_eq2.png)
+  ![Field Detailed](refree_model_eq2.png)
 </div>
 
 Lastly the ball is within the penalty area (and thus catchable) if
 the ball is at least partially within the penalty area - i.e.
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/refree_model_eq3.png)
+  ![Field Detailed](refree_model_eq3.png)
 </div>
 
 ## Catch Referee

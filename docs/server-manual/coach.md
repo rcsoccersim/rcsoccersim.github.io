@@ -1306,7 +1306,7 @@ Server Interactions with Trainer/Coach
     |                                        ||      (:math:`OBJ_1` :math:`OBJDESC_1` )               |
     |                                        ||      (:math:`OBJ_2` :math:`OBJDESC_2` )..)            |
     |                                        ||   :math:`OBJ_j` ::= object name                       |
-    |                                        ||              (see Section :ref:`sec-sensormodels`)    |
+    |                                        ||              (see Section Sensor Model)    |
     |                                        ||          :math:`OBJDESC_j` ::= X Y |                  |
     |                                        ||       X Y :math:`DELTA_x` :math:`DELTA_y`\|           |
     |                                        ||       X Y :math:`DELTA_x` :math:`DELTA_y`             |

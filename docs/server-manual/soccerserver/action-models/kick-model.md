@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Kick Model
 
 The *kick* command takes two parameters, the kick power the player
@@ -5,8 +9,8 @@ client wants to use (between **server::minpower** and
 **server::maxpower**) and the angle the player kicks the ball to.
 The angle is given in degrees and has to be between
 **server::minmoment** and **server::maxmoment**
-(see cases[]`param-kick` for current parameter values).
-<!---Correct this refrence later--->
+(see this [table](#ball-and-kick-model-parameters) for current parameter values).
+
 
 Once the *kick* command arrived at the server, the kick will be
 executed if the ball is kick-able for the player and the player is not
@@ -25,7 +29,7 @@ The first thing to be calculated for the kick is the effective kick power ep:
 
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq1.png)
+  ![Field Detailed](kick_model_eq1.png)
   
 </div>
 
@@ -55,14 +59,13 @@ kick power will be reduced by 25% of the original kick power.
 
 The overall worst case for kicking the ball is if a player kicks a
 distant ball behind itself: 50% of kick power will be used.
-For the effective kick power, we get the formula [].<!---Correct this refrence later--->
+For the effective kick power, we get the following formula:
 (dir diff means the absolute direction difference between ball and the player’s body
 direction, dist diff means the absolute distance between ball and
 player.)
-<!---Correct this refrence later--->
 
 <div align="center">
-  ![Field Detailed](./../../../static/img/server-manual/kick_model_eq2.png)
+  ![Field Detailed](kick_model_eq2.png)
 </div>
 
 
@@ -119,6 +122,8 @@ position within the kickable area and kick it to the desired direction.
 It would be another possibility to accelerate the ball to maximum speed
 without putting it to relative position (0,0\{textdegree}) using a
 compound kick.
+
+#### Ball and Kick Model Parameters
 
 | Default Parameters             | Default Value (Range)     | Heterogeneous Player Parameters          | Value     |
 |-------------------------------|----------------------------|------------------------------------------|-----------|
