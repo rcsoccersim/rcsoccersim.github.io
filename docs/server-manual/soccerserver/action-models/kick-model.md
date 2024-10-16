@@ -69,7 +69,7 @@ player.)
 </div>
 
 
-The effective kick power is used to calculate $\vec{a}_{{n}_{i}}$,
+The effective kick power is used to calculate $\vec{a}_{n_{i}}$,
 an acceleration vector that will be added to the global ball
 acceleration $\vec{a}_{n}$ during cycle $n$ (remember that
 we have a multi agent system and *each* player close to the ball can
