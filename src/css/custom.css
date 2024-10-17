@@ -36,3 +36,39 @@
 .katex {
   font-size: 1.2em; 
 }
+
+.homeMainSection {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .homeMainSection {
+    flex-direction: column;
+  }
+}
+
+.newsContainer {
+  margin: 10;
+  padding: 1rem 0.5rem;
+}
+
+.rowNews{
+  color: white;
+}
+
+.newsHeader {
+  color: #33925d;
+}
+
+
+.newsLink {
+  color: black;
+}
+
+[data-theme='dark']
+.newsLink {
+  color: white;
+}
+
+

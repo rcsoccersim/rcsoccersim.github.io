@@ -1,5 +1,5 @@
 ---
-slug: HowToParticipate
+slug: 2024/HowToParticipate
 title: How to participate in RoboCup Soccer Simulation 2D League?
 tags: [robocup,soccersimulation]
 authors: [naderec]

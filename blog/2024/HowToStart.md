@@ -1,5 +1,5 @@
 ---
-slug: HowToStart
+slug: 2024/HowToStart
 title: How to start with RoboCup Soccer Simulation 2D League?
 tags: [robocup,soccersimulation]
 authors: [naderec]
