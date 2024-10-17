@@ -1,5 +1,4 @@
 ---
-slug: 2024/SS2D
 title: What is Soccer Simulation 2D?
 tags: [robocup,soccersimulation]
 authors: [naderec]

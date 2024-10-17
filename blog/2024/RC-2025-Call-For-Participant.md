@@ -1,5 +1,4 @@
 ---
-slug: 2024/RC-2025-Call-For-Participant
 title: RC 2025 Call For Participant
 tags: [robocup,robocup2025]
 authors: [naderec]
