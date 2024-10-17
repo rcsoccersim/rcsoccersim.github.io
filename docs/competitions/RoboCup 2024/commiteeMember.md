@@ -7,7 +7,7 @@
 
 ## Technical Committee
 
-- Arad Firouzkouhi
+- Alireza Sadraii
 - Hidehisa Akiyama
 
 ## Organization Committee

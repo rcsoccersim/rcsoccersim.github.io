@@ -13,12 +13,16 @@ module.exports = function () {
       const posts = filePaths.map((relativePath) => {
         const fullPath = path.join(blogDir, relativePath);
         const content = fs.readFileSync(fullPath, 'utf-8');
+        const date = new Date(fs.statSync(fullPath).mtime);
         const { data } = matter(content);
-
         return {
           title: data.title,
-          date: data.date,
-          permalink: `/blog/${relativePath.replace(/\.(md|mdx)$/, '')}`,
+          fileLink: `/blog/${relativePath.replace(/\.(md|mdx)$/, '')}`,
+          description: data.description, // Add description
+          date: date,               // Add date
+          author: data.author,           // Add author
+          tags: data.tags || [],         // Add tags
+          permalink: `/blog/${data.slug || relativePath.replace(/\.(md|mdx)$/, '')}`, // Add slug
         };
       });
 

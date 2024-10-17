@@ -45,6 +45,8 @@ const config: Config = {
           rehypePlugins: [rehypeKatex],
         },
         blog: {
+          blogSidebarTitle: 'All our posts',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],

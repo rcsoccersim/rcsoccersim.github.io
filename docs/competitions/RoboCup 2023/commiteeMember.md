@@ -7,8 +7,8 @@
 
 ## Technical Committee
 
+- Alireza Sadraii
 - Aref Sayareh
-- ????
 
 ## Organization Committee
 

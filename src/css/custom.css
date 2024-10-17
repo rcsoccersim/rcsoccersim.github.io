@@ -59,16 +59,40 @@
 
 .newsHeader {
   color: #33925d;
+  padding-left: 40px; /* Create space for the custom bullet */
 }
-
 
 .newsLink {
   color: black;
 }
 
-[data-theme='dark']
-.newsLink {
+[data-theme='dark'] .newsLink {
   color: white;
 }
 
 
+.listItem {
+  color: black;
+  list-style-type: none; /* Remove the default bullet */
+  position: relative;
+  padding-left: 20px; /* Create space for the custom bullet */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+  max-width: 250px; /* Set a max width for the list item */
+}
+
+[data-theme='dark'] .listItem {
+  color: white;
+}
+
+.listItem::before {
+  content: "-"; /* Unicode for '>' */
+  color: black;
+  position: absolute;
+  left: 0;
+}
+
+[data-theme='dark'] .listItem::before {
+  color: white;
+}
