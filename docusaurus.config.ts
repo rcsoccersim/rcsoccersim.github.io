@@ -118,7 +118,7 @@ const config: Config = {
           items: [
             {
               label: 'Server Manual',
-              to: '/docs/server-manual/intro',
+              to: 'https://rcsoccersim.readthedocs.io/en/latest/',
             },
           ],
         },
