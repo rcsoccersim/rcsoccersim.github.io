@@ -9,26 +9,26 @@
 @import 'katex/dist/katex.min.css';
 
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #2e5585;
+  --ifm-color-primary-dark: #294c78;
+  --ifm-color-primary-darker: #274871;
+  --ifm-color-primary-darkest: #203b5d;
+  --ifm-color-primary-light: #335d92;
+  --ifm-color-primary-lighter: #356299;
+  --ifm-color-primary-lightest: #3c6ead;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #25a0c2;
+  --ifm-color-primary-dark: #2190af;
+  --ifm-color-primary-darker: #1f88a5;
+  --ifm-color-primary-darkest: #1a7088;
+  --ifm-color-primary-light: #29b0d5;
+  --ifm-color-primary-lighter: #32b4d8;
+  --ifm-color-primary-lightest: #4fbfdd;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -58,7 +58,7 @@
 }
 
 .newsHeader {
-  color: #33925d;
+  color: #335d92;
   padding-left: 40px; /* Create space for the custom bullet */
 }
 
