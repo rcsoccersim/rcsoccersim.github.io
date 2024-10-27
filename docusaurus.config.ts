@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'RoboCup Soccer Simulation 2D',
   tagline: '',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo2d2.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -75,7 +75,7 @@ const config: Config = {
       title: 'Soccer Simulation',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo2d2.png',
       },
       items: [
         {
