@@ -1,8 +1,8 @@
 ---
-title: RoboCup2022 Team Description Papers
+title: RoboCup2022
 ---
 
-[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/robocup2022/TDP)
+[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2022/TDP)
 
 
 - [Alice2022](./TDP_Alice2022.pdf)

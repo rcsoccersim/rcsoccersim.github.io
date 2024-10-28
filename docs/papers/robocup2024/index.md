@@ -1,8 +1,8 @@
 ---
-title: RoboCup2024 Team Description Papers
+title: RoboCup2024
 ---
 
-[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/robocup2024/TDP)
+[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2024/TDP)
 
 - [AEteam](./TDP_AEteam.pdf)
 - [CYRUS2024](./TDP_CYRUS2024.pdf)
