@@ -79,10 +79,47 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'serverManual',
+          type: 'dropdown',
+          to: 'docs/server-manual/intro',
           position: 'left',
           label: 'Server Manual',
+          items: [
+            {
+              type: 'doc',
+              docId: 'server-manual/intro',
+              label: 'Introduction',
+            },
+            {
+              type: 'doc',
+              docId: 'server-manual/overview',
+              label: 'Overview',
+            },
+            {
+              type: 'doc',
+              docId: 'server-manual/gettingstarted',
+              label: 'Getting Started',
+            },
+            {
+              type: 'doc',
+              docId: 'server-manual/soccerserver/index',
+              label: 'Soccer Server',
+            },
+            {
+              type: 'doc',
+              docId: 'server-manual/soccermonitor',
+              label: 'Soccer Monitor',
+            },
+            {
+              type: 'doc',
+              docId: 'server-manual/soccerclient',
+              label: 'Soccer Client',
+            },
+            {
+              type: 'doc',
+              docId: 'server-manual/coach',
+              label: 'Coach',
+            }
+          ],
         },
         {
           type: 'docSidebar',

@@ -15,9 +15,9 @@
 
 ### [TeamName](/tdps/[New DIR]/TDP_TeamName.pdf)
 
-- TDP title
-- TDP authors
-- TDP abstract
+- 📄 **Title**: TDP title
+- ✍️ **Authors**: TDP authors
+- 📜 **Abstract**: TDP abstract
 
 ### [TeamName](/tdps/[New DIR]/TDP_TeamName.pdf)
 
