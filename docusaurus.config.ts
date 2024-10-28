@@ -10,15 +10,15 @@ const config: Config = {
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://rcsoccersim.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'robocup', // Usually your GitHub org/user name.
+  projectName: 'soccer simulation 2d', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -97,11 +97,6 @@ const config: Config = {
           label: 'Papers',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://rcsoccersim.readthedocs.io/en/latest/',
-          position: 'left',
-          label: 'Server Manual',
-        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
