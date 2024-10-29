@@ -138,11 +138,7 @@ const config: Config = {
           items: [
             {
               label: 'RoboCup',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-            {
-              label: 'Blog',
-              to: '/blog',
+              href: 'https://robocup.org/',
             },
             {
               label: 'GitHub',
@@ -151,6 +147,14 @@ const config: Config = {
             {
               label: 'Log & Binary Archive',
               href: 'https://archive.robocup.info/Soccer/Simulation/2D/',
+            },
+            {
+              label: 'RoboCup Soccer Simulator Server',
+              href: 'https://github.com/rcsoccersim/rcssserver/releases'
+            },
+            {
+              label: 'RoboCup Soccer Simulator Monitor',
+              href: 'https://github.com/rcsoccersim/rcssmonitor/releases'
             }
           ],
         },
