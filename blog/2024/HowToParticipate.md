@@ -2,13 +2,16 @@
 title: How to Participate in the RoboCup Soccer Simulation 2D League?
 tags: [robocup,soccersimulation]
 authors: [nader-zare-ec]
+homepage: true
+img: ss2d.png
+shortTitle: How to Participate?
 ---
 
 Joining the RoboCup Soccer Simulation 2D League requires developing a competitive AI-driven soccer team and submitting a Team Description Paper (TDP) to the league committee.
 
 <!-- truncate -->
 
-![Soccer Simulation 2D](./ss2d.png)
+![Soccer Simulation 2D](../../static/img/blog/ss2d.png)
 
 The RoboCup Soccer Simulation 2D League is a global competition within RoboCup that focuses on simulating soccer matches in a 2D environment, showcasing advancements in artificial intelligence and robotics. Each year, teams from across the world participate, presenting their research and innovations.
 

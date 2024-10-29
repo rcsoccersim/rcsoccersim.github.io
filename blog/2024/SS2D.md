@@ -1,13 +1,16 @@
 ---
 title: About the RoboCup Soccer Simulator?
 tags: [robocup,soccersimulation]
+homepage: true
+img: ss2d.png
+shortTitle: About the Simulator?
 ---
 
 The RoboCup Soccer Simulator is a research and educational tool for multiagent systems and artificial intelligence. It enables for two teams of 11 simulated autonomous robotic players to play soccer (football).
 
 <!-- truncate -->
 
-![Soccer Simulation 2D](./ss2d.png)
+![Soccer Simulation 2D](../../static/img/blog/ss2d.png)
 
 Without the neccessity to maintain any robot hardware, the RoboCup Simulation League’s focus comprises artificial intelligence and team strategy.
 

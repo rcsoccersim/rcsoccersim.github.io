@@ -28,3 +28,31 @@ Abstract of the blog goes here.
 
 Content of the blog goes here.
 ```
+
+To add the blog into the homepage, you need to do the following:
+
+- set the `homepage` field to `true` in the front matter of the markdown file.
+- set the `img` field to the image file name in the `static/img/blog/` directory.
+- set the `shortTitle` field to the short title of the blog.
+- set the `description` field to the description of the blog.
+
+For example, to add a blog for the year 2024, create a new markdown file in the `blog/2024/` directory.
+
+To add the blog into the homepage, add the following front matter to the markdown file:
+
+```markdown
+---
+title: How to add blogs?
+tags: [robocup,soccersimulation]
+authors: [nader-zare-ec]
+homepage: true
+img: howtoaddblogs.png
+shortTitle: How to add blogs?
+description: Learn how to add blogs to the RoboCup Soccer Simulation 2D League website.
+---
+Abstract of the blog goes here.
+
+<!-- truncate -->
+
+Content of the blog goes here.
+```
