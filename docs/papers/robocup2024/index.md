@@ -6,9 +6,9 @@ title: RoboCup 2024
 
 ### [YuShan2024](./TDP_YuShan2024.pdf)
 
-- YuShan2024 Team Description Paper for RoboCup2024
-- Zekai Cheng, Liang Zhang, Dabo Dan, Huiyu Xiong, Haiyang Qin
-- This team description paper describes the direction and methods of team optimization
+- 📄 **Title**: YuShan2024 Team Description Paper for RoboCup2024
+- ✍️ **Authors**:  Zekai Cheng, Liang Zhang, Dabo Dan, Huiyu Xiong, Haiyang Qin
+- 📜 **Abstract**: This team description paper describes the direction and methods of team optimization
 over the past year at YuShan2024. There are two main parts of the work, which are the analysis and
 optimization of the shooting module and the analysis of physical strength and running distance. In
 a lot of tests in the past, we found that the team has the situation that even though the player is in
@@ -23,9 +23,9 @@ of the team's stamina maintenanc.
 
 ### [AEteam](./TDP_AEteam.pdf)
 
-- AEteam Soccer Simulation 2D Team Description Paper 2024
-- Erfan Fathi , Soroush Mazloom , Parham Keyhani , Amir hosein Nikfetrat and Vahid khodabakhshi
-- This team description paper presents an overview of previous work
+- 📄 **Title**: AEteam Soccer Simulation 2D Team Description Paper 2024
+- ✍️ **Authors**: Erfan Fathi , Soroush Mazloom , Parham Keyhani , Amir hosein Nikfetrat and Vahid khodabakhshi
+- 📜 **Abstract**: This team description paper presents an overview of previous work
 and recent research topics of Team AEteam. In this article, we aim to enhance
 our understanding and improve the efficiency of offensive players escaping by
 exploring and expanding our knowledge on the subject. To achieve this, we em-
@@ -34,9 +34,9 @@ trend of players’ attacks.
 
 ### [CYRUS2024](./TDP_CYRUS2024.pdf)
 
-- Observation Denoising in CYRUS Soccer Simulation 2D Team For RoboCup 2024
-- Nader Zare, Aref Sayareh, Sadra Khanjari, and Arad Firouzkouhi
-- In the Soccer Simulation 2D environment, accurate observa-
+- 📄 **Title**: Observation Denoising in CYRUS Soccer Simulation 2D Team For RoboCup 2024
+- ✍️ **Authors**: Nader Zare, Aref Sayareh, Sadra Khanjari, and Arad Firouzkouhi
+- 📜 **Abstract**: In the Soccer Simulation 2D environment, accurate observa-
 tion is crucial for effective decision-making. However, challenges such as
 partial observation and noisy data can hinder performance. To address
 these issues, we propose a denoising algorithm that leverages predictive
@@ -50,9 +50,9 @@ base codes.
 
 ### [HELIOS2024](./TDP_HELIOS2024.pdf)
 
-- HELIOS2024: Team Description Paper
-- Hidehisa Akiyama, Tomoharu Nakashima, Kyo Hatakeyama, Takumi Fujikawa, and Akei Hishiki
-- This team description paper presents an overview of previous
+- 📄 **Title**: HELIOS2024: Team Description Paper
+- ✍️ **Authors**: Hidehisa Akiyama, Tomoharu Nakashima, Kyo Hatakeyama, Takumi Fujikawa, and Akei Hishiki
+- 📜 **Abstract**: This team description paper presents an overview of previous
 work and recent research topics of Team HELIOS2024. This year, we en-
 hanced the online opponent formation identification, which our team had
 previously implemented. The primary contribution involves accelerating
@@ -62,12 +62,11 @@ nent identification.
 
 ### [Mars](./TDP_Mars.pdf)
 
-- MARS Soccer Simulation 2D Team Description
-Paper 2024
-- Mehdi torshani , Mohammad Maziani , Mohammad Ghasemi , Mohammad
+- 📄 **Title**: MARS Soccer Simulation 2D Team Description Paper 2024
+- ✍️ **Authors**: Mehdi torshani , Mohammad Maziani , Mohammad Ghasemi , Mohammad
 Bonakdar Tehrani , Fakhteh Hosseinkhani , Mahdieh GhasemPour , Afsaneh Imani ,
 Zahra Samadi ,and Mercedeh Ghasemi
-- Report examines the records and performance of the Mars team in the
+- 📜 **Abstract**: Report examines the records and performance of the Mars team in the
 two-dimensional football simulation game.The Mars team began its activities in
 robotics in 2006. This team has developed various algorithms in the ation league
 using the Agent2D base code. In this report, we will discuss part of this team's
@@ -77,9 +76,9 @@ player using the highest probability and the best training data.
 
 ### [Oxsy](./TDP_Oxsy.pdf)
 
-- OXSY 2024 Team Description
-- Sebastian Marian, Dorin Luca, Radu Sacuiu, Bogdan Sarac, Ovidiu Cotarlea
-- Oxsy team has been founded in July 2002 as a graduation project of
+- 📄 **Title**: OXSY 2024 Team Description
+- ✍️ **Authors**: Sebastian Marian, Dorin Luca, Radu Sacuiu, Bogdan Sarac, Ovidiu Cotarlea
+- 📜 **Abstract**: Oxsy team has been founded in July 2002 as a graduation project of
 one student, Sebastian Marian, in the field of Multi-Agent Systems [1] Lucian
 Blaga University (Sibiu - Romania). After graduation he continued the work on
 this project and eventually Oxsy team was born. As we started from scratch [2]
@@ -91,12 +90,12 @@ RoboCup [3] Soccer Simulation League.
 
 ### [RobôCIn](./TDP_RobôCIn.pdf)
 
-- RobˆoCIn Soccer Simulation 2D
+- 📄 **Title**: RobˆoCIn Soccer Simulation 2D
 Team Description Paper for RoboCup 2024
-- Bonna Borsoi, Felipe Pereira, Gabriel Souza, Heitor Souza, Jeferson Ara ́ujo,
+- ✍️ **Authors**: Bonna Borsoi, Felipe Pereira, Gabriel Souza, Heitor Souza, Jeferson Ara ́ujo,
 Maria L. Silva, Mariana Coelho, Mateus Machado, Mateus Soares, Pedro V.
 Cunha, Rafael Labio, Walber M. Rodrigues, and Edna Barros
-- RobˆoCIn Soccer Simulation 2D team, based at the Universi-
+- 📜 **Abstract**: RobˆoCIn Soccer Simulation 2D team, based at the Universi-
 dade Federal de Pernambuco, was founded in 2018. In our debut compe-
 tition at the Latin American Robotics Competition (LARC) in Jo ̃ao Pes-
 soa, Para ́ıba, Brazil, we secured fourth place against other Latin Amer-
@@ -109,9 +108,9 @@ evaluator.
 
 ### [FRA-UNIted2024](./TDP_FRA-UNIted2024.pdf)
 
-- FRA-UNIted — Team Description 2024
-- Thomas Gabel, Berkan Eren, Eicke Godehardt
-- The main focus of FRA-UNIted’s effort in the RoboCup soc-
+- 📄 **Title**: FRA-UNIted — Team Description 2024
+- ✍️ **Authors**: Thomas Gabel, Berkan Eren, Eicke Godehardt
+- 📜 **Abstract**: The main focus of FRA-UNIted’s effort in the RoboCup soc-
 cer simulation 2D domain is to develop and to apply machine learning
 techniques in complex domains. In particular, we are interested in ap-
 plying reinforcement learning methods, where the training signal is only
@@ -121,11 +120,11 @@ support and team performance analyses.
 
 ### [ITAndroids](./TDP_ITAndroids.pdf)
 
-- ITAndroids 2D Soccer Simulation
+- 📄 **Title**: ITAndroids 2D Soccer Simulation
 Team Description Paper 2024
-- Davi M. Vasconcelos, Luiz F. B. Ramos, Marcos R. O. A. Maximo, Nean
+- ✍️ **Authors**: Davi M. Vasconcelos, Luiz F. B. Ramos, Marcos R. O. A. Maximo, Nean
 Segura, and Vinícius F. Almeida
-- The ITAndroids 2D Soccer Simulation team is composed of
+- 📜 **Abstract**: The ITAndroids 2D Soccer Simulation team is composed of
 undergraduate students of the Aeronautics Institute of Technology. This
 paper explores three topics: defensive behavior for 1-versus-1 situations
 with Deep Reinforcement Learning, improvement of the goalkeeper’s po-
@@ -139,11 +138,11 @@ win rate of 71.6% against agent2d 3.1.0 with librcsc 4.1.0.
 
 ### [R2D2](./TDP_R2D2.pdf)
 
-- R2D2 Soccer Simulation 2D Team Description Paper
+- 📄 **Title**: R2D2 Soccer Simulation 2D Team Description Paper
 Robocup World Cup 2024
-- Seyed Hassan Majid Zonouzi, Mohammad Hesam Nasiri, Sanaz Moosapour, Sina
+- ✍️ **Authors**: Seyed Hassan Majid Zonouzi, Mohammad Hesam Nasiri, Sanaz Moosapour, Sina
 Taheri Behrooz, Sana Mousavi, Seyed Mostafa Atyabi, Fatemeh Houra Haghighatkhah
-- The paper details the R2D2 team’s (R3CESBU) algorithm and de-
+- 📜 **Abstract**: The paper details the R2D2 team’s (R3CESBU) algorithm and de-
 velopment clarifications for RoboCup's 2D soccer simulation league. It intro-
 duces goalie, shooting, and marking advancements, emphasizing the ranking al-
 gorithm for chain action states and dynamic positioning. R2D2 employs artificial
@@ -152,3 +151,4 @@ enhance kickable agents and goalies. The research contributes to the evolution o
 competitive play in the RoboCup 2D Simulation League. The offence tactics in-
 volve improvements in the field evaluator, through-pass, unmarking, and shoot-
 ing algorithms, resulting in significant performance enhancements.
+
