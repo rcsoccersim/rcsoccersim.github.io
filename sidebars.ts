@@ -13,11 +13,17 @@ function getPapersSidebar() {
       return yearB - yearA; 
     });
   
-  const items: { type: 'doc'; id: string; label: string }[] = yearFolders.map((folder) => ({
-    type: 'doc', 
-    id: `papers/${folder}/index`, // ID of the document
-    label: folder.replace('robocup','RoboCup ').toString(),
-  }));
+  const items: { type: 'doc'; id: string; label: string }[] = yearFolders.map((folder): { type: 'doc'; id: string; label: string } | null => {
+    const indexPath = path.join(papersDir, folder, 'index.md');
+    if (fs.existsSync(indexPath)) {
+      return {
+        type: 'doc',
+        id: `papers/${folder}/index`, // ID of the document
+        label: folder.replace('robocup', 'RoboCup ').toString(),
+      };
+    }
+    return null;
+  }).filter(item => item !== null);
   return items;
 }
 /**
