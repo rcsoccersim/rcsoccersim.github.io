@@ -7,8 +7,8 @@
 
 ## Technical Committee
 
-- ????
-- ????
+- Hidehisa Akiyama
+- Omid Admini
 
 ## Organization Committee
 

@@ -8,7 +8,7 @@
 ## Technical Committee
 
 - Alireza Sadraii
-- 
+- Arad Firouzkouhi
 
 ## Organization Committee
 
