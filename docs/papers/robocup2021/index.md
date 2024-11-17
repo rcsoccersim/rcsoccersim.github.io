@@ -1,8 +1,8 @@
 ---
-title: RoboCup2021
+title: RoboCup 2021
 ---
 
-[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2021/TDP)
+[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2021/)
 
 ### [ARAS](./TDP_ARAS.pdf)
 - 📄 **Title**: ARAS Team Description Paper 2021

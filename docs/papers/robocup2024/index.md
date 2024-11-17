@@ -2,7 +2,7 @@
 title: RoboCup 2024
 ---
 
-[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2024/TDP)
+[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2024/)
 
 ### [YuShan2024](./TDP_YuShan2024.pdf)
 

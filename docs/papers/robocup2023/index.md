@@ -1,8 +1,8 @@
 ---
-title: RoboCup2023
+title: RoboCup 2023
 ---
 
-[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2023/TDP)
+[Link to all files](https://github.com/rcsoccersim/rcsoccersim.github.io/tree/master/docs/papers/robocup2023/)
 
 ### [CYRUS](./CYRUS_SS2D_RC2023_TDP.pdf)
 - 📄 **Title**: Observation Denoising in CYRUS Soccer Simulation 2D Team For RoboCup 2023
