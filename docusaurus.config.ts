@@ -78,27 +78,27 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'competitions',
-          position: 'left',
-          label: 'Competitions',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'openSourceProjects',
-          position: 'left',
-          label: 'Open Source Projects',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'competitions',
+        //   position: 'left',
+        //   label: 'Competitions',
+        // },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'openSourceProjects',
+        //   position: 'left',
+        //   label: 'Open Source Projects',
+        // },
         {
           type: 'docSidebar',
           sidebarId: 'papers',
           position: 'left',
           label: 'Papers',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/rcsoccersim/rcsoccersim.github.io',
           label: 'GitHub',
           position: 'right',
         },
