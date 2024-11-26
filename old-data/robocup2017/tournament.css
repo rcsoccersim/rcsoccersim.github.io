@@ -1,0 +1,205 @@
+
+@media all {
+
+	table {
+		margin-left: 1.5em;
+		border-collapse: collapse;
+	}
+
+	th {
+		font-weight: normal;
+		text-align: center;
+		border: 1px solid #222;
+		padding: 0.2em 0.5em 0.2em 0.5em;
+	}
+	
+	td {
+		border: 1px solid #222;
+		padding: 0.2em 0.5em 0.2em 0.5em;
+	}
+
+
+	/* score board elements */
+	
+	.index {
+		text-align: right;
+	}
+	
+	.country {
+		padding: 4px 4px 0 4px;
+		margin: 0;
+	}
+	
+	.score {
+		text-align: center;
+	}
+	
+	.points {
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	.results {
+		text-align: center;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+	.matches {
+		text-align: center;
+	}
+	
+	.avg {
+		text-align: right;
+	}
+	
+	.exception {
+		font-weight: bold;
+		color: red;
+	}
+	
+	.entry {
+		text-align: left;
+	}
+	
+	.data {
+		text-align: right;
+	}
+	
+	.log {
+		text-align: center;
+	}
+
+	.winner {
+		background-color: #001600;
+ 	}
+
+	.looser {}
+}
+
+@media screen {
+
+	body {
+		font-family: Verdana, Tahoma, sans-serif;
+		font-size: 10pt;
+		color: silver;
+		background-color: #222;
+		margin: 0;
+		line-height: 150%;
+	}
+
+	img {
+		border: 1px solid #222;
+	}
+
+	a {
+		color: gray;
+		outline: none;
+	}
+			  
+	a:hover {
+		color: red;
+	}
+
+	h1 {
+		color: red;
+		margin-top: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		color: gray;
+		padding-top: 1.5em;
+		margin-top: 0;
+	}
+
+	ul {
+		list-style-type: square;
+	}
+
+	em {
+		font-style: normal;
+		color: gray;
+	}
+
+	th {
+		color: gray;
+		background-color: #200;
+	}
+
+	#title {
+		line-height: 100%;
+		color: red;
+		background-color: #400;
+		padding: 0.3em 0.8em 1.9em 0.8em;
+	}
+
+	#title h1 {
+		font-size: 2.4em;
+		margin: 0.7em 0 0 0;
+		line-height: 100%;
+	}
+
+	#main {
+		color: silver;
+		background-color: black; 
+		border-top: 2px solid red;
+		padding: 0.2em 1em 2em 1em;
+	}
+
+	#footer {
+		font-size: smaller;
+		color: gray;
+		border-top: 2px solid red;
+		padding: 0.2em 0.8em 0.2em 0.2em;
+		text-align: right;
+	}
+
+	#footer a {
+		text-decoration: none;
+	}
+	
+	#footer a:hover {
+		text-decoration: underline;
+	}
+}
+
+@media print {
+	
+	body {
+		font-family: "Trebuchet MS";
+		font-size: 11pt;
+	}
+	
+	table {
+		font-size: 10pt;
+		page-break-inside: avoid;
+	}
+	
+	th {
+		font-weight: bold;
+	}
+	
+	h1 {
+		page-break-after: avoid;
+	}
+	
+	h2 {
+		margin-top: 1.7em;
+		page-break-after: avoid;
+	}
+
+	ul {
+		list-style-type: square;
+	}
+	
+	a {
+		color: black;
+	}
+	
+	#footer {
+		font-size: smaller;
+		text-align: right;
+		margin-top: 2em;
+	}
+}
