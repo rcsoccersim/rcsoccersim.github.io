@@ -78,12 +78,12 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'competitions',
-        //   position: 'left',
-        //   label: 'Competitions',
-        // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'competitions',
+          position: 'left',
+          label: 'Competitions',
+        },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'openSourceProjects',
