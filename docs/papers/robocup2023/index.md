@@ -36,7 +36,7 @@ title: RoboCup 2023
 - 📄 **Title**: ITAndroids 2D Soccer Simulation Team Description Paper 2023    
 - ✍️ **Authors**: Davi M. Vasconcelos, Nean Segura, and Marcos R. O. A. Maximo
 - 📜 **Abstract**: The ITAndroids 2D Soccer Simulation team is composed by undergraduate students of the Aeronautics Institute of Technology. The team is currently one of the strongest teams in Brazil, having won first place 4 times consecutively from 2012 to 2015, Vice Champion in 2018 and was the Champion of the 2019 Latin American Competition. Moreover, the team has qualified for the last ten editions of RoboCup, having participated in nine. This paper describes some of our advances in 2022 and our plans for 2023.
-### [OXSY](./OXSY_SS2D_RC2023_TDP.pdf)
+### [OXSY](./Oxsy_SS2D_RC2023_TDP.pdf)
 - 📄 **Title**: OXSY 2023 Team Description
 - ✍️ **Authors**: Sebastian Marian, Dorin Luca, Radu Sacuiu, Bogdan Sarac, Ovidiu Cotarlea
 - 📜 **Abstract**: Oxsy team has been founded in July 2002 as a graduation project of one student, Sebastian Marian, in the field of Multi-Agent Systems [1], at the Department of Computer Science of Lucian Blaga University (Sibiu - Romania). After graduation he continued the work on this project and eventually Oxsy team was born. As we started from scratch [6], our ideas, concepts and beliefs, have been implemented year by year, and today, we are happy to see our evolution, as our team was growing in these years, more than we expected from the beginning. If we will qualify for this year competition, we will reach at the 19h consecutive participation, in RoboCup [4] Soccer Simulation League.
