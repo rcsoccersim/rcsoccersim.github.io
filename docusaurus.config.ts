@@ -45,7 +45,7 @@ const config: Config = {
           rehypePlugins: [rehypeKatex],
         },
         blog: {
-          blogSidebarTitle: 'All our posts',
+          blogSidebarTitle: 'All News',
           blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
@@ -96,7 +96,7 @@ const config: Config = {
           position: 'left',
           label: 'Papers',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'News', position: 'left'},
         {
           href: 'https://github.com/rcsoccersim/rcsoccersim.github.io',
           label: 'GitHub',

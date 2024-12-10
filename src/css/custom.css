@@ -96,3 +96,14 @@
 [data-theme='dark'] .listItem::before {
   color: white;
 }
+
+/* Custom blog title */
+/* Increase specificity */
+[data-theme='dark'] .title_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Title-styles-module {
+  font-size: 1.5em; /* Adjust the size as needed */
+}
+
+/* Or use !important */
+.title_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Title-styles-module {
+  font-size: 1.5em !important; /* Adjust the size as needed */
+}
