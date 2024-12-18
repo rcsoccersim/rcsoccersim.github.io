@@ -176,12 +176,12 @@ const config: Config = {
     ],
     algolia: {
       // The application ID provided by Algolia
-      appId: 'YOUR_APP_ID',
+      appId: '8RI3GOTRQI',
 
       // Public API key: it is safe to commit it
-      apiKey: 'YOUR_SEARCH_API_KEY',
+      apiKey: '88ae4eb7b0884d01c7df879791db55e5',
 
-      indexName: 'YOUR_INDEX_NAME',
+      indexName: 'rcsoccersimio',
 
       // Optional: see doc section below
       contextualSearch: true,
@@ -192,7 +192,7 @@ const config: Config = {
       // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
       replaceSearchResultPathname: {
         from: '/docs/', // or as RegExp: /\/docs\//
-        to: '/',
+        to: '/docs/',
       },
 
       // Optional: Algolia search parameters
