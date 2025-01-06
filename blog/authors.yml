@@ -6,3 +6,12 @@ nader-zare-ec:
   page: true
   socials:
     github: naderzare
+
+omid-amini-oc:
+  name: Omid Amini
+  title: Organizing Committee Member
+  url: https://github.com/mroa4
+  image_url: https://avatars.githubusercontent.com/u/43232848?v=44
+  page: true
+  socials:
+    github: mroa4
