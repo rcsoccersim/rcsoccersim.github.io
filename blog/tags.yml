@@ -3,3 +3,6 @@ robocup:
 
 soccersimulation:
   label: Soccer Simulation
+
+rc2025:
+  label: RoboCup 2025
