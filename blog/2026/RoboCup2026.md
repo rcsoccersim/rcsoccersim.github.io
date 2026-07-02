@@ -1,5 +1,5 @@
 ---
-title: RoboCup 2026 is Underway in Incheon: Catch the Soccer Simulation 2D League Live!
+title: RoboCup 2026 is Underway in Incheon. Catch the Soccer Simulation 2D League Live!
 tags: [robocup,soccersimulation,rc2026]
 addToHomepage: true
 homePageImage: RoboCup2026-live.png
