@@ -5,6 +5,8 @@ authors: [nader-zare-ec]
 addToHomepage: true
 homePageImage: ss2d-competition.png
 homePageTitle: How to Participate?
+date: 2099-12-31
+sticky: true
 ---
 
 Joining the RoboCup Soccer Simulation 2D League requires developing a competitive AI-driven soccer team and submitting a Team Description Paper (TDP) to the league committee.
