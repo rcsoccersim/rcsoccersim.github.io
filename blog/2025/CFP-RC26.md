@@ -4,11 +4,15 @@ tags: [robocup,soccersimulation,rc2026]
 addToHomepage: true
 homePageImage: RoboCup2026-flyer.jpeg
 homePageTitle: CFP RoboCup 2026
+date: 2025-12-13
 ---
+
+We invite you to participate in the RoboCup 2026 Soccer Simulation League 2D competition, to be held from **June 30 to July 6, 2026, in Incheon, Korea**.
+
+<!-- truncate -->
 
 ![RoboCup2026 Flyer](/img/blog/RoboCup2026-flyer.jpeg)
 
-We invite you to participate in the RoboCup 2026 Soccer Simulation League 2D competition, to be held from **June 30 to July 6, 2026, in Incheon, Korea**.
 
 The RoboCup Soccer Simulation 2D League is one of the oldest RoboCup Soccer competitions. It is based on the RoboCup Soccer Simulator, which enables two teams of 11 simulated autonomous robots, plus an autonomous coach agent, to play a soccer game with very realistic rules and gameplay. Due to its stability, the RoboCup Soccer Simulator is an outstanding research and educational tool for multi-agent systems, artificial intelligence, and machine learning.
 

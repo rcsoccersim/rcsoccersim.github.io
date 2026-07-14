@@ -4,11 +4,14 @@ tags: [robocup,soccersimulation,rc2026]
 addToHomepage: true
 homePageImage: RoboCup2026-live.png
 homePageTitle: RoboCup 2026
+date: 2026-07-02
 ---
 
-![RoboCup2026 is Live](/img/blog/RoboCup2026-live.png)
-
 RoboCup 2026 has officially kicked off, and the event is currently taking place in the beautiful city of Incheon, South Korea. It is always inspiring to see researchers, developers, and AI enthusiasts from around the world gather to showcase their latest advancements in autonomous technology and robotics.
+
+<!-- truncate -->
+
+![RoboCup2026 is Live](/img/blog/RoboCup2026-live.png)
 
 If you couldn't make the trip to South Korea this year, don't worry -- you can still experience the tournament from home. The Soccer Simulation 2D League is currently being broadcast live on YouTube. It is a great opportunity to watch these fully autonomous AI agents strategize and compete on the digital pitch in real-time.
 

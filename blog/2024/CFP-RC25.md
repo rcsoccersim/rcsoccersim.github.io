@@ -5,6 +5,7 @@ authors: [omid-amini-oc]
 addToHomepage: true
 homePageImage: rc2025-logo.png
 homePageTitle: CFP RoboCup 2025
+date: 2025-01-06
 ---
 
 We are excited to invite you to participate in the RoboCup 2025 Soccer Simulation 2D League  competition, which will take place from July 15 to July 21, 2025, in Salvador, Brazil.
