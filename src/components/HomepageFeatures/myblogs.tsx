@@ -8,7 +8,7 @@ type NewsItem = {
   title: string;
   link: string;
   year: number;
-  date: number;
+  date: string;
   fileLink: string;
 };
 
@@ -35,7 +35,9 @@ function getNewsItems(): NewsItem[] {
   });
 
   // newsList.sort((a, b) => b.year - a.year);
-  newsList.sort((a, b) => b.date - a.date);
+  newsList.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
   console.log("newsList");
   console.log(newsList);
 
