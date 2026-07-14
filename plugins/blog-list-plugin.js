@@ -55,6 +55,17 @@ function shouldBeOnHomePage(data, image, shortTitle, description) {
   return addToHomepage;
 }
 
+function getPostDate(data, fullPath) {
+  if (data.date) {
+    const frontMatterDate = new Date(data.date);
+    if (!Number.isNaN(frontMatterDate.getTime())) {
+      return frontMatterDate;
+    }
+  }
+
+  return new Date(fs.statSync(fullPath).mtime);
+}
+
 module.exports = function () {
   return {
     name: "blog-list-plugin",
@@ -65,8 +76,8 @@ module.exports = function () {
       const posts = filePaths.map((relativePath) => {
         const fullPath = path.join(blogDir, relativePath);
         const content = fs.readFileSync(fullPath, "utf-8");
-        const date = new Date(fs.statSync(fullPath).mtime);
         const { data } = matter(content);
+        const date = getPostDate(data, fullPath);
         var homePageImage = getHomeImage(data);
         var description = getDescription(data, content);
         var homePageTitle = getHomePageTitle(data);
