@@ -7,10 +7,11 @@
 
 ## Technical Committee
 
-- Sebastian Marian
+- Aref Sayareh
 - Hassan Zonouzi
 
 ## Organization Committee
 
 - Tomoharu Nakashima
 - Omid Amini
+- Gabriel Lopes de Souza

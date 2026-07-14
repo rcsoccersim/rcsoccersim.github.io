@@ -13,4 +13,4 @@
 ## Organization Committee
 
 - Tomoharu Nakashima
-- Gabriel Lopes
+- Gabriel Lopes de Souza
